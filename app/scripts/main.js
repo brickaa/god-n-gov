@@ -1,6 +1,14 @@
 'use strict';
 
-$(document).ready(function() {
+var $menuBtn = $('#menu-chapters-btn'),
+    $menuChapters = $('#menu-chapters');
 
-  console.log('hello world!');
+
+function menuAccordion(e) {
+  $menuChapters.slideToggle(250);
+  e.preventDefault();
+}
+
+$(document).ready(function() {
+  $menuBtn.click(menuAccordion);
 });

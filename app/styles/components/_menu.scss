@@ -108,6 +108,7 @@
 
 .menu-chapters {
   @include clearfix();
+  display: none;
   padding: 0 .35em 1em;
 
   .menu-chapter {

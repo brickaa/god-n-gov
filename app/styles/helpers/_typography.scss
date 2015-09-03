@@ -1,2 +1,13 @@
 $bookmania: "Bookmania", "Cambria", "Times New Roman", "Times", serif;
 $montserrat: "Montserrat", sans-serif;
+
+.story-prose {
+  font-family: $bookmania;
+
+  p {
+    @extend %font-base;
+    font-family: $bookmania;
+    line-height: 1.2;
+  }
+}
+

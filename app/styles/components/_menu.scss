@@ -24,36 +24,52 @@
   a {
     &:hover {
       text-decoration: none;
-
-      p {
-       color: $white; 
-      }
     }
   }
 
   .bg-hover-layer {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    display: none;
 
-    &:hover {
-      background-color: transparentize($purple, .5);
+    @include media($default-desktop) {
+      background-color: transparent;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+
+      &:hover {
+        background-color: transparentize($purple, .5);
+      }
     }
   }
 }
 
 .menu-bar {
   @include clearfix();
+  padding: .5em 0;
   width: 100%;
 
-  p {
+  span {
     @include font-size($s, .8);
     font-family: $montserrat;
     display: inline-block;
+    padding: 0 0 0 1.25em;
   }
+
+  figure {
+    float: left;
+  }
+}
+
+.menu-bar-left {
+  float: left;
+}
+
+.menu-bar-right {
+  float: right;
 }
 
 .menu-block {
@@ -92,15 +108,12 @@
 
 .menu-chapters {
   @include clearfix();
-
-  &:last-child {
-    padding-bottom: 1em;
-  }
+  padding: 0 .35em 1em;
 
   .menu-chapter {
     text-align: center;
     padding: .75em .25em;
-    margin: 0 .25em .35em;
+    margin: 0 0 .35em;
 
     p {
       @include font-size($s, .8);
@@ -110,6 +123,14 @@
 
     @include media($default-desktop) {
       margin: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      background-color: transparentize($purple, .01);
     }
   }
 
@@ -136,17 +157,29 @@
   }
 }
 
+.menu-extra-links {
+  display: none;
+  @include media($default-desktop) {
+    display: block;
+    float: right;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  .about-link {
+    font-weight: 800;
+  }
+}
+
 .menu-icon {
   img {
     height: 1em;
     width: inherit;
   }
-}
-
-.menu-icon-left {
-  float: left;
-}
-
-.menu-icon-right {
-  float: right;
 }

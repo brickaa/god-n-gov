@@ -108,9 +108,13 @@
 
 .menu-chapters {
   @include clearfix();
-  display: none;
+  display: block;
   padding: 0 .35em 1em;
 
+  @include media($default-desktop) {
+    display: none;
+  }
+  
   .menu-chapter {
     text-align: center;
     padding: .75em .25em;

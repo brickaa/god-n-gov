@@ -24,6 +24,10 @@
   a {
     &:hover {
       text-decoration: none;
+
+      p {
+        color: $white;
+      }
     }
   }
 
@@ -106,15 +110,16 @@
   }
 }
 
+.menu-chapters-btn {
+  &:hover {
+    color: $purple;
+  }
+}
 .menu-chapters {
   @include clearfix();
-  display: block;
+  display: none;
   padding: 0 .35em 1em;
 
-  @include media($default-desktop) {
-    display: none;
-  }
-  
   .menu-chapter {
     text-align: center;
     padding: .75em .25em;
@@ -139,7 +144,7 @@
     }
   }
 
-  .video-chapter {
+  .menu-video-chapter {
     background-color: $background-gray;
     color: $tribune-black;
 
@@ -148,7 +153,7 @@
     }
   }
 
-  .extra-chapter {
+  .menu-extra-chapter {
     background-color: $tribune-black;
     border: 1px solid $background-gray;
     color: $white;

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ META.project_title }} | The Texas Tribune</title>
+{% include 'includes/_social_meta.html' %}
+  
+  <script src="https://use.typekit.net/baa7muu.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  {% block styles %}
+  <link rel="stylesheet" href="{{ PATH_PREFIX }}styles/main.css">
+  {% endblock %}
+</head>
+<body>
+
+{% block content %}{% endblock %}
+
+{% block script %}
+<script src="{{ PATH_PREFIX }}scripts/main.js"></script>
+{% endblock %}
+{% include 'includes/_google_analytics.html' %}
+</body>
+</html>

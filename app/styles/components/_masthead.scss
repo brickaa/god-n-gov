@@ -1,0 +1,18 @@
+.masthead {
+  @include clearfix();
+  background-color: $tribune-black;
+
+  img {
+    height: 1em;
+    width: inherit;
+  }
+
+  .logo-left {
+    float: left;
+  }
+
+  .logo-right {
+    float: right;
+  }
+
+}

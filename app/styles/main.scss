@@ -2,7 +2,4 @@
 // Uncomment to pull in additional base styles like themes and components
 // @import 'node_modules/newsapps-styles/initialize';
 @import 'helpers/typography';
-
-.story-prose {
-  font-family: $bookmania;
-}
+@import 'components/masthead';

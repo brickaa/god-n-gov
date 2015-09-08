@@ -60,6 +60,11 @@ $(document).ready(function() {
     // seekBar.value = value;
   });
 
+  video.addEventListener("ended", function() {
+    $('.icon-TT-god_pause').hide();
+    $('.icon-TT-god_play').show();
+  });
+
 });
 
 // RESIZE EVENTS

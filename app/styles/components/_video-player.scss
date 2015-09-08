@@ -1,5 +1,5 @@
 .video-wrapper {
-  background-color: $tribune-black;
+  background-color: $gg-black;
   position: relative;
 }
 
@@ -12,33 +12,59 @@
 }
 
 .video-controls {
-  background-color: $tribune-black;
+  background-color: $gg-black;
   padding: 1em;
   position: absolute;
   top: 100%;
   width: 100%;
+
+  button {
+    background-color: $gg-black;
+    border: none;
+    border-radius: 0;
+    color: $white;
+
+    &:hover {
+      color: $gg-red;
+    }
+
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
 }
 
 .video-controls-left,
 .video-controls-right {
-  display: inline-block;
-  position: relative;
-  width: 20%;
+  width: 14.7%;
 }
 
 .video-controls-left {
   float: left;
+  margin: 0;
+  button { float: right; }
 }
 
 .video-controls-right {
   float: right;
+  margin: 0;
+  button { float: left; }
+}
+
+.video-controls-middle {
+  float: left;
+  width: 65%;
+  margin: 0 2.5%;
 }
 
 .progress-bar-wrapper {
-  display: inline-block;
-  padding: 0 1em 1.5em;
+  @include clearfix();
+  // display: inline-block;
+  padding: .5em 0;
   position: relative;
-  width: 50%;
+  // width: 50%;
 }
 
 .progress-bar {

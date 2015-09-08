@@ -7,10 +7,11 @@
 }
 
 .menu {
-  @include font-size($s, .8);
+  @include font-size($s, 1.1);
   background-color: $gg-black;
   bottom: 0;
   color: $white;
+  height: 40px;
   font-family: $montserrat;
   position: fixed;
   text-transform: uppercase;
@@ -25,11 +26,18 @@
   }
 
   a {
+    color: $white;
+
     &:hover {
+      color: $gg-red;
       text-decoration: none;
 
       p {
         color: $white;
+      }
+
+      span {
+        color: $gg-red;
       }
     }
   }
@@ -48,29 +56,21 @@
       z-index: -1;
 
       &:hover {
-        background-color: transparentize($purple, .5);
+        background-color: transparentize($gg-red, .5);
       }
     }
   }
 }
 
 .menu-bar {
-  @include clearfix();
-  padding: .5em .35em;
+  height: 2em;
   width: 100%;
-
-  span {
-    @include font-size($s, .8);
-    font-family: $montserrat;
-    display: inline-block;
-    padding: 0 0 0 1.25em;
-  }
-
-  figure {
-    float: left;
-  }
 }
 
+.menu-bar-left,
+.menu-bar-right {
+  padding: .75em .35em 1em;
+}
 .menu-bar-left {
   float: left;
 }
@@ -114,8 +114,13 @@
 }
 
 .menu-chapters-btn {
+  .icon-TT-god_chapters {
+    color: $white;
+  }
+
   &:hover {
-    color: $purple;
+    cursor: pointer;
+    span { color: $gg-red; }
   }
 }
 .menu-chapters {
@@ -129,7 +134,7 @@
     margin: 0 0 .35em;
 
     p {
-      @include font-size($s, .8);
+      @include font-size($s, 1.1);
       font-family: $montserrat;
       margin: 0;
     }
@@ -143,7 +148,7 @@
     }
 
     &:hover {
-      background-color: transparentize($purple, .01);
+      background-color: transparentize($gg-red, .01);
     }
   }
 
@@ -177,23 +182,17 @@
     display: block;
     float: right;
   }
-
-  a {
-    color: $white;
-
-    &:hover {
-      color: $purple;
-    }
-  }
-
-  .about-link {
-    font-weight: 800;
-  }
 }
 
 .menu-icon {
-  img {
-    height: 1em;
-    width: inherit;
+  color: $white;
+  margin: 0 .5em 0 0;
+}
+
+.menu-icon-share {
+  padding: 0 .35em 0 1.5em;
+
+  @include media($default-desktop) {
+    padding: 0 .5em;
   }
 }

@@ -11,3 +11,94 @@ $montserrat: "Montserrat", sans-serif;
   }
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('{{ PATH_PREFIX}}assets/fonts/icomoon.eot?-4tm7m8');
+  src:url('{{ PATH_PREFIX}}assets/fonts/icomoon.eot?#iefix-4tm7m8') format('embedded-opentype'),
+    url('{{ PATH_PREFIX}}assets/fonts/icomoon.ttf?-4tm7m8') format('truetype'),
+    url('{{ PATH_PREFIX}}assets/fonts/icomoon.woff?-4tm7m8') format('woff'),
+    url('{{ PATH_PREFIX}}assets/fonts/icomoon.svg?-4tm7m8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-TT-god_full-screen:before {
+  content: "\e60e";
+}
+.icon-TT-god_scroll:before {
+  content: "\e60f";
+}
+.icon-TT-god_dash:before {
+  content: "\e610";
+}
+.icon-TT-god_twitter:before {
+  content: "\e611";
+}
+.icon-TT-god_facebook:before {
+  content: "\e612";
+}
+.icon-TT-god_chapters:before {
+  content: "\e613";
+}
+.icon-TT-god_pause:before {
+  content: "\e614";
+}
+.icon-TT-god_play:before {
+  content: "\e615";
+}
+.icon-starstruck-play-btn-outline:before {
+  content: "\e60c";
+}
+.icon-starstruck-play-btn-solid:before {
+  content: "\e60d";
+}
+.icon-starstruck-right-arrow-sml:before {
+  content: "\e600";
+}
+.icon-starstruck-left-arrow-med:before {
+  content: "\e603";
+}
+.icon-starstruck-left-arrow-sml:before {
+  content: "\e607";
+}
+.icon-starstruck-right-arrow-med:before {
+  content: "\e608";
+}
+.icon-starstruck-replay-icon:before {
+  content: "\e609";
+}
+.icon-starstruck-left-arrow:before {
+  content: "\e60a";
+}
+.icon-starstruck-right-arrow:before {
+  content: "\e60b";
+}
+.icon-starstruck-pause-btn-outline:before {
+  content: "\e601";
+}
+.icon-starstruck-pause-btn-solid:before {
+  content: "\e602";
+}
+.icon-starstruck-volume-btn-outline:before {
+  content: "\e604";
+}
+.icon-starstruck-volume-btn-solid:before {
+  content: "\e605";
+}
+.icon-starstruck-volume-off:before {
+  content: "\e606";
+}

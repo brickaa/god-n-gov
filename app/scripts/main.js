@@ -18,8 +18,12 @@ function playPause(e) {
   e.preventDefault();
   if (video.paused == true) {
     video.play();
+    $('.icon-TT-god_play').hide();
+    $('.icon-TT-god_pause').show();
   } else {
     video.pause();
+    $('.icon-TT-god_pause').hide();
+    $('.icon-TT-god_play').show();
   }
 }
 
@@ -36,11 +40,11 @@ function fullScreen(e) {
 }
 
 function resize() {
-  $('.video-wrapper').height($(window).height() * .8);
+  $('.video-wrapper').height($(window).height() * .75);
 }
 
 $(document).ready(function() {
-  $('.video-wrapper').height($(window).height() * .8);
+  $('.video-wrapper').height($(window).height() * .75);
 
   $menuBtn.click(menuAccordion);
   $playBtn.click(playPause);

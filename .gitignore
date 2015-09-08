@@ -5,6 +5,8 @@ app/assets/fonts/*
 app/assets/images/*
 !app/assets/images/.gitkeep
 app/assets/video/*
+!app/assets/icons/.gitkeep
+app/assets/icons/*
 !app/assets/video/.gitkeep
 bower_components
 dist

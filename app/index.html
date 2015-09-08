@@ -7,7 +7,22 @@
 {% block content %}
 
 <section class="main">
-  <p>Placeholder for Video</p>
+  <div class="video-wrapper">
+    <video id="video" class="video" poster="http://placehold.it/500x350">
+      <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>
+      <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4;'>
+    </video>
+  </div>
+
+  <!-- Video Controls -->
+  <div id="video-controls" class="video-controls">
+    <button type="button" id="play-pause" class="video-controls-left">Play</button>
+    <div class="progress-bar-wrapper">
+      <div class="progress-bar"></div>
+      <div id="video-progress" class="progress"></div>
+    </div>
+    <button type="button" id="full-screen" class="video-controls-right">Full-Screen</button>
+  </div>
 </section>
 
 <nav class="menu">

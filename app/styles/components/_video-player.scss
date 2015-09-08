@@ -1,0 +1,37 @@
+.video-wrapper {
+  background-color: $tribune-black;
+  position: relative;
+}
+
+.video {
+  height: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-controls {
+  background-color: $tribune-black;
+}
+
+.video-controls-left,
+.video-controls-right {
+  @include span-columns(2);
+}
+
+.progress-bar-wrapper {
+  @include span-columns(8);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: black;
+  height: .25em;
+}
+
+.progress {
+  width: 0%;
+  background-color: blue;
+  height: 1em;  
+}

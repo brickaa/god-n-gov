@@ -1,18 +1,20 @@
 .masthead {
   @include clearfix();
   background-color: $tribune-black;
+  padding: .25em 1em;
 
   img {
-    height: 1em;
     width: inherit;
   }
 
   .logo-left {
     float: left;
+    img { height: 1em; }
   }
 
   .logo-right {
     float: right;
+    img { height: .9em; }
   }
 
 }

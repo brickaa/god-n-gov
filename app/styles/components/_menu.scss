@@ -15,6 +15,7 @@
   position: fixed;
   text-transform: uppercase;
   width: 100%;
+  z-index: 1000;
 
   @include media($default-desktop) {
     padding: 0 1em;

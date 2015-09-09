@@ -1,0 +1,24 @@
+
+.video-cover-wrapper {
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.video-cover-img {
+  background-image: url('/assets/images/TT-god_bg-img.png');
+  background-position: 50% 50%; 
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.video-cover-logo {
+  left: 0;
+  margin: 0 auto;
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}

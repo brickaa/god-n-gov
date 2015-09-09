@@ -8,10 +8,9 @@ var $menuBtn = $('#menu-chapters-btn'),
     video = $video[0],
     $fullScreenBtn = $('#full-screen'),
     $playBtn = $('#play-pause'),
-    seekBar = $('#progress-bar'),
+    seekBar = document.getElementById("seek-bar"),
     $startBtn = $('#start-video'),
     $videoCover = $('#video-cover-wrapper');
-
 
 function menuAccordion(e) {
   e.preventDefault();
@@ -61,14 +60,46 @@ $(document).ready(function() {
   $playBtn.click(playPause);
   $fullScreenBtn.click(fullScreen);
 
+  // // Update the seek bar as the video plays
+  // video.addEventListener("timeupdate", function() {
+  //   // Calculate the slider value
+  //   var value = (100 / video.duration) * video.currentTime;
+
+  //   $('#video-progress').width(value + '%');
+  //   // Update the slider value
+  //   // seekBar.value = value;
+  // });
+
+  // Event listener for the seek bar
+  seekBar.addEventListener("change", function() {
+    // Calculate the new time
+    var time = video.duration * (seekBar.value / 100);
+
+    // Update the video time
+    video.currentTime = time;
+  });
+
   // Update the seek bar as the video plays
   video.addEventListener("timeupdate", function() {
     // Calculate the slider value
     var value = (100 / video.duration) * video.currentTime;
 
-    $('#video-progress').width(value + '%');
     // Update the slider value
-    // seekBar.value = value;
+    seekBar.value = value;
+  });
+
+  // Pause the video when the slider handle is being dragged
+  seekBar.addEventListener("mousedown", function() {
+    video.pause();
+    $('.icon-TT-god_pause').hide();
+    $('.icon-TT-god_play').show();
+  });
+
+  // Play the video when the slider handle is dropped
+  seekBar.addEventListener("mouseup", function() {
+    video.play();
+    $('.icon-TT-god_play').hide();
+    $('.icon-TT-god_pause').show();
   });
 
   video.addEventListener("ended", function() {

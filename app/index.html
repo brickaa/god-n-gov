@@ -7,27 +7,44 @@
 {% block content %}
 
 <section class="main">
-  <p>Placeholder for Video</p>
+  <div class="video-wrapper">
+    <video id="video" class="video" poster="http://placehold.it/500x350">
+      <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>
+      <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4;'>
+    </video>
+
+    <!-- Video Controls -->
+    <div id="video-controls" class="video-controls">
+      <div class="video-controls-left">
+        <button type="button" id="play-pause"><span class="icon-TT-god_play"></span><span class="icon-TT-god_pause" style="display: none;"></span></button>
+      </div>
+      <div class="video-controls-middle">
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar"></div>
+          <div id="video-progress" class="progress"></div>
+        </div>
+      </div>
+      <div class="video-controls-right">
+        <button type="button" id="full-screen"><span class="icon-TT-god_full-screen"></span></button>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <nav class="menu">
   <div id="menu-bar" class="menu-bar">
     <div id="menu-chapters-btn" class="menu-bar-left menu-chapters-btn">
-      <figure class="menu-icon">
-        <img src="http://placehold.it/50x50">
-      </figure>
+      <span class="menu-icon icon-TT-god_chapters"></span>
       <span>Chapters</span>
     </div>
     <div class="menu-bar-right">
-      <figure class="menu-icon menu-icon-right">
-        <img src="http://placehold.it/50x50">
-      </figure>
-      <figure class="menu-icon menu-icon-right">
-        <img src="http://placehold.it/50x50">
-      </figure>
+      <a href=""><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
+      <a href=""><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
       <div class="menu-extra-links">
-        <a href=""><span>Lawmakers</span></a>
-        <a href=""><span class="about-link">About</span></a>
+        <span class="icon-TT-god_dash menu-icon"></span>
+        <a href=""><span class="menu-icon">Lawmakers</span></a>
+        <a href=""><span class="menu-icon">About</span></a>
       </div>
     </div>
   </div>

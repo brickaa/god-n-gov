@@ -11,3 +11,53 @@ $montserrat: "Montserrat", sans-serif;
   }
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('/assets/fonts/icomoon.eot?-j7ril9');
+  src:url('/assets/fonts/icomoon.eot?#iefix-j7ril9') format('embedded-opentype'),
+    url('/assets/fonts/icomoon.ttf?-j7ril9') format('truetype'),
+    url('/assets/fonts/icomoon.woff?-j7ril9') format('woff'),
+    url('/assets/fonts/icomoon.svg?-j7ril9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-TT-god_full-screen:before {
+  content: "\e600";
+}
+.icon-TT-god_scroll:before {
+  content: "\e601";
+}
+.icon-TT-god_facebook:before {
+  content: "\e602";
+}
+.icon-TT-god_dash:before {
+  content: "\e603";
+}
+.icon-TT-god_twitter:before {
+  content: "\e604";
+}
+.icon-TT-god_chapters:before {
+  content: "\e605";
+}
+.icon-TT-god_pause:before {
+  content: "\e606";
+}
+.icon-TT-god_play:before {
+  content: "\e607";
+}
+

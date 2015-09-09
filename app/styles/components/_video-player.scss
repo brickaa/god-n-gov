@@ -1,0 +1,82 @@
+.video-wrapper {
+  background-color: $gg-black;
+  position: relative;
+}
+
+.video {
+  height: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-controls {
+  background-color: $gg-black;
+  padding: 1em;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+
+  button {
+    background-color: $gg-black;
+    border: none;
+    border-radius: 0;
+    color: $white;
+
+    &:hover {
+      color: $gg-red;
+    }
+
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.video-controls-left,
+.video-controls-right {
+  width: 14.7%;
+}
+
+.video-controls-left {
+  float: left;
+  margin: 0;
+  button { float: right; }
+}
+
+.video-controls-right {
+  float: right;
+  margin: 0;
+  button { float: left; }
+}
+
+.video-controls-middle {
+  float: left;
+  width: 65%;
+  margin: 0 2.5%;
+}
+
+.progress-bar-wrapper {
+  @include clearfix();
+  // display: inline-block;
+  padding: .5em 0;
+  position: relative;
+  // width: 50%;
+}
+
+.progress-bar {
+  background-color: $white;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.progress {
+  width: 0%;
+  background-color: $gg-red;
+  height: 6px;  
+  position: absolute;
+}

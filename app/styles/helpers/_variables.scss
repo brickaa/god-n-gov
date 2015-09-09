@@ -14,7 +14,7 @@ $gg-black: rgb(41, 41, 41);
 .ghost-button-red {
   @include clearfix;
   background-color: transparentize($gg-red, .2);
-  border: 1px solid $white;
+  border: none;
   border-radius: 0;
   color: $white;
   cursor: pointer;
@@ -31,7 +31,7 @@ $gg-black: rgb(41, 41, 41);
   &:active,
   &:hover {
     background-color: $gg-red;
-    border: 1px solid $gg-red;
+    border: none;
     color: $white;
   }
 

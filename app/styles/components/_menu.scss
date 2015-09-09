@@ -8,7 +8,7 @@
 
 .menu {
   @include font-size($s, 1.1);
-  background-color: $gg-black;
+  background-color: $tribune-black;
   bottom: 0;
   color: $white;
   font-family: $montserrat;
@@ -155,7 +155,7 @@
 
   .menu-video-chapter {
     background-color: $background-gray;
-    color: $gg-black;
+    color: $tribune-black;
 
     @include media($default-desktop) {
       color: $white;
@@ -164,7 +164,7 @@
   }
 
   .menu-extra-chapter {
-    background-color: $gg-black;
+    background-color: $tribune-black;
     border: 1px solid $background-gray;
     color: $white;
   }

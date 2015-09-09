@@ -1,6 +1,6 @@
 .masthead {
   @include clearfix();
-  background-color: $gg-black;
+  background-color: $tribune-black;
   padding: .5em 1em;
 
   img {
@@ -17,7 +17,8 @@
     cursor: pointer;
     float: right;
     img { 
-      height: .75em; 
+      height: .6em;
+      margin-bottom: .1em;
     }
   }
 

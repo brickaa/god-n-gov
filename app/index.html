@@ -7,6 +7,13 @@
 {% block content %}
 
 <section class="main">
+  <div id="video-cover-wrapper" class="video-cover-wrapper">
+    <div class="video-cover-img"></div>
+    <figure class="video-cover-logo">
+      <img src="{{ PATH_PREFIX }}assets/images/logos/TT-god_logo-stack.svg">
+      <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
+    </figure>   
+  </div>
   <div class="video-wrapper">
     <video id="video" class="video" poster="http://placehold.it/500x350">
       <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>

@@ -2,12 +2,14 @@
 // Uncomment to pull in additional base styles like themes and components
 // @import 'node_modules/newsapps-styles/initialize';
 
-@import 'helpers/variables';
 @import 'helpers/typography';
+@import 'helpers/variables';
 @import 'components/masthead';
 @import 'components/menu';
+@import 'components/video-cover';
 @import 'components/video-player';
 
 body {
   background-color: $gg-black;
 }
+

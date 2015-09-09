@@ -1,3 +1,5 @@
+/* global $ */
+
 'use strict';
 
 var $menuBtn = $('#menu-chapters-btn'),
@@ -6,7 +8,9 @@ var $menuBtn = $('#menu-chapters-btn'),
     video = $video[0],
     $fullScreenBtn = $('#full-screen'),
     $playBtn = $('#play-pause'),
-    seekBar = $('#progress-bar');
+    seekBar = $('#progress-bar'),
+    $startBtn = $('#start-video'),
+    $videoCover = $('#video-cover-wrapper');
 
 
 function menuAccordion(e) {
@@ -39,6 +43,12 @@ function fullScreen(e) {
   }
 }
 
+function startVideo(e) {
+  e.preventDefault();
+  $videoCover.hide();
+  playPause(e);
+}
+
 function resize() {
   $('.video-wrapper').height($(window).height() * .75);
 }
@@ -46,6 +56,7 @@ function resize() {
 $(document).ready(function() {
   $('.video-wrapper').height($(window).height() * .75);
 
+  $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);
   $playBtn.click(playPause);
   $fullScreenBtn.click(fullScreen);

@@ -9,4 +9,33 @@
 /*COLORS:*/
 $gg-red: rgb(241, 82, 73); // #f15249
 $gg-maroon: rgb(112, 56, 66); // #703842 
-$gg-black: rgb(33, 33, 33); // #212121
+$gg-black: rgb(41, 41, 41); 
+
+.ghost-button-red {
+  @include clearfix;
+  background-color: transparentize($gg-red, .2);
+  border: 1px solid $white;
+  border-radius: 0;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $montserrat;
+  font-size: 1.2em;
+  letter-spacing: .2rem;
+  margin: 2em 0;
+  padding: .4em 1.4em .5em;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: bottom;
+
+  &:active,
+  &:hover {
+    background-color: $gg-red;
+    border: 1px solid $gg-red;
+    color: $white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

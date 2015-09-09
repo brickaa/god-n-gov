@@ -1,3 +1,7 @@
+$menu-desktop: new-breakpoint(min-width 600px);
+$menu-desktop-lg: new-breakpoint(min-width 800px);
+$menu-desktop-xlg: new-breakpoint(min-width 1080px);
+
 %bg-cover {
   background-position: no-repeat center center fixed; 
   background-size: cover;
@@ -17,7 +21,7 @@
   width: 100%;
   z-index: 1000;
 
-  @include media($default-desktop) {
+  @include media($menu-desktop) {
     padding: 0 1em;
   }
 
@@ -45,7 +49,7 @@
   .bg-hover-layer {
     display: none;
 
-    @include media($default-desktop) {
+    @include media($menu-desktop) {
       background-color: transparent;
       display: block;
       height: 100%;
@@ -80,7 +84,12 @@
 }
 
 .menu-block {
-  @include media($default-desktop) {
+  .active {
+    box-sizing: border-box;
+    border: 3px solid $gg-red;
+  }
+
+  @include media($menu-desktop) {
     @include span-columns(4 of 20);
     @include omega(5n);
 
@@ -89,11 +98,6 @@
       bottom: 1em;
       left: 0;
       right: 0;
-    }
-
-    &.active {
-      box-sizing: border-box;
-      border: 3px solid $gg-red;
     }
 
     .bg-overview {
@@ -133,11 +137,17 @@
     span { color: $gg-red; }
   }
 }
+
 .menu-chapters {
   @include clearfix();
   display: none;
   padding: 0 .35em 1em;
   width: 100%;
+
+  .active {
+    box-sizing: border-box;
+    border: 3px solid $gg-red;
+  }
 
   .menu-chapter {
     text-align: center;
@@ -150,7 +160,7 @@
       margin: 0;
     }
 
-    @include media($default-desktop) {
+    @include media($menu-desktop) {
       margin: 0;
 
       &:hover {
@@ -167,9 +177,19 @@
     background-color: $background-gray;
     color: $tribune-black;
 
-    @include media($default-desktop) {
+    @include media($menu-desktop) {
       color: $white;
-      height: 10em;
+      height: 6em;
+    }
+
+    @include media($menu-desktop-lg) {
+      color: $white;
+      height: 8em;
+    }
+
+    @include media($menu-desktop-xlg) {
+      color: $white;
+      height: 12em;
     }
   }
 
@@ -182,14 +202,14 @@
 }
 
 .menu-extra {
-  @include media($default-desktop) {
+  @include media($menu-desktop) {
     display: none;
   }
 }
 
 .menu-extra-links {
   display: none;
-  @include media($default-desktop) {
+  @include media($menu-desktop) {
     display: block;
     float: right;
   }
@@ -201,10 +221,9 @@
 }
 
 .menu-icon-share {
-  // margin: 0 1em;
   padding: 0 24px;
 
-  @include media($default-desktop) {
-    padding: 0 12px;
+  @include media($menu-desktop) {
+    padding: 0 14px;
   }
 }

@@ -187,13 +187,14 @@
 
 .menu-icon {
   color: $white;
-  margin: 0 .5em 0 0;
+  padding: 0 10px;
 }
 
 .menu-icon-share {
-  padding: 0 .35em 0 1.5em;
+  // margin: 0 1em;
+  padding: 0 24px;
 
   @include media($default-desktop) {
-    padding: 0 .5em;
+    padding: 0 12px;
   }
 }

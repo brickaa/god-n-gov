@@ -1,3 +1,5 @@
+/* global $ */
+
 'use strict';
 
 var $menuBtn = $('#menu-chapters-btn'),

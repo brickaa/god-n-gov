@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+{% import 'includes/_macros.html' as macro %}
 
 <section class="main">
   <div id="video-cover-wrapper" class="video-cover-wrapper">
@@ -40,67 +41,8 @@
   </div>
 
 </section>
-
-<nav class="menu">
-  <div id="menu-bar" class="menu-bar">
-    <div id="menu-chapters-btn" class="menu-bar-left menu-chapters-btn">
-      <span class="menu-icon icon-TT-god_chapters"></span>
-      <span>Chapters</span>
-    </div>
-    <div class="menu-bar-right">
-      <a href=""><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
-      <a href=""><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
-      <div class="menu-extra-links">
-        <span class="icon-TT-god_dash menu-icon"></span>
-        <a href=""><span class="menu-icon">Lawmakers</span></a>
-        <a href=""><span class="menu-icon">About</span></a>
-      </div>
-    </div>
-  </div>
-  <ul id="menu-chapters" class="menu-chapters">
-    <a href="" class="menu-block">
-      <li class="menu-chapter menu-video-chapter bg-overview active">
-        <div class="bg-hover-layer"></div>
-        <p>Overview</p>
-      </li>
-    </a>
-    <a href="" class="menu-block">
-      <li class="menu-chapter menu-video-chapter bg-guns">
-        <div class="bg-hover-layer"></div>
-        <p>Guns</p>
-      </li>
-    </a>
-    <a href="" class="menu-block">
-      <li class="menu-chapter menu-video-chapter bg-marriage">
-        <div class="bg-hover-layer"></div>
-        <p>Marriage</p>
-      </li>
-    </a>
-    <a href="" class="menu-block">
-      <li class="menu-chapter menu-video-chapter bg-education">
-        <div class="bg-hover-layer"></div>
-        <p>Education</p>
-      </li>
-    </a>
-    <a href="" class="menu-block">
-      <li class="menu-chapter menu-video-chapter bg-life">
-        <div class="bg-hover-layer"></div>
-        <p>Life</p>
-      </li>
-    </a>
-    <a href="" class="menu-extra">
-      <li class="menu-chapter menu-extra-chapter">
-        <p>Lawmakers</p>
-      </li>
-      </a>
-    <a href="" class="menu-extra">
-      <li class="menu-chapter menu-extra-chapter">
-        <p>About</p>
-      </li>
-    </a>
-  </ul>
-</nav>
-
+ 
+{{ macro.menu('overview') }}
 {% endblock %}
 
 {% block script %}

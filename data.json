@@ -1,7 +1,208 @@
 {
-  "META": {
-    "project_title": "REPLACE_THIS",
-    "description": "",
-    "shareline": ""
-  }
+  "L": [
+    {
+      "NAME": "Ken Paxton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Attorney General"
+    },
+    {
+      "NAME": "Dan Patrick",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Lieutenant Governor",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Lt. Governor"
+    },
+    {
+      "NAME": "Sid Miller",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Agriculture Commissioner",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Agricultural Commissioner"
+    },
+    {
+      "NAME": "Glenn Hegar",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Comptroller",
+      "FAITH": "METHODIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Comptroller"
+    },
+    {
+      "NAME": "Elliott Naishtat",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Austin",
+      "FAITH": "JEWISH",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Austin"
+    },
+    {
+      "NAME": "Jonathan Stickland",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Bedford",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Bedford"
+    },
+    {
+      "NAME": "Matt Krause",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Fort Worth",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Fort Worth"
+    },
+    {
+      "NAME": "Matt Schaefer",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Plano"
+    },
+    {
+      "NAME": "Sylvester Turner",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Houston",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Houston"
+    },
+    {
+      "NAME": "Eddie Lucio III",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Harlingen",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Harlingen"
+    },
+    {
+      "NAME": "David Simpson",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Longview",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Longview"
+    },
+    {
+      "NAME": "Bill Zedler",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Arlington",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Arlington"
+    },
+    {
+      "NAME": "Jeff Leach",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Plano"
+    },
+    {
+      "NAME": "Angie Chen Button",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Richardson",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Richardson"
+    },
+    {
+      "NAME": "Bryan Hughes",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Mineola",
+      "FAITH": "EVANGELICAL CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Mineola"
+    },
+    {
+      "NAME": "Celia Israel",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Represenative, Austin",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Austin"
+    },
+    {
+      "NAME": "Alfonso \"Poncho\" Nevárez",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Eagle Pass",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Eagle Pass"
+    },
+    {
+      "NAME": "James White",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Woodville",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep. ",
+      "LOCATION": "Woodville"
+    },
+    {
+      "NAME": "Konni Burton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Colleyville",
+      "FAITH": "LUTHERAN",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "Colleyville"
+    },
+    {
+      "NAME": "Donna Campbell",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, New Braunfels",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "New Braunfels"
+    },
+    {
+      "NAME": "Eddie Lucio Jr.",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Brownsville",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "Senate",
+      "PARTY": "D",
+      "TITLE": "State Sen.",
+      "LOCATION": "Brownsville"
+    },
+    {
+      "NAME": "Kirk Watson",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Austin",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "Senate",
+      "PARTY": "D",
+      "TITLE": "State Sen.",
+      "LOCATION": "Austin"
+    },
+    {
+      "NAME": "Charles Perry",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Lubbock",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "Lubbock"
+    }
+  ],
+  "META": {}
 }

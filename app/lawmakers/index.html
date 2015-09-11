@@ -17,7 +17,16 @@
     <div class="gg-prose">
       <div class="gg-prose-block">
         <p>Duis vel nibh at velit scelerisque suscipit. Nullam sagittis. Nullam dictum felis eu pede mollis pretium. In hac habitasse platea dictumst. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent ut ligula non mi varius sagittis. Praesent turpis.</p>
+        <p>{{ L[0].NAME }}</p>
       </div>
+      <ul class="lawmaker-list">
+        {% for x in L %}
+          <li>
+            <h2>{{ x.NAME }}</h2>
+            <p>{{ x.TITLE}}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

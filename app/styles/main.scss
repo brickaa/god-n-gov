@@ -9,7 +9,8 @@
 @import 'components/menu';
 @import 'components/cover-photos';
 @import 'components/video-player';
+@import 'components/lawmakers';
 
-body {
+.inverse {
   background-color: $gg-black;
 }

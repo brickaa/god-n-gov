@@ -47,7 +47,7 @@ gulp.task('assets', () => {
 });
 
 gulp.task('templates', () => {
-  let data = {};
+  let data = JSON.parse(fs.readFileSync('./data.json'));
 
   let config = JSON.parse(fs.readFileSync('./config.json'));
   let deployConfig = config.deploy;

@@ -1,0 +1,6 @@
+.lawmaker-list {
+  li {
+    @include span-columns(1 of 3);
+    @include omega(3n);
+  }
+}

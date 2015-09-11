@@ -1,5 +1,5 @@
 .video-cover-wrapper,
-.about-cover-wrapper {
+.gg-page-cover-wrapper {
   margin: 0;
   position: absolute;
   width: 100%;
@@ -10,20 +10,20 @@
   height: 100%;
 }
 
-.about-cover-wrapper {
+.gg-page-cover-wrapper {
   height: 200px;
   position: relative;
 }
 
 .video-cover-img,
-.about-cover-img {
+.gg-page-cover-img {
   background-position: 50% 50%; 
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-.about-cover-img {
+.gg-page-cover-img {
   background-image: url('/assets/images/TT-god_bg-img.png');
 }
 
@@ -42,7 +42,7 @@
   top: 20%;
 }
 
-.about-cover-title {
+.gg-page-cover-title {
   left: 0;
   height: 100%;
   margin: 0 auto;

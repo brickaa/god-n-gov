@@ -4,15 +4,11 @@
 }
 
 .video {
-  height: initial;
+  height: 100%;
   display: block;
   width: auto;
   max-width: 100%;
   margin: 0 auto;
-
-  @include media($default-desktop) {
-    height: 100%;
-  }
 }
 
 .video-controls {
@@ -33,10 +29,104 @@
 
     &:active,
     &:focus {
-      border: none;
+      border: 0;
       outline: none;
     }
   }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type=range]::-ms-thumb {
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 13px;
+    box-shadow: 0;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: $gg-red;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    height: 6px;
+    width: 100%;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 13px;
+    box-shadow: none;
+    cursor: pointer;
+    height: 16px;
+    margin-top: -4.25px;
+    width: 16px;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: transparentize($gg-red, .05);
+  }
+
+  input[type=range]::-moz-range-track {
+    background: $gg-red;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    height: 8px;
+    width: 100%;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 13px;
+    box-shadow: 0;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+  }
+
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    height: 8px;
+    width: 100%;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background-color: transparentize($gg-red, .1);
+    border: 0;
+    box-shadow: 0;
+
+    &:focus {
+      background: $gg-red;
+    }
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: $gg-red;
+    border: 0;
+    box-shadow: 0;
+
+    &:focus {
+      background: transparentize($gg-red, .1);
+    }
+  }
+
 }
 
 .video-controls-left,
@@ -60,26 +150,4 @@
   float: left;
   width: 65%;
   margin: 0 2.5%;
-}
-
-.progress-bar-wrapper {
-  @include clearfix();
-  // display: inline-block;
-  padding: .5em 0;
-  position: relative;
-  // width: 50%;
-}
-
-.progress-bar {
-  background-color: $white;
-  height: 1px;
-  position: absolute;
-  width: 100%;
-}
-
-.progress {
-  width: 0%;
-  background-color: $gg-red;
-  height: 6px;  
-  position: absolute;
 }

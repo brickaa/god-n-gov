@@ -1,0 +1,60 @@
+.video-cover-wrapper,
+.about-cover-wrapper {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.video-cover-wrapper {
+  height: 100%;
+}
+
+.about-cover-wrapper {
+  height: 200px;
+  position: relative;
+}
+
+.video-cover-img,
+.about-cover-img {
+  background-position: 50% 50%; 
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-cover-img {
+  background-image: url('/assets/images/TT-god_bg-img.png');
+}
+
+.video-cover-img {
+  background-image: url('/assets/images/TT-god_bg-img.png');
+  height: 100%;
+}
+
+.video-cover-logo {
+  left: 0;
+  margin: 0 auto;
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 20%;
+}
+
+.about-cover-title {
+  left: 0;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0%;
+  width: 100%;
+}
+
+.video-cover-btn {
+  left: 0;
+  margin: 2em auto;
+  right: 0;
+}

@@ -7,8 +7,37 @@
 {% block content %}
 {% import 'includes/_macros.html' as macro %}
 <section class="main">
-  <div class="video-cover-img"></div>
-
+  <div class="about-cover-wrapper">
+    <div class="about-cover-img"></div>
+    <header class="about-cover-title">
+      <h1 class="gg-page-title">About</h1>
+    </header>
+  </div>
+  <div class="gg-prose-wrapper">
+    <div class="gg-prose">
+      <div class="gg-prose-block">
+      <p>Duis vel nibh at velit scelerisque suscipit. Nullam sagittis. Nullam dictum felis eu pede mollis pretium. In hac habitasse platea dictumst. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent ut ligula non mi varius sagittis. Praesent turpis.</p>
+      </div>
+      <div class="gg-prose-block">
+        <header>
+          <h1>Editorial</h1>
+        </header>
+        <p>Justin Dehn, David Pasztor, Alana Rocha and Todd Wiseman.</p>
+      </div>
+      <div class="gg-prose-block">
+        <header>
+          <h1>Design</h1>
+        </header>
+        <p>Becca Aaronson and Emily Albracht.</p>
+      </div>
+      <div class="gg-prose-block">
+        <header>
+          <h1>Enjoy this series?</h1>
+        </header>
+        <p>Learn more about how you can <a href="http://support.texastribune.org/">support</a> investigative coverage in Texas.</p>
+      </div>
+    </div>
+  </div>
 </section>
 {{ macro.menu() }}
 

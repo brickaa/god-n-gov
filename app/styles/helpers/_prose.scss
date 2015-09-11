@@ -1,0 +1,61 @@
+.gg-prose-wrapper {
+  background-color: $white;
+  height: 100%;
+  position: absolute;
+  top: 216px;
+  width: 100%;
+}
+
+.gg-prose {
+  margin: 1em auto 0;
+  max-width: 900px;
+  padding: 2em 1.5em;
+  width: 100%;
+
+  @include media($default-desktop) {
+    width: 75%;
+  }
+
+  a {
+    color: $gg-red;
+
+    &:hover {
+      color: $gg-red;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    @extend %font-base;
+    font-family: $bookmania;
+    line-height: 1.4;
+    margin: 0 0 1em;
+  }
+
+  h1 {
+    @extend %font-l;
+    font-family: $montserrat;
+    line-height: 1.3;
+    margin: 0 0 .5em;
+    text-transform: uppercase;
+  }
+
+}
+
+.gg-page-title {
+  @extend %font-xl;
+  color: $white;
+  font-family: $montserrat;
+  line-height: 1.3;
+  margin: 77px 0;
+  text-transform: uppercase;  
+}
+
+.gg-prose-about {
+  padding: 2em 1.5em 0;
+  top: 100%;
+}
+
+.gg-prose-block {
+  margin-bottom: 2em;
+}

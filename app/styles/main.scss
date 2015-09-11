@@ -4,12 +4,12 @@
 
 @import 'helpers/typography';
 @import 'helpers/variables';
+@import 'helpers/prose';
 @import 'components/masthead';
 @import 'components/menu';
-@import 'components/video-cover';
+@import 'components/cover-photos';
 @import 'components/video-player';
 
 body {
   background-color: $gg-black;
 }
-

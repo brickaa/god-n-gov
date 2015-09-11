@@ -1,4 +1,10 @@
-{% macro menu(active) %}
+{% macro menu(active, level='A') %}
+  {{ path }}
+  {% if level == 'A' %}
+    {% set path = '../' %}
+  {% else %}
+    {% set path = '' %}
+  {% endif %}
 <nav class="menu">
   <div id="menu-bar" class="menu-bar">
     <div id="menu-chapters-btn" class="menu-bar-left menu-chapters-btn">
@@ -10,13 +16,13 @@
       <a href=""><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
       <div class="menu-extra-links">
         <span class="icon-TT-god_dash menu-icon"></span>
-        <a href="{{ PATH_PREFIX }}lawmakers"><span class="menu-icon">Lawmakers</span></a>
-        <a href="{{ PATH_PREFIX }}about"><span class="menu-icon">About</span></a>
+        <a href="{{ PATH_PREFIX }}{{ path }}lawmakers"><span class="menu-icon">Lawmakers</span></a>
+        <a href="{{ PATH_PREFIX }}{{ path }}about"><span class="menu-icon">About</span></a>
       </div>
     </div>
   </div>
   <ul id="menu-chapters" class="menu-chapters">
-    <a href="" class="menu-block">
+    <a href="{{ PATH_PREFIX }}" class="menu-block">
       {% if active == 'overview' %}
       <li class="menu-chapter menu-video-chapter bg-overview active">
       {% else %}
@@ -26,7 +32,7 @@
         <p>Overview</p>
       </li>
     </a>
-    <a href="" class="menu-block">
+    <a href="{{ PATH_PREFIX }}{{ path }}guns" class="menu-block">
       {% if active == 'guns' %}
       <li class="menu-chapter menu-video-chapter bg-guns active">
       {% else %}
@@ -36,17 +42,17 @@
         <p>Guns</p>
       </li>
     </a>
-    <a href="" class="menu-block">
+    <a href="{{ PATH_PREFIX }}{{ path }}marriage" class="menu-block">
       {% if active == 'marriage' %}
-      <li class="menu-chapter menu-video-chapter bg-guns active">
+      <li class="menu-chapter menu-video-chapter bg-marriage active">
       {% else %}
-      <li class="menu-chapter menu-video-chapter bg-guns">
+      <li class="menu-chapter menu-video-chapter bg-marriage">
       {% endif %}
         <div class="bg-hover-layer"></div>
         <p>Marriage</p>
       </li>
     </a>
-    <a href="" class="menu-block">
+    <a href="{{ PATH_PREFIX }}{{ path }}education" class="menu-block">
       {% if active == 'education' %}
       <li class="menu-chapter menu-video-chapter bg-education active">
       {% else %}
@@ -56,7 +62,7 @@
         <p>Education</p>
       </li>
     </a>
-    <a href="" class="menu-block">
+    <a href="{{ PATH_PREFIX }}{{ path }}life" class="menu-block">
       {% if active == 'life' %}
       <li class="menu-chapter menu-video-chapter bg-life active">
       {% else %}
@@ -66,12 +72,12 @@
         <p>Life</p>
       </li>
     </a>
-    <a href="{{ PATH_PREFIX }}lawmakers" class="menu-extra">
+    <a href="{{ PATH_PREFIX }}{{ path }}lawmakers" class="menu-extra">
       <li class="menu-chapter menu-extra-chapter">
         <p>Lawmakers</p>
       </li>
       </a>
-    <a href="{{ PATH_PREFIX }}about" class="menu-extra">
+    <a href="{{ PATH_PREFIX }}{{ path }}about" class="menu-extra">
       <li class="menu-chapter menu-extra-chapter">
         <p>About</p>
       </li>

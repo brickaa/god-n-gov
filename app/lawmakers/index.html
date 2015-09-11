@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+{% import 'includes/_macros.html' as macro %}
+<section class="main">
+  <div class="gg-page-cover-wrapper">
+    <div class="gg-page-cover-img"></div>
+    <header class="gg-page-cover-title">
+      <h1 class="gg-page-title">Lawmakers</h1>
+    </header>
+  </div>
+  <div class="gg-prose-wrapper">
+    <div class="gg-prose">
+      <div class="gg-prose-block">
+        <p>Duis vel nibh at velit scelerisque suscipit. Nullam sagittis. Nullam dictum felis eu pede mollis pretium. In hac habitasse platea dictumst. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent ut ligula non mi varius sagittis. Praesent turpis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ macro.menu() }}
+
+{% endblock %}
+
+{% block script %}
+{{ super()}}
+{% endblock %}

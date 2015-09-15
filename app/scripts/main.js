@@ -2,7 +2,8 @@
 
 'use strict';
 
-var $menuBtn = $('#menu-chapters-btn'),
+var $main = $('#main'),
+    $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
     $video = $('#video'),
     video = $video[0],
@@ -60,15 +61,11 @@ $(document).ready(function() {
   $playBtn.click(playPause);
   $fullScreenBtn.click(fullScreen);
 
-  // // Update the seek bar as the video plays
-  // video.addEventListener("timeupdate", function() {
-  //   // Calculate the slider value
-  //   var value = (100 / video.duration) * video.currentTime;
-
-  //   $('#video-progress').width(value + '%');
-  //   // Update the slider value
-  //   // seekBar.value = value;
-  // });
+  $main.click(function() {
+    if($('#menu-chapters').is(':visible')) {
+      $('#menu-chapters').slideToggle(250);
+    }
+  });
 
   // Event listener for the seek bar
   seekBar.addEventListener("change", function() {

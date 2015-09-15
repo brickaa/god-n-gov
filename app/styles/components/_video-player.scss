@@ -17,11 +17,20 @@
   top: 100%;
   width: 100%;
 
+  .lawmaker-video-wrapper & {
+    background-color: $white;
+  }
+
   button {
     background-color: $gg-black;
     border: none;
     border-radius: 0;
     color: $white;
+
+    .lawmaker-video-wrapper & {
+      background-color: $white;
+      color: $gg-black;
+    }
 
     &:hover {
       color: $gg-red;
@@ -51,6 +60,10 @@
     cursor: pointer;
     height: 16px;
     width: 16px;
+
+    .lawmaker-video-wrapper & {
+      border: 1px solid $gg-red;
+    }
   }
 
   input[type=range]::-webkit-slider-runnable-track {
@@ -73,6 +86,10 @@
     height: 16px;
     margin-top: -4.25px;
     width: 16px;
+    
+    .lawmaker-video-wrapper & {
+      border: 1px solid $gg-red;
+    }
   }
 
   input[type=range]:focus::-webkit-slider-runnable-track {

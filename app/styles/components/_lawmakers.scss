@@ -3,16 +3,21 @@
   margin: 0 0 2em;
 
   li {
-    @include omega(3n);
     background-color: $gg-black;
     float: left;
     margin: 0 3% 1em 0;
     min-height: 160px;
     position: relative;
-    width: 31.33%;
+    width: 100%;
 
     &:hover {
       background-color: rgb(141, 62, 57);
+    }
+
+    @include media($default-desktop) {
+      @include omega(3n);
+      min-height: 160px;
+      width: 31.33%;
     }
   }
 

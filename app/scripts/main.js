@@ -6,10 +6,11 @@ var $main = $('#main'),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
     $video = $('#video'),
+    $videoControls = $('#video-controls'),
     video = $video[0],
     $fullScreenBtn = $('#full-screen'),
     $playBtn = $('#play-pause'),
-    seekBar = document.getElementById("seek-bar"),
+    seekBar = document.getElementById('seek-bar'),
     $startBtn = $('#start-video'),
     $videoCover = $('#video-cover-wrapper');
 
@@ -20,7 +21,7 @@ function menuAccordion(e) {
 
 function playPause(e) {
   e.preventDefault();
-  if (video.paused == true) {
+  if (video.paused === true) {
     video.play();
     $('.icon-TT-god_play').hide();
     $('.icon-TT-god_pause').show();
@@ -46,15 +47,17 @@ function fullScreen(e) {
 function startVideo(e) {
   e.preventDefault();
   $videoCover.hide();
+  $video.show();
+  $videoControls.show();
   playPause(e);
 }
 
 function resize() {
-  $('.video-wrapper').height($(window).height() * .75);
+  $('.video-wrapper').height($(window).height() * 0.75);
 }
 
 $(document).ready(function() {
-  $('.video-wrapper').height($(window).height() * .75);
+  $('.video-wrapper').height($(window).height() * 0.75);
 
   $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);
@@ -68,7 +71,7 @@ $(document).ready(function() {
   });
 
   // Event listener for the seek bar
-  seekBar.addEventListener("change", function() {
+  seekBar.addEventListener('change', function() {
     // Calculate the new time
     var time = video.duration * (seekBar.value / 100);
 
@@ -77,7 +80,7 @@ $(document).ready(function() {
   });
 
   // Update the seek bar as the video plays
-  video.addEventListener("timeupdate", function() {
+  video.addEventListener('timeupdate', function() {
     // Calculate the slider value
     var value = (100 / video.duration) * video.currentTime;
 
@@ -86,20 +89,20 @@ $(document).ready(function() {
   });
 
   // Pause the video when the slider handle is being dragged
-  seekBar.addEventListener("mousedown", function() {
+  seekBar.addEventListener('mousedown', function() {
     video.pause();
     $('.icon-TT-god_pause').hide();
     $('.icon-TT-god_play').show();
   });
 
   // Play the video when the slider handle is dropped
-  seekBar.addEventListener("mouseup", function() {
+  seekBar.addEventListener('mouseup', function() {
     video.play();
     $('.icon-TT-god_play').hide();
     $('.icon-TT-god_pause').show();
   });
 
-  video.addEventListener("ended", function() {
+  video.addEventListener('ended', function() {
     $('.icon-TT-god_pause').hide();
     $('.icon-TT-god_play').show();
   });

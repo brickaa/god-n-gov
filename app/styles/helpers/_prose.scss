@@ -2,14 +2,13 @@
   background-color: $white;
   position: absolute;
   margin: 0 0 3em;
-  top: 216px;
   width: 100%;
 }
 
 .gg-prose {
-  margin: 1em auto 0;
+  margin: 0 auto;
   max-width: 900px;
-  padding: 2em 1.5em;
+  padding: 1em 1.5em 2em;
   width: 100%;
 
   @include media($default-desktop) {
@@ -47,7 +46,7 @@
   color: $white;
   font-family: $montserrat;
   line-height: 1.3;
-  margin: 77px 0;
+  margin: 52px 0;
   text-transform: uppercase;  
 }
 

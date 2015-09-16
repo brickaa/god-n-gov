@@ -1,22 +1,33 @@
 .video-wrapper {
   background-color: $gg-black;
   position: relative;
+  text-align: center;
 }
 
 .video {
   height: 100%;
-  display: block;
+  display: none;
   width: auto;
   max-width: 100%;
   margin: 0 auto;
+
+  &.video-lawmakers {
+    display: block;
+  }
+
 }
 
 .video-controls {
   background-color: $gg-black;
+  display: none;
   padding: 1em;
   top: 100%;
   width: 100%;
 
+  &.video-controls-lawmakers {
+    display: block;
+  }
+  
   .lawmaker-video-wrapper & {
     background-color: $white;
   }

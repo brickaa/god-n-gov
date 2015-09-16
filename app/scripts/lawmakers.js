@@ -1,7 +1,5 @@
 /* global $ */
 
-'use strict';
-
 var $main = $('#main'),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
@@ -42,7 +40,8 @@ function fullScreen(e) {
 }
 
 $(document).ready(function() {
-
+  'use strict';
+  
   $('#lawmaker-list li').click(function() {
     var currentID = $(this).attr('id'),
         source = $(this).attr('src'),

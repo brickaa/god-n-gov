@@ -1,7 +1,5 @@
 /* global $ */
 
-'use strict';
-
 var $main = $('#main'),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
@@ -57,6 +55,7 @@ function resize() {
 }
 
 $(document).ready(function() {
+  'use strict';
   $('.video-wrapper').height($(window).height() * 0.75);
 
   $startBtn.click(startVideo);

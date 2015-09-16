@@ -1,7 +1,7 @@
 {
   "deploy": {
     "s3_bucket": "moose.texastribune.org",
-    "slug": "god-and-government"
+    "slug": "god-and-governing"
   },
   "google_spreadsheet_key": "174wdaXEa08vGYlydW0yFIBP8lFKhtB0x2oAw1X390A8",
   "google_spreadsheet_type": "objectlist",

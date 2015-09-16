@@ -29,6 +29,12 @@
 
     p {
       margin: 0;
+
+      &.lawmaker-faith {
+        @extend %font-s;
+        font-family: $montserrat;
+        text-transform: uppercase;
+      }
     }
   }
 

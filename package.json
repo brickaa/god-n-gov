@@ -1,9 +1,5 @@
 {
   "private": true,
-  "config": {
-    "s3_bucket": "moose.texastribune.org",
-    "slug": "god-and-governing"
-  },
   "devDependencies": {
     "async": "^1.4.2",
     "autoprefixer-core": "^5.2.1",

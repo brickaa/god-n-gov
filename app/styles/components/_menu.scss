@@ -21,10 +21,6 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
   width: 100%;
   z-index: 1000;
 
-  @include media($menu-desktop-sm) {
-    padding: 0 1em;
-  }
-
   li {
     position: relative;
   }
@@ -66,15 +62,39 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
   }
 }
 
+.extra-footage {
+  background-color: $gg-black;
+  padding: .5em 1.5em;
+  text-align: center;
+
+  p { 
+    @extend %font-xs;
+    color: $white;
+    font-family: $montserrat;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: .8em;
+    padding: 0 3em;
+  }
+}
+
 .menu-bar {
   height: 2em;
   width: 100%;
+
+  @include media($menu-desktop-sm) {
+    padding: 0 1em;
+  }
 }
 
 .menu-bar-left,
 .menu-bar-right {
   padding: .75em .35em 1em;
 }
+
 .menu-bar-left {
   float: left;
 }
@@ -84,11 +104,6 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 }
 
 .menu-block {
-  .active {
-    box-sizing: border-box;
-    border: 3px solid $gg-red;
-  }
-
   @include media($menu-desktop-sm) {
     @include span-columns(4 of 20);
     @include omega(5n);
@@ -125,6 +140,11 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
       background-image: url('http://placekitten.com/g/300/220');
     }
   }
+
+  .active {
+    border: 3px solid $gg-red;
+    box-sizing: border-box;
+  }
 }
 
 .menu-chapters-btn {
@@ -144,22 +164,20 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
   overflow: scroll;
   padding: 0 .35em 1em;
   width: 100%;
-
-  .active {
-    box-sizing: border-box;
-    border: 3px solid $gg-red;
+  
+  @include media($menu-desktop-sm) {
+    padding: 0 1em;
   }
 
+  .active {
+    border: 3px solid $gg-red;
+    box-sizing: border-box;
+  }
+  
   .menu-chapter {
-    text-align: center;
-    padding: .75em .25em;
     margin: 0 0 .35em;
-
-    p {
-      @include font-size($s, 1.1);
-      font-family: $montserrat;
-      margin: 0;
-    }
+    padding: .75em .25em;
+    text-align: center;
 
     @include media($menu-desktop-sm) {
       margin: 0;
@@ -171,6 +189,12 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
     &:hover {
       background-color: transparentize($gg-red, .01);
+    }
+
+    p {
+      @include font-size($s, 1.1);
+      font-family: $montserrat;
+      margin: 0;
     }
   }
 
@@ -210,6 +234,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
 .menu-extra-links {
   display: none;
+  
   @include media($menu-desktop-sm) {
     display: block;
     float: right;

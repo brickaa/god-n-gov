@@ -1,3 +1,5 @@
+/* global $, $f */
+
 $(function() {
   var iframe = $('#player1')[0];
   var player = $f(iframe);
@@ -14,7 +16,7 @@ $(function() {
 
   // Call the API when a button is pressed
   $('button').bind('click', function() {
-    player.api($(this).attr("id").text().toLowerCase());
+    player.api($(this).attr('id').text().toLowerCase());
   });
 
   function onPause(id) {
@@ -28,5 +30,5 @@ $(function() {
   function onPlayProgress(data, id) {
     status.text(data.seconds + 's played');
   }
-  
+
 });

@@ -23,9 +23,10 @@
 }
 
 .lawmaker-list {
-  margin: 0 3% 1em 0;
 
   li {
+    margin: 0 3% 1em 0;
+    
     @include media($default-desktop) {
       @include omega(3n);
       min-height: 160px;

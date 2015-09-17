@@ -31,14 +31,21 @@
     margin: 0 0 1em;
   }
 
-  h1 {
-    @extend %font-l;
+  h1,
+  h2 {
     font-family: $montserrat;
     line-height: 1.3;
     margin: 0 0 .5em;
     text-transform: uppercase;
   }
 
+  h1 {
+    @extend %font-l;
+  }
+
+  h2 {
+    @extend %font-m;
+  }
 }
 
 .gg-page-title {
@@ -50,6 +57,9 @@
   text-transform: uppercase;  
 }
 
+.gg-prose-header {
+  margin: 2em 0 1em;
+}
 .gg-prose-block {
   margin-bottom: 2em;
 }

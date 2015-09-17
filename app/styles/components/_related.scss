@@ -4,7 +4,7 @@
   text-align: center;
 
   p { 
-    @extend %font-base;
+    @extend %font-xs;
     color: $white;
     font-family: $montserrat;
     margin: 0;

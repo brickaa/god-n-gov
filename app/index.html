@@ -23,32 +23,28 @@
   <div class="extra-footage">
     <p><span class="icon-TT-god_scroll"></span>Extra Footage<span class="icon-TT-god_scroll"></span></p>
   </div>
-<!--   <div>
-    <button id="play"><span class="icon-TT-god_play"></span></button>
-    <button id="pause"><span class="icon-TT-god_pause"></span></button>
-    <p>Status: <span class="status">&hellip;</span></p>
-  </div> -->
-<!--     <video id="video" class="video" poster="http://placehold.it/500x350">
-      <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>
-      <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4;'>
-    </video> -->
-
-    <!-- Video Controls -->
-<!--     <div id="video-controls" class="video-controls">
-      <div class="video-controls-left">
-        <button type="button" id="play-pause"><span class="icon-TT-god_play"></span><span class="icon-TT-god_pause" style="display: none;"></span></button>
-      </div>
-      <div class="video-controls-middle">
-        <input type="range" id="seek-bar" value="0">
-        <div class="progress-bar-wrapper">
-        </div>
-      </div>
-      <div class="video-controls-right">
-        <button type="button" id="full-screen"><span class="icon-TT-god_full-screen"></span></button>
-      </div>
+  <div class="gg-prose-wrapper">
+    <div class="gg-prose">
+      <header class="gg-prose-header">
+        <h2>Related Clips</h2>
+      </header>
+      <p>This is a test paragraph.</p>
+      <ul id="lawmakers-related" class="lawmakers-related">
+        {% for x in L %}
+          {% if x.TEST == 'marriage' %}
+          <li id="{{ x.ID }}">
+            <div class="lawmaker-hover-layer"></div>
+            <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+            <div class="lawmaker-info">
+              <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
+              <p class="lawmaker-faith">{{ x.FAITH }}</p>
+            </div>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
-  </div> -->
-
+  </div>
 </section>
  
 {{ macro.menu(PATH_PREFIX, 'overview') }}

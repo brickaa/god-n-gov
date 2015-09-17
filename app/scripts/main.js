@@ -2,11 +2,13 @@
 
 var $extraFootage = $('#extra-footage'),
     $main = $('#main'),
+    extraHeight = $('.masthead').height() + $('#menu-bar').height(),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
     $relatedVids = $('#lawmakers-related'),
     $startBtn = $('#start-video'),
-    $videoCover = $('#video-cover-wrapper');
+    $videoCover = $('#video-cover-wrapper'),
+    $videoWrapper = $('.video-wrapper');
 
 function menuAccordion(e) {
   e.preventDefault();
@@ -16,13 +18,13 @@ function menuAccordion(e) {
 function startVideo(e) {
   e.preventDefault();
   $videoCover.hide();
+  $videoWrapper.css('visibility', 'visible');
   $relatedVids.show();
   $extraFootage.show();
 }
 
 function videoSize() {
-  // $('.video-wrapper').height($(window).height() * 0.8);
-  $('.video-frame').css('padding', $(window).height() * 0.1);
+  $('.video-wrapper').css('min-height', $(window).height() - extraHeight);
 }
 
 function resize() {
@@ -36,11 +38,15 @@ $(document).ready(function() {
   $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);
 
+  $main.fitVids();
+
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {
       $('#menu-chapters').slideToggle(250);
     }
   });
+
+
 
 });
 

@@ -1,8 +1,10 @@
 /* global $ */
 
-var $main = $('#main'),
+var $extraFootage = $('#extra-footage'),
+    $main = $('#main'),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
+    $relatedVids = $('#lawmakers-related'),
     $startBtn = $('#start-video'),
     $videoCover = $('#video-cover-wrapper');
 
@@ -14,11 +16,13 @@ function menuAccordion(e) {
 function startVideo(e) {
   e.preventDefault();
   $videoCover.hide();
+  $relatedVids.show();
+  $extraFootage.show();
 }
 
 function videoSize() {
   // $('.video-wrapper').height($(window).height() * 0.8);
-  $('.video-frame').css('padding', $(window).height() * .1);
+  $('.video-frame').css('padding', $(window).height() * 0.1);
 }
 
 function resize() {

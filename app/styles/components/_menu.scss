@@ -64,6 +64,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
 .extra-footage {
   background-color: $gg-black;
+  display: none;
   padding: .5em 1.5em;
   text-align: center;
 

@@ -23,13 +23,13 @@
 <!--   <div class="extra-footage">
     <p><span class="icon-TT-god_scroll"></span>Extra Footage<span class="icon-TT-god_scroll"></span></p>
   </div> -->
-  <div class="gg-prose-wrapper">
+  <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
     <div class="gg-prose">
       <header class="gg-prose-header">
         <h2>Related Clips</h2>
       </header>
       <p>This is a test paragraph.</p>
-      <ul id="lawmakers-related" class="lawmakers-related">
+      <ul id="lawmaker-related-list" class="lawmaker-related-list">
         {% for x in L %}
           {% if x.TEST == 'marriage' %}
           <li id="{{ x.ID }}">

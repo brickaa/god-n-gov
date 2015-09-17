@@ -1,4 +1,4 @@
-{% extends "_base-inverse.html" %}
+{% extends "_base.html" %}
 
 {% block styles %}
 {{ super() }}
@@ -16,13 +16,18 @@
     </figure>   
   </div>
   <div class="video-wrapper">
-
-  <iframe id="player1" src="https://player.vimeo.com/video/76979871?api=1&player_id=player1" width="630" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <div>
+    <div class="video-frame">
+      <iframe id="player1" src="https://player.vimeo.com/video/57153098?api=1&player_id=player1" width="630" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="extra-footage">
+    <p><span class="icon-TT-god_scroll"></span>Extra Footage<span class="icon-TT-god_scroll"></span></p>
+  </div>
+<!--   <div>
     <button id="play"><span class="icon-TT-god_play"></span></button>
     <button id="pause"><span class="icon-TT-god_pause"></span></button>
     <p>Status: <span class="status">&hellip;</span></p>
-  </div>
+  </div> -->
 <!--     <video id="video" class="video" poster="http://placehold.it/500x350">
       <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>
       <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4;'>

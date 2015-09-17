@@ -16,13 +16,18 @@ function startVideo(e) {
   $videoCover.hide();
 }
 
+function videoSize() {
+  // $('.video-wrapper').height($(window).height() * 0.8);
+  $('.video-frame').css('padding', $(window).height() * .1);
+}
+
 function resize() {
-  $('.video-wrapper').height($(window).height() * 0.75);
+  videoSize();
 }
 
 $(document).ready(function() {
   'use strict';
-  $('.video-wrapper').height($(window).height() * 0.75);
+  videoSize();
 
   $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);

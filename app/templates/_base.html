@@ -18,8 +18,10 @@
 {% block content %}{% endblock %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 {% block script %}
-<script src="{{ PATH_PREFIX }}scripts/lawmakers.js"></script>
+<script src="{{ PATH_PREFIX }}scripts/main.js"></script>
+<script src="{{ PATH_PREFIX }}scripts/froogaloo-custom.js"></script>
 {% endblock %}
 {% include 'includes/_google_analytics.html' %}
 </body>

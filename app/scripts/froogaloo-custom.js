@@ -16,7 +16,7 @@ $(function() {
 
   // Call the API when a button is pressed
   $('button').bind('click', function() {
-    player.api($(this).attr('id').text().toLowerCase());
+    player.api($(this).attr('id'));
   });
 
   function onPause(id) {

@@ -24,6 +24,12 @@ gulp.task('jshint', () => {
     .pipe($.if(!bs.active, $.jshint.reporter('fail')));
 });
 
+gulp.task('scripts', () => {
+  return gulp.src('./app/scripts/**/*.js')
+    .pipe(gulp.dest('./dist/scripts'))
+    .pipe($.size({title: 'scripts'}));
+});
+
 gulp.task('images', () => {
   gulp.src('./app/assets/images/**/*')
     .pipe($.cache($.imagemin({
@@ -35,7 +41,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('fonts', () => {
-  gulp.src(['./app/assets/fonts/**/*'])
+  return gulp.src(['./app/assets/fonts/**/*'])
     .pipe(gulp.dest('./dist/assets/fonts'))
     .pipe($.size({title: 'fonts'}));
 });
@@ -78,12 +84,34 @@ gulp.task('templates', () => {
 });
 
 gulp.task('styles', () => {
+  let data = JSON.parse(fs.readFileSync('./data.json'));
+
+  let config = JSON.parse(fs.readFileSync('./config.json'));
+  let deployConfig = config.deploy;
+
+  let basePath = args.production ? url.resolve('/', deployConfig.slug) + '/' : '/';
+  data.PATH_PREFIX = basePath;
+
+  let fullPath = url.format({
+    protocol: 'http',
+    host: deployConfig.s3_bucket,
+    pathname: deployConfig.slug
+  }) + '/';
+  data.PATH_FULL = fullPath;
+
+  // disable watching or it'll hang forever
+  let env = nunjucks.configure('./app/templates', {watch: false});
+
+  let nunjuckify = map((code, filename) => {
+    return env.renderString(code.toString(), data);
+  });  
   return gulp.src(['./app/styles/*.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: ['node_modules'],
       precision: 10
     }).on('error', $.sass.logError))
+    .pipe(nunjuckify)
     .pipe($.postcss([
       autoprefixer({
         browsers: ['last 2 versions']
@@ -125,7 +153,7 @@ gulp.task('clean', cb => {
 });
 
 gulp.task('build', ['clean'], cb => {
-  runSequence(['assets', 'fonts', 'images', 'jshint', 'styles', 'templates'], cb);
+  runSequence(['assets', 'fonts', 'images', 'jshint', 'styles', 'templates', 'scripts'], cb);
 });
 
 gulp.task('default', ['build']);

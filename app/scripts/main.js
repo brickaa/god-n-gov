@@ -18,6 +18,8 @@ function menuAccordion(e) {
 function startVideo(e) {
   e.preventDefault();
   $videoCover.hide();
+  videoSize();
+  $main.fitVids();
   $videoWrapper.css('visibility', 'visible');
   $relatedVids.show();
   $extraFootage.show();
@@ -33,12 +35,9 @@ function resize() {
 
 $(document).ready(function() {
   'use strict';
-  videoSize();
 
   $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);
-
-  $main.fitVids();
 
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {

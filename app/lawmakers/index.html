@@ -1,11 +1,15 @@
 {% extends "_base-lawmakers.html" %}
+{% import 'includes/_macros.html' as macro %}
+
+{% block meta %}
+  {{ macro.meta('Lawmakers') }}
+{% endblock %}
 
 {% block styles %}
 {{ super() }}
 {% endblock %}
 
 {% block content %}
-{% import 'includes/_macros.html' as macro %}
 <section id="main" class="main">
   <div class="gg-page-cover-wrapper">
     <div class="gg-page-cover-img"></div>

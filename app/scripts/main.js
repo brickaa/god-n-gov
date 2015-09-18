@@ -46,7 +46,24 @@ $(document).ready(function() {
     }
   });
 
-
+  //lightboxes
+  $('#lawmaker-list').each(function() { // the containers for all your galleries
+      $(this).magnificPopup({
+        delegate: 'a',
+        type:'iframe',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+          enabled: true
+        }
+     });
+  });
 
 });
 

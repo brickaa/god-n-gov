@@ -11,7 +11,6 @@ function menuAccordion(e) {
 
 $(document).ready(function() {
   'use strict';
-  var currentID;
 
   $('#lawmaker-list li').click(function() {
     var currentID = $(this).attr('id'),

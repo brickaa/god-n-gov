@@ -26,17 +26,21 @@
         <h2>Related Clips</h2>
       </header>
       <p>This is a test paragraph.</p>
-      <ul id="lawmaker-related-list" class="lawmaker-related-list">
+      <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}
           {% if x.TEST == 'marriage' %}
-          <li id="{{ x.ID }}">
-            <div class="lawmaker-hover-layer"></div>
-            <h2 class="lawmaker-name">{{ x.NAME }}</h2>
-            <div class="lawmaker-info">
-              <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
-              <p class="lawmaker-faith">{{ x.FAITH }}</p>
-            </div>
-          </li>
+          <a href="{{ x.VIMEO }}">
+            <li id="{{ x.ID }}" class="lawmaker-info-box">
+              <div class="lawmaker-hover-layer">
+                <span class="icon-TT-god_play"></span>
+              </div>
+              <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+              <div class="lawmaker-info">
+                <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
+                <p class="lawmaker-faith">{{ x.FAITH }}</p>
+              </div>
+            </li>
+          </a>
           {% endif %}
         {% endfor %}
       </ul>

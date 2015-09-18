@@ -1,53 +1,89 @@
+.lawmakers-related {
+  display: none;
+}
+
 .lawmaker-list {
   color: $white;
   margin: 0 0 2em;
 
-  li {
+
+  a {
     background-color: $gg-black;
+    color: $white;
     float: left;
-    margin: 0 3% 1em 0;
+    margin: 0 0 1em;
     min-height: 160px;
     position: relative;
     width: 100%;
 
-    &:hover {
-      background-color: rgb(141, 62, 57);
+    .lawmaker-hover-layer {
+      display: none;
+      text-align: center;
+      margin: 3.5em auto;
+
+      span {
+        font-size: 30px;
+      }
     }
 
+    &:hover {
+      background-color: rgb(141, 62, 57);
+      color: $white;
+      text-decoration: none;
+
+      .lawmaker-hover-layer { 
+        display: block;
+      }
+    }
+
+    &:last-child {
+      margin: 0 0 4em;
+    }
+
+  }
+
+}
+
+.lawmaker-list {
+
+  a {
+    margin: 0 3% 1em 0;
+    
     @include media($default-desktop) {
       @include omega(3n);
       min-height: 160px;
       width: 31.33%;
     }
   }
+}
 
-  .lawmaker-info {
-    bottom: 0;
-    padding: 16px;
-    position: absolute;
-    z-index: 2;
+.lawmaker-info {
+  bottom: 0;
+  padding: 16px;
+  position: absolute;
+  z-index: 2;
 
-    p {
-      margin: 0;
+  p {
+    margin: 0;
 
-      &.lawmaker-faith {
-        @extend %font-s;
-        font-family: $montserrat;
-        text-transform: uppercase;
-      }
+    &.lawmaker-faith {
+      @extend %font-s;
+      font-family: $montserrat;
+      text-transform: uppercase;
     }
   }
+}
 
-  .lawmaker-name {
-    @extend %font-l;
-    top: 0;
-    font-family: $montserrat;
-    padding: 16px;
-    position: absolute;
-    text-transform: uppercase;
-    z-index: 2;
-  }
 
+
+.lawmaker-name {
+  @extend %font-l;
+  top: 0;
+  font-family: $montserrat;
+  padding: 16px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 .lawmaker-video-wrapper {

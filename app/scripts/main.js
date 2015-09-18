@@ -1,67 +1,44 @@
 /* global $ */
 
-var $main = $('#main'),
+var $extraFootage = $('#extra-footage'),
+    $main = $('#main'),
+    extraHeight = $('.masthead').height() + $('#menu-bar').height(),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
-    $video = $('#video'),
-    $videoControls = $('#video-controls'),
-    video = $video[0],
-    $fullScreenBtn = $('#full-screen'),
-    $playBtn = $('#play-pause'),
-    seekBar = document.getElementById('seek-bar'),
+    $relatedVids = $('#lawmakers-related'),
     $startBtn = $('#start-video'),
-    $videoCover = $('#video-cover-wrapper');
+    $videoCover = $('#video-cover-wrapper'),
+    $videoWrapper = $('.video-wrapper');
 
 function menuAccordion(e) {
   e.preventDefault();
   $menuChapters.slideToggle(250);
 }
 
-function playPause(e) {
-  e.preventDefault();
-  if (video.paused === true) {
-    video.play();
-    $('.icon-TT-god_play').hide();
-    $('.icon-TT-god_pause').show();
-  } else {
-    video.pause();
-    $('.icon-TT-god_pause').hide();
-    $('.icon-TT-god_play').show();
-  }
-}
-
-function fullScreen(e) {
-  e.preventDefault();
-
-  if (video.requestFullscreen) {
-    video.requestFullscreen();
-  } else if (video.mozRequestFullScreen) {
-    video.mozRequestFullScreen(); // Firefox
-  } else if (video.webkitRequestFullscreen) {
-    video.webkitRequestFullscreen(); // Chrome and Safari
-  }
-}
-
 function startVideo(e) {
   e.preventDefault();
   $videoCover.hide();
-  $video.show();
-  $videoControls.show();
-  playPause(e);
+  $videoWrapper.css('visibility', 'visible');
+  $relatedVids.show();
+  $extraFootage.show();
+}
+
+function videoSize() {
+  $('.video-wrapper').css('min-height', $(window).height() - extraHeight);
 }
 
 function resize() {
-  $('.video-wrapper').height($(window).height() * 0.75);
+  videoSize();
 }
 
 $(document).ready(function() {
   'use strict';
-  $('.video-wrapper').height($(window).height() * 0.75);
+  videoSize();
 
   $startBtn.click(startVideo);
   $menuBtn.click(menuAccordion);
-  $playBtn.click(playPause);
-  $fullScreenBtn.click(fullScreen);
+
+  $main.fitVids();
 
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {
@@ -69,43 +46,31 @@ $(document).ready(function() {
     }
   });
 
-  // Event listener for the seek bar
-  seekBar.addEventListener('change', function() {
-    // Calculate the new time
-    var time = video.duration * (seekBar.value / 100);
-
-    // Update the video time
-    video.currentTime = time;
+  //lightboxes
+  $('#lawmaker-list').each(function() { // the containers for all your galleries
+      $(this).magnificPopup({
+        delegate: 'a',
+        type:'iframe',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+          enabled: true
+        }
+     });
   });
 
-  // Update the seek bar as the video plays
-  video.addEventListener('timeupdate', function() {
-    // Calculate the slider value
-    var value = (100 / video.duration) * video.currentTime;
+});
 
-    // Update the slider value
-    seekBar.value = value;
-  });
-
-  // Pause the video when the slider handle is being dragged
-  seekBar.addEventListener('mousedown', function() {
-    video.pause();
-    $('.icon-TT-god_pause').hide();
-    $('.icon-TT-god_play').show();
-  });
-
-  // Play the video when the slider handle is dropped
-  seekBar.addEventListener('mouseup', function() {
-    video.play();
-    $('.icon-TT-god_play').hide();
-    $('.icon-TT-god_pause').show();
-  });
-
-  video.addEventListener('ended', function() {
-    $('.icon-TT-god_pause').hide();
-    $('.icon-TT-god_play').show();
-  });
-
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 50) {
+    $('#extra-footage').fadeOut();
+  }
 });
 
 // RESIZE EVENTS

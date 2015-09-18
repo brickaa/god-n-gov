@@ -58,3 +58,15 @@
   margin: 2em auto;
   right: 0;
 }
+
+.video-wrapper {
+  background-color: $gg-black;
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_bg-img.png');
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.video-frame {
+  padding: 5%;
+}

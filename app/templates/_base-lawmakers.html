@@ -13,13 +13,14 @@
   <link rel="stylesheet" href="{{ PATH_PREFIX }}styles/main.css">
   {% endblock %}
 </head>
-<body class="inverse">
+<body>
 {% include 'includes/_masthead.html' %}
 {% block content %}{% endblock %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 {% block script %}
-<script src="{{ PATH_PREFIX }}scripts/main.js"></script>
+<script src="{{ PATH_PREFIX }}scripts/vendor/magnifique.js"></script>
+<script src="{{ PATH_PREFIX }}scripts/lawmakers.js"></script>
 {% endblock %}
 {% include 'includes/_google_analytics.html' %}
 </body>

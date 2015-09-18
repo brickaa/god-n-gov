@@ -1,5 +1,10 @@
-{% macro menu(path_prefix, active) %}
+{% macro menu(path_prefix, active, related) %}
 <nav class="menu">
+  {% if related == 'related' %}
+  <div id="extra-footage" class="extra-footage">
+    <p><span class="icon-TT-god_scroll"></span>Extra Footage<span class="icon-TT-god_scroll"></span></p>
+  </div>
+  {% endif %}
   <div id="menu-bar" class="menu-bar">
     <div id="menu-chapters-btn" class="menu-bar-left menu-chapters-btn">
       <span class="menu-icon icon-TT-god_chapters"></span>
@@ -16,7 +21,7 @@
     </div>
   </div>
   <ul id="menu-chapters" class="menu-chapters">
-    <a href="/" class="menu-block">
+    <a href="{{ path_prefix }}" class="menu-block">
       {% if active == 'overview' %}
       <li class="menu-chapter menu-video-chapter bg-overview active">
       {% else %}

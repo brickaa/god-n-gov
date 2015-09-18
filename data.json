@@ -8,7 +8,8 @@
       "PARTY": "R",
       "TITLE": "Attorney General",
       "ID": "paxton",
-      "TEST": "marriage"
+      "TEST": "marriage",
+      "VIMEO": "https://vimeo.com/57153098"
     },
     {
       "NAME": "Dan Patrick",
@@ -18,7 +19,8 @@
       "PARTY": "R",
       "TITLE": "Lt.Governor",
       "ID": "patrick",
-      "TEST": "marriage"
+      "TEST": "marriage",
+      "VIMEO": "https://vimeo.com/57153097"
     },
     {
       "NAME": "Sid Miller",
@@ -28,7 +30,8 @@
       "PARTY": "R",
       "TITLE": "Agricultural Commissioner",
       "ID": "miller",
-      "TEST": "marriage"
+      "TEST": "marriage",
+      "VIMEO": "https://vimeo.com/57153096"
     },
     {
       "NAME": "Glenn Hegar",
@@ -37,7 +40,8 @@
       "OFFICE": "Statewide",
       "PARTY": "R",
       "TITLE": "Comptroller",
-      "ID": "hegar"
+      "ID": "hegar",
+      "VIMEO": "https://vimeo.com/57153095"
     },
     {
       "NAME": "Elliott Naishtat",
@@ -47,7 +51,8 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Austin",
-      "ID": "naishtat"
+      "ID": "naishtat",
+      "VIMEO": "https://vimeo.com/57153094"
     },
     {
       "NAME": "Jonathan Stickland",
@@ -57,7 +62,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Bedford",
-      "ID": "stickland"
+      "ID": "stickland",
+      "VIMEO": "https://vimeo.com/57153093"
     },
     {
       "NAME": "Matt Krause",
@@ -67,7 +73,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Fort Worth",
-      "ID": "krause"
+      "ID": "krause",
+      "VIMEO": "https://vimeo.com/57153092"
     },
     {
       "NAME": "Matt Schaefer",
@@ -77,7 +84,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Plano",
-      "ID": "schaefer"
+      "ID": "schaefer",
+      "VIMEO": "https://vimeo.com/57153091"
     },
     {
       "NAME": "Sylvester Turner",
@@ -87,7 +95,8 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Houston",
-      "ID": "turner"
+      "ID": "turner",
+      "VIMEO": "https://vimeo.com/57153090"
     },
     {
       "NAME": "Eddie Lucio III",
@@ -97,7 +106,8 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Harlingen",
-      "ID": "lucio-iii"
+      "ID": "lucio-iii",
+      "VIMEO": "https://vimeo.com/57153089"
     },
     {
       "NAME": "David Simpson",
@@ -107,7 +117,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Longview",
-      "ID": "simpson"
+      "ID": "simpson",
+      "VIMEO": "https://vimeo.com/57153088"
     },
     {
       "NAME": "Bill Zedler",
@@ -117,7 +128,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Arlington",
-      "ID": "zedler"
+      "ID": "zedler",
+      "VIMEO": "https://vimeo.com/57153087"
     },
     {
       "NAME": "Jeff Leach",
@@ -127,7 +139,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Plano",
-      "ID": "leach"
+      "ID": "leach",
+      "VIMEO": "https://vimeo.com/57153086"
     },
     {
       "NAME": "Angie Chen Button",
@@ -137,7 +150,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Richardson",
-      "ID": "chen-button"
+      "ID": "chen-button",
+      "VIMEO": "https://vimeo.com/57153085"
     },
     {
       "NAME": "Bryan Hughes",
@@ -147,7 +161,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Mineola",
-      "ID": "hughes"
+      "ID": "hughes",
+      "VIMEO": "https://vimeo.com/57153084"
     },
     {
       "NAME": "Celia Israel",
@@ -157,7 +172,8 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Austin",
-      "ID": "israel"
+      "ID": "israel",
+      "VIMEO": "https://vimeo.com/57153083"
     },
     {
       "NAME": "Alfonso \"Poncho\" Nevárez",
@@ -167,7 +183,8 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Eagle Pass",
-      "ID": "nevarez"
+      "ID": "nevarez",
+      "VIMEO": "https://vimeo.com/57153082"
     },
     {
       "NAME": "James White",
@@ -177,7 +194,8 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Woodville",
-      "ID": "white"
+      "ID": "white",
+      "VIMEO": "https://vimeo.com/57153081"
     },
     {
       "NAME": "Konni Burton",
@@ -187,7 +205,8 @@
       "PARTY": "R",
       "TITLE": "State Sen.",
       "LOCATION": "Colleyville",
-      "ID": "burton"
+      "ID": "burton",
+      "VIMEO": "https://vimeo.com/57153080"
     },
     {
       "NAME": "Donna Campbell",
@@ -197,7 +216,8 @@
       "PARTY": "R",
       "TITLE": "State Sen.",
       "LOCATION": "New Braunfels",
-      "ID": "campbell"
+      "ID": "campbell",
+      "VIMEO": "https://vimeo.com/57153079"
     },
     {
       "NAME": "Eddie Lucio Jr.",
@@ -207,7 +227,8 @@
       "PARTY": "D",
       "TITLE": "State Sen.",
       "LOCATION": "Brownsville",
-      "ID": "lucio-jr"
+      "ID": "lucio-jr",
+      "VIMEO": "https://vimeo.com/57153078"
     },
     {
       "NAME": "Kirk Watson",
@@ -217,7 +238,8 @@
       "PARTY": "D",
       "TITLE": "State Sen.",
       "LOCATION": "Austin",
-      "ID": "watson"
+      "ID": "watson",
+      "VIMEO": "https://vimeo.com/57153077"
     },
     {
       "NAME": "Charles Perry",
@@ -227,7 +249,8 @@
       "PARTY": "R",
       "TITLE": "State Sen.",
       "LOCATION": "Lubbock",
-      "ID": "perry"
+      "ID": "perry",
+      "VIMEO": "https://vimeo.com/57153076"
     }
   ],
   "META": {}

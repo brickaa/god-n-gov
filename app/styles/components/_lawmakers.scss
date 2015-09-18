@@ -7,28 +7,47 @@
   color: $white;
   margin: 0 0 2em;
 
-  li {
+
+  a {
     background-color: $gg-black;
+    color: $white;
     float: left;
     margin: 0 0 1em;
     min-height: 160px;
     position: relative;
     width: 100%;
 
+    .lawmaker-hover-layer {
+      display: none;
+      text-align: center;
+      margin: 3.5em auto;
+
+      span {
+        font-size: 30px;
+      }
+    }
+
     &:hover {
       background-color: rgb(141, 62, 57);
+      color: $white;
+      text-decoration: none;
+
+      .lawmaker-hover-layer { 
+        display: block;
+      }
     }
 
     &:last-child {
       margin: 0 0 4em;
     }
+
   }
 
 }
 
 .lawmaker-list {
 
-  li {
+  a {
     margin: 0 3% 1em 0;
     
     @include media($default-desktop) {
@@ -55,6 +74,8 @@
     }
   }
 }
+
+
 
 .lawmaker-name {
   @extend %font-l;

@@ -1,4 +1,4 @@
-{% extends "_base.html" %}
+{% extends "_base-lawmakers.html" %}
 
 {% block styles %}
 {{ super() }}
@@ -16,18 +16,22 @@
   <div class="gg-prose-wrapper">
     <div class="gg-prose">
       <div class="gg-prose-block">
-        <p>Duis vel nibh at velit scelerisque suscipit. Nullam sagittis. Nullam dictum felis eu pede mollis pretium. In hac habitasse platea dictumst. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent ut ligula non mi varius sagittis. Praesent turpis.</p>
+        <p>The Texas Tribune interviewed 23 lawmakers with various religious and political backgrounds from across the state for this series. Watch additional clips from those interviews below.</p>
       </div>
       <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}
-          <li id="{{ x.ID }}">
-            <div class="lawmaker-hover-layer"></div>
-            <h2 class="lawmaker-name">{{ x.NAME }}</h2>
-            <div class="lawmaker-info">
-              <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
-              <p class="lawmaker-faith">{{ x.FAITH }}</p>
-            </div>
-          </li>
+          <a href="{{ x.VIMEO }}">
+            <li id="{{ x.ID }}" class="lawmaker-info-box">
+              <div class="lawmaker-hover-layer">
+                <span class="icon-TT-god_play"></span>
+              </div>
+              <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+              <div class="lawmaker-info">
+                <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
+                <p class="lawmaker-faith">{{ x.FAITH }}</p>
+              </div>
+            </li>
+          </a>
         {% endfor %}
       </ul>
     </div>

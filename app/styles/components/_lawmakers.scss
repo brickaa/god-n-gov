@@ -17,20 +17,12 @@
     width: 100%;
 
     .lawmaker-hover-layer {
-      // display: none;
-      // @extend %bg-cover;
-      // background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/burton-sq-bw.jpg');
-      // text-align: center;
-      // padding: 4.5em 0;
-      // height: 100%;
-
       span {
         font-size: 30px;
       }
     }
 
     &:hover {
-      // background-color: rgb(141, 62, 57);
       color: $white;
       text-decoration: none;
 

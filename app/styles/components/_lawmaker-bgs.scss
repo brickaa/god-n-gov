@@ -3,16 +3,24 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
 @each $lawmaker in $list {
   .lawmaker-layer-#{$lawmaker} {
     @extend %bg-cover;
-    background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+    background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-bw.jpg');
     height: 100%;
     padding: 4.5em 0;
     text-align: center;
+
+    @include media($default-desktop) {
+      background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+    }
   }
 
   .lawmaker-list a {
     &:hover {
       .lawmaker-layer-#{$lawmaker} {
-        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-red.jpg');
+        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-red.jpg');
+        
+        @include media($default-desktop) {
+          background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-red.jpg');
+        }
       }
     }
   }

@@ -34,7 +34,7 @@
           {% if x.TEST == 'marriage' %}
           <a href="{{ x.VIMEO }}">
             <li id="{{ x.ID }}" class="lawmaker-info-box">
-              <div class="lawmaker-hover-layer">
+              <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
                 <span class="icon-TT-god_play"></span>
               </div>
               <h2 class="lawmaker-name">{{ x.NAME }}</h2>

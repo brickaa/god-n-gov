@@ -13,6 +13,17 @@
       "VIMEO": "https://vimeo.com/140116845"
     },
     {
+      "NAME": "Glenn Hegar",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Comptroller",
+      "FAITH": "METHODIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Comptroller",
+      "ID": "hegar",
+      "SECTION": "OVERVIEW",
+      "VIMEO": "https://vimeo.com/57153095"
+    },
+    {
       "NAME": "Jonathan Stickland",
       "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Bedford",
       "FAITH": "BAPTIST",
@@ -92,7 +103,7 @@
       "TITLE": "State Sen.",
       "LOCATION": "Colleyville",
       "ID": "burton",
-      "SECTION": "LIFE",
+      "SECTION": "LIFE or OVERVIEW",
       "VIMEO": "https://vimeo.com/57153080"
     },
     {
@@ -173,19 +184,9 @@
       "PARTY": "R",
       "TITLE": "State Rep.",
       "LOCATION": "Richardson",
-      "ID": "chen-button",
+      "ID": "button",
       "SECTION": "VOICES",
       "VIMEO": "https://vimeo.com/140117742"
-    },
-    {
-      "NAME": "Glenn Hegar",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R Comptroller",
-      "FAITH": "METHODIST",
-      "OFFICE": "Statewide",
-      "PARTY": "R",
-      "TITLE": "Comptroller",
-      "ID": "hegar",
-      "VIMEO": "https://vimeo.com/57153095"
     },
     {
       "NAME": "Eddie Lucio Jr.",
@@ -195,7 +196,7 @@
       "PARTY": "D",
       "TITLE": "State Sen.",
       "LOCATION": "Brownsville",
-      "ID": "lucio-jr",
+      "ID": "lucioJr",
       "VIMEO": "https://vimeo.com/57153078"
     },
     {
@@ -250,7 +251,7 @@
       "PARTY": "D",
       "TITLE": "State Rep.",
       "LOCATION": "Harlingen",
-      "ID": "lucio-iii",
+      "ID": "lucioIII",
       "VIMEO": "https://vimeo.com/57153089"
     },
     {

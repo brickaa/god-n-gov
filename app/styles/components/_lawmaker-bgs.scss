@@ -16,11 +16,21 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
   .lawmaker-list a {
     &:hover {
       .lawmaker-layer-#{$lawmaker} {
-        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-red.jpg');
-        
+        background: 
+        linear-gradient(
+          rgba(255, 0, 0, .45), 
+          rgba(255, 0, 0, .45)
+        ),
+        url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-bw.jpg');
+
         @include media($default-desktop) {
-          background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-red.jpg');
-        }
+          background:
+          linear-gradient(
+            rgba(255, 0, 0, .45), 
+            rgba(255, 0, 0, .45)
+          ),
+          url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+          }
       }
     }
   }

@@ -18,6 +18,7 @@
 
     .lawmaker-hover-layer {
       span {
+        visibility: hidden;
         font-size: 30px;
       }
     }
@@ -27,7 +28,7 @@
       text-decoration: none;
 
       .lawmaker-hover-layer { 
-        // display: block;
+        span { visibility: visible; }
         // background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/burton-sq-red.jpg');
       }
     }

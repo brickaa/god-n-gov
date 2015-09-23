@@ -84,6 +84,18 @@
       "VIMEO": "https://vimeo.com/140116978"
     },
     {
+      "NAME": "Konni Burton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Colleyville",
+      "FAITH": "LUTHERAN",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "Colleyville",
+      "ID": "burton",
+      "SECTION": "LIFE",
+      "VIMEO": "https://vimeo.com/57153080"
+    },
+    {
       "NAME": "Ken Paxton",
       "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
       "FAITH": "BAPTIST",
@@ -198,17 +210,6 @@
       "VIMEO": "https://vimeo.com/57153081"
     },
     {
-      "NAME": "Konni Burton",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Colleyville",
-      "FAITH": "LUTHERAN",
-      "OFFICE": "Senate",
-      "PARTY": "R",
-      "TITLE": "State Sen.",
-      "LOCATION": "Colleyville",
-      "ID": "burton",
-      "VIMEO": "https://vimeo.com/57153080"
-    },
-    {
       "NAME": "Bryan Hughes",
       "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Mineola",
       "FAITH": "EVANGELICAL CHRISTIAN",
@@ -265,11 +266,11 @@
     }
   ],
   "VIDEO_IDS": {
-    "Overview": "https://vimeo.com/140111963",
-    "Guns": "https://vimeo.com/140109971",
-    "Marriage": "https://vimeo.com/140110585",
-    "Education": "https://vimeo.com/140111044",
-    "Life": "https://vimeo.com/140111476"
+    "Overview": 140111963,
+    "Guns": 140109971,
+    "Marriage": 140110585,
+    "Education": 140111044,
+    "Life": 140111476
   },
   "META": {}
 }

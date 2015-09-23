@@ -12,15 +12,15 @@
 {% block content %}
 <section id="main" class="main">
   <div id="video-cover-wrapper" class="video-cover-wrapper">
-    <div class="video-cover-img video-cover-img-guns"></div>
+    <div class="video-cover-img video-cover-img-marriage"></div>
     <figure class="video-cover-logo">
       <img src="{{ PATH_PREFIX }}assets/images/logos/TT-god_logo-stack.svg">
       <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
     </figure>   
   </div>
-  <div class="video-wrapper video-wrapper-guns">
+  <div class="video-wrapper video-wrapper-marriage">
     <div class="video-frame">
-      <iframe id="player1" src="{{ VIDEO_IDS.Guns }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe id="player1" src="{{ VIDEO_IDS.Marriage }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
   <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
@@ -31,7 +31,7 @@
       <p>This is a test paragraph.</p>
       <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}
-          {% if x.SECTION == 'GUNS' %}
+          {% if x.SECTION == 'MARRIAGE' %}
           <a href="{{ x.VIMEO }}">
             <li id="{{ x.ID }}" class="lawmaker-info-box">
               <div class="lawmaker-hover-layer">
@@ -51,7 +51,7 @@
   </div>
 </section>
  
-{{ macro.menu(PATH_PREFIX, 'guns', 'related') }}
+{{ macro.menu(PATH_PREFIX, 'marriage', 'related') }}
 {% endblock %}
 
 {% block script %}

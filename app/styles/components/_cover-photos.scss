@@ -24,12 +24,56 @@
 }
 
 .gg-page-cover-img {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_bg-img.png');
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-sm.png');
+
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-lg.png');
+  }
 }
 
-.video-cover-img {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_bg-img.png');
-  height: 100%;
+.video-cover-img-overview,
+.video-wrapper-overview {
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-sm.png');
+
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-lg.png');
+  }  
+}
+
+.video-wrapper-edu,
+.video-cover-img-edu {
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_edu-sm.png');
+  
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_edu-lg.png');
+  } 
+}
+
+.video-wrapper-guns,
+.video-cover-img-guns {
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_guns-sm.png');
+  
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_guns-lg.png');
+  } 
+}
+
+.video-wrapper-life,
+.video-cover-img-life {
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_life-sm.png');
+  
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_life-lg.png');
+  } 
+}
+
+.video-wrapper-marriage,
+.video-cover-img-marriage {
+  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_marriage-sm.png');
+  
+  @include media($default-desktop) {
+    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_marriage-lg.png');
+  } 
 }
 
 .video-cover-logo {
@@ -61,7 +105,6 @@
 
 .video-wrapper {
   background-color: $gg-black;
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_bg-img.png');
   background-size: cover;
   position: relative;
   text-align: center;

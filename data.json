@@ -1,26 +1,76 @@
 {
   "L": [
     {
-      "NAME": "Ken Paxton",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
-      "FAITH": "BAPTIST",
-      "OFFICE": "Statewide",
-      "PARTY": "R",
-      "TITLE": "Attorney General",
-      "ID": "paxton",
-      "TEST": "marriage",
-      "VIMEO": "https://vimeo.com/57153098"
+      "NAME": "Elliott Naishtat",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Austin",
+      "FAITH": "JEWISH",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Austin",
+      "ID": "naishtat",
+      "SECTION": "OVERVIEW",
+      "VIMEO": "https://vimeo.com/140116845"
     },
     {
-      "NAME": "Dan Patrick",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R Lieutenant Governor",
+      "NAME": "Jonathan Stickland",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Bedford",
       "FAITH": "BAPTIST",
-      "OFFICE": "Statewide",
+      "OFFICE": "House",
       "PARTY": "R",
-      "TITLE": "Lt.Governor",
-      "ID": "patrick",
-      "TEST": "marriage",
-      "VIMEO": "https://vimeo.com/57153097"
+      "TITLE": "State Rep.",
+      "LOCATION": "Bedford",
+      "ID": "stickland",
+      "SECTION": "GUNS",
+      "VIMEO": "https://vimeo.com/1401156623"
+    },
+    {
+      "NAME": "Matt Krause",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Fort Worth",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Fort Worth",
+      "ID": "krause",
+      "SECTION": "GUNS",
+      "VIMEO": "https://vimeo.com/140117137"
+    },
+    {
+      "NAME": "Alfonso \"Poncho\" Nevárez",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Eagle Pass",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Eagle Pass",
+      "ID": "nevarez",
+      "SECTION": "GUNS",
+      "VIMEO": "https://vimeo.com/140116702"
+    },
+    {
+      "NAME": "Matt Schaefer",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Plano",
+      "ID": "schaefer",
+      "SECTION": "LIFE",
+      "VIMEO": "https://vimeo.com/140116213"
+    },
+    {
+      "NAME": "Donna Campbell",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, New Braunfels",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "New Braunfels",
+      "ID": "campbell",
+      "SECTION": "LIFE",
+      "VIMEO": "https://vimeo.com/140117299"
     },
     {
       "NAME": "Sid Miller",
@@ -30,8 +80,90 @@
       "PARTY": "R",
       "TITLE": "Agricultural Commissioner",
       "ID": "miller",
-      "TEST": "marriage",
-      "VIMEO": "https://vimeo.com/57153096"
+      "SECTION": "LIFE",
+      "VIMEO": "https://vimeo.com/140116978"
+    },
+    {
+      "NAME": "Ken Paxton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Attorney General",
+      "ID": "paxton",
+      "SECTION": "MARRIAGE or OVERVIEW",
+      "VIMEO": "https://vimeo.com/140193818"
+    },
+    {
+      "NAME": "Bill Zedler",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Arlington",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Arlington",
+      "ID": "zedler",
+      "SECTION": "MARRIAGE",
+      "VIMEO": "https://vimeo.com/140115546"
+    },
+    {
+      "NAME": "Kirk Watson",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Austin",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "Senate",
+      "PARTY": "D",
+      "TITLE": "State Sen.",
+      "LOCATION": "Austin",
+      "ID": "watson",
+      "SECTION": "MARRIAGE",
+      "VIMEO": "https://vimeo.com/140193562"
+    },
+    {
+      "NAME": "Charles Perry",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Lubbock",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "Lubbock",
+      "ID": "perry",
+      "SECTION": "MARRIAGE",
+      "VIMEO": "https://vimeo.com/140116451"
+    },
+    {
+      "NAME": "Dan Patrick",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Lieutenant Governor",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Lt.Governor",
+      "ID": "patrick",
+      "SECTION": "EDUCATION",
+      "VIMEO": "https://vimeo.com/140116214"
+    },
+    {
+      "NAME": "David Simpson",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Longview",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Longview",
+      "ID": "simpson",
+      "SECTION": "VOICES",
+      "VIMEO": "https://vimeo.com/140115956"
+    },
+    {
+      "NAME": "Angie Chen Button",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Richardson",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Richardson",
+      "ID": "chen-button",
+      "SECTION": "VOICES",
+      "VIMEO": "https://vimeo.com/140117742"
     },
     {
       "NAME": "Glenn Hegar",
@@ -44,147 +176,15 @@
       "VIMEO": "https://vimeo.com/57153095"
     },
     {
-      "NAME": "Elliott Naishtat",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Austin",
-      "FAITH": "JEWISH",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Austin",
-      "ID": "naishtat",
-      "VIMEO": "https://vimeo.com/57153094"
-    },
-    {
-      "NAME": "Jonathan Stickland",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Bedford",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Bedford",
-      "ID": "stickland",
-      "VIMEO": "https://vimeo.com/57153093"
-    },
-    {
-      "NAME": "Matt Krause",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Fort Worth",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Fort Worth",
-      "ID": "krause",
-      "VIMEO": "https://vimeo.com/57153092"
-    },
-    {
-      "NAME": "Matt Schaefer",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Plano",
-      "ID": "schaefer",
-      "VIMEO": "https://vimeo.com/57153091"
-    },
-    {
-      "NAME": "Sylvester Turner",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Houston",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Houston",
-      "ID": "turner",
-      "VIMEO": "https://vimeo.com/57153090"
-    },
-    {
-      "NAME": "Eddie Lucio III",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Harlingen",
+      "NAME": "Eddie Lucio Jr.",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Brownsville",
       "FAITH": "CATHOLIC",
-      "OFFICE": "House",
+      "OFFICE": "Senate",
       "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Harlingen",
-      "ID": "lucio-iii",
-      "VIMEO": "https://vimeo.com/57153089"
-    },
-    {
-      "NAME": "David Simpson",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Longview",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Longview",
-      "ID": "simpson",
-      "VIMEO": "https://vimeo.com/57153088"
-    },
-    {
-      "NAME": "Bill Zedler",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Arlington",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Arlington",
-      "ID": "zedler",
-      "VIMEO": "https://vimeo.com/57153087"
-    },
-    {
-      "NAME": "Jeff Leach",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Plano",
-      "ID": "leach",
-      "VIMEO": "https://vimeo.com/57153086"
-    },
-    {
-      "NAME": "Angie Chen Button",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Richardson",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Richardson",
-      "ID": "chen-button",
-      "VIMEO": "https://vimeo.com/57153085"
-    },
-    {
-      "NAME": "Bryan Hughes",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Mineola",
-      "FAITH": "EVANGELICAL CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Mineola",
-      "ID": "hughes",
-      "VIMEO": "https://vimeo.com/57153084"
-    },
-    {
-      "NAME": "Celia Israel",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Represenative, Austin",
-      "FAITH": "CATHOLIC",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Austin",
-      "ID": "israel",
-      "VIMEO": "https://vimeo.com/57153083"
-    },
-    {
-      "NAME": "Alfonso \"Poncho\" Nevárez",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Eagle Pass",
-      "FAITH": "CATHOLIC",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Eagle Pass",
-      "ID": "nevarez",
-      "VIMEO": "https://vimeo.com/57153082"
+      "TITLE": "State Sen.",
+      "LOCATION": "Brownsville",
+      "ID": "lucio-jr",
+      "VIMEO": "https://vimeo.com/57153078"
     },
     {
       "NAME": "James White",
@@ -209,49 +209,67 @@
       "VIMEO": "https://vimeo.com/57153080"
     },
     {
-      "NAME": "Donna Campbell",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, New Braunfels",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "Senate",
+      "NAME": "Bryan Hughes",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Mineola",
+      "FAITH": "EVANGELICAL CHRISTIAN",
+      "OFFICE": "House",
       "PARTY": "R",
-      "TITLE": "State Sen.",
-      "LOCATION": "New Braunfels",
-      "ID": "campbell",
-      "VIMEO": "https://vimeo.com/57153079"
+      "TITLE": "State Rep.",
+      "LOCATION": "Mineola",
+      "ID": "hughes",
+      "VIMEO": "https://vimeo.com/57153084"
     },
     {
-      "NAME": "Eddie Lucio Jr.",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Brownsville",
+      "NAME": "Celia Israel",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Represenative, Austin",
       "FAITH": "CATHOLIC",
-      "OFFICE": "Senate",
+      "OFFICE": "House",
       "PARTY": "D",
-      "TITLE": "State Sen.",
-      "LOCATION": "Brownsville",
-      "ID": "lucio-jr",
-      "VIMEO": "https://vimeo.com/57153078"
-    },
-    {
-      "NAME": "Kirk Watson",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Austin",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "Senate",
-      "PARTY": "D",
-      "TITLE": "State Sen.",
+      "TITLE": "State Rep.",
       "LOCATION": "Austin",
-      "ID": "watson",
-      "VIMEO": "https://vimeo.com/57153077"
+      "ID": "israel",
+      "VIMEO": "https://vimeo.com/57153083"
     },
     {
-      "NAME": "Charles Perry",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Lubbock",
+      "NAME": "Sylvester Turner",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Houston",
       "FAITH": "BAPTIST",
-      "OFFICE": "Senate",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Houston",
+      "ID": "turner",
+      "VIMEO": "https://vimeo.com/57153090"
+    },
+    {
+      "NAME": "Eddie Lucio III",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Harlingen",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Harlingen",
+      "ID": "lucio-iii",
+      "VIMEO": "https://vimeo.com/57153089"
+    },
+    {
+      "NAME": "Jeff Leach",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
       "PARTY": "R",
-      "TITLE": "State Sen.",
-      "LOCATION": "Lubbock",
-      "ID": "perry",
-      "VIMEO": "https://vimeo.com/57153076"
+      "TITLE": "State Rep.",
+      "LOCATION": "Plano",
+      "ID": "leach",
+      "VIMEO": "https://vimeo.com/57153086"
     }
   ],
+  "VIDEO_IDS": {
+    "Overview": "https://vimeo.com/140111963",
+    "Guns": "https://vimeo.com/140109971",
+    "Marriage": "https://vimeo.com/140110585",
+    "Education": "https://vimeo.com/140111044",
+    "Life": "https://vimeo.com/140111476"
+  },
   "META": {}
 }

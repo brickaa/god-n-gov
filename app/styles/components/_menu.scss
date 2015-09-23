@@ -118,27 +118,54 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
     .bg-overview {
       @extend %bg-cover;
-      background-image: url('http://placekitten.com/g/300/220');
+      background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-sm.png');
     }
 
     .bg-guns {
       @extend %bg-cover;
-      background-image: url('http://placekitten.com/g/300/220');
+      background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_guns-sm.png');
     }
 
     .bg-marriage {
       @extend %bg-cover;
-      background-image: url('http://placekitten.com/g/300/220');
+      background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_marriage-sm.png');
     }
 
     .bg-education {
       @extend %bg-cover;
-      background-image: url('http://placekitten.com/g/300/220');
+      background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_edu-sm.png');
     }
 
     .bg-life {
       @extend %bg-cover;
-      background-image: url('http://placekitten.com/g/300/220');
+      background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_life-sm.png');
+    }
+
+    &:hover {
+      .bg-overview {
+        @extend %bg-cover;
+        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god-red_overview-sm.png');
+      }
+      
+      .bg-guns {
+        @extend %bg-cover;
+        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god-red_guns-sm.png');
+      }
+
+      .bg-marriage {
+        @extend %bg-cover;
+        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god-red_marriage-sm.png');
+      }
+
+      .bg-education {
+        @extend %bg-cover;
+        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god-red_edu-sm.png');
+      }
+
+      .bg-life {
+        @extend %bg-cover;
+        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god-red_life-sm.png');
+      }
     }
   }
 
@@ -146,6 +173,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
     border: 3px solid $gg-red;
     box-sizing: border-box;
   }
+
 }
 
 .menu-chapters-btn {
@@ -155,7 +183,6 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
   &:hover {
     cursor: pointer;
-    span { color: $gg-red; }
   }
 }
 
@@ -182,14 +209,6 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
     @include media($menu-desktop-sm) {
       margin: 0;
-
-      &:hover {
-        background-color: transparent;
-      }
-    }
-
-    &:hover {
-      background-color: transparentize($gg-red, .01);
     }
 
     p {

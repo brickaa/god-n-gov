@@ -24,56 +24,22 @@
 }
 
 .gg-page-cover-img {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-sm.png');
+  background-image: url('{{ PATH_PREFIX }}assets/images/overview-sm.png');
 
   @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-lg.png');
+    background-image: url('{{ PATH_PREFIX }}assets/images/overview-lg.png');
   }
 }
 
-.video-cover-img-overview,
-.video-wrapper-overview {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-sm.png');
+@each $vid in $vid-list {
+  .video-cover-img-#{$vid},
+  .video-wrapper-#{$vid} {
+    background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
 
-  @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_overview-lg.png');
-  }  
-}
-
-.video-wrapper-edu,
-.video-cover-img-edu {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_edu-sm.png');
-  
-  @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_edu-lg.png');
-  } 
-}
-
-.video-wrapper-guns,
-.video-cover-img-guns {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_guns-sm.png');
-  
-  @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_guns-lg.png');
-  } 
-}
-
-.video-wrapper-life,
-.video-cover-img-life {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_life-sm.png');
-  
-  @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_life-lg.png');
-  } 
-}
-
-.video-wrapper-marriage,
-.video-cover-img-marriage {
-  background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_marriage-sm.png');
-  
-  @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_marriage-lg.png');
-  } 
+    @include media($default-desktop) {
+      background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-lg.png');
+    }  
+  }
 }
 
 .video-cover-logo {

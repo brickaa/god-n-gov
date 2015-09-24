@@ -1,7 +1,6 @@
 $menu-desktop-sm: new-breakpoint(min-width 550px);
 $menu-desktop-lg: new-breakpoint(min-width 800px);
 $menu-desktop-xlg: new-breakpoint(min-width 1080px);
-$vid-list: overview guns edu marriage life;
 
 %bg-cover-menu {
   background-position: 50% 50%; 
@@ -132,7 +131,7 @@ $vid-list: overview guns edu marriage life;
     @each $vid in $vid-list {
       .bg-#{$vid} {
         @extend %bg-cover-menu;
-        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_#{$vid}-sm.png');
+        background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
       }
 
       &:hover {
@@ -142,7 +141,7 @@ $vid-list: overview guns edu marriage life;
               transparentize($gg-red, .6), 
               transparentize($gg-red, .6)
             ),
-            url('{{ PATH_PREFIX }}assets/images/TT-god_#{$vid}-sm.png');
+            url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
           background-size: cover;
           background-position: 50% 50%;       
         }

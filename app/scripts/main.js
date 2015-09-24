@@ -41,11 +41,7 @@ $(document).ready(function() {
   'use strict';
 
   player.addEvent('ready', function() {
-
-    // player.addEvent('pause', onPause);
-    player.addEvent('play', onPlay);
-    // player.addEvent('finish', onFinish);
-    // player.addEvent('playProgress', onPlayProgress);
+    player.addEvent('play');
   });
 
   $main.fitVids();

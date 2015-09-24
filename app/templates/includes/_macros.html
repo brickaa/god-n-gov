@@ -77,9 +77,9 @@
     </a>
     <a href="{{ path_prefix }}education" class="menu-block">
       {% if active == 'education' %}
-      <li class="menu-chapter menu-video-chapter bg-education active">
+      <li class="menu-chapter menu-video-chapter bg-edu active">
       {% else %}
-      <li class="menu-chapter menu-video-chapter bg-education">
+      <li class="menu-chapter menu-video-chapter bg-edu">
       {% endif %}
         <p>Education</p>
       </li>
@@ -94,12 +94,20 @@
       </li>
     </a>
     <a href="{{ path_prefix }}lawmakers" class="menu-extra">
+      {% if active == 'lawmakers' %}
+      <li class="menu-chapter menu-extra-chapter active">
+      {% else %}
       <li class="menu-chapter menu-extra-chapter">
+      {% endif %}
         <p>Lawmakers</p>
       </li>
       </a>
     <a href="{{ path_prefix }}about" class="menu-extra">
+      {% if active == 'about' %}
+      <li class="menu-chapter menu-extra-chapter active">
+      {% else %}
       <li class="menu-chapter menu-extra-chapter">
+      {% endif %}
         <p>About</p>
       </li>
     </a>

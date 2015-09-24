@@ -6,6 +6,10 @@
   z-index: 1;
 }
 
+$lawmaker-bp-sm: new-breakpoint(min-width 410px);
+$lawmaker-bp-md: new-breakpoint(min-width 835px max-width 959px);
+$lawmaker-bp-lg: new-breakpoint(min-width 960px);
+
 /*COLORS:*/
 $gg-red: rgb(241, 82, 73); // #f15249
 $gg-maroon: rgb(112, 56, 66); // #703842 

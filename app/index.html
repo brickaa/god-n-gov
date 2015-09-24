@@ -18,9 +18,10 @@
       <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
     </figure>   
   </div>
-  <div class="video-wrapper">
+  <div class="video-wrapper video-wrapper-overview">
     <div class="video-frame">
-      <iframe id="player1" src="http://player.vimeo.com/video/{{ VIDEO_IDS.Overview }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <!-- <iframe id="player1" src="http://player.vimeo.com/video/{{ VIDEO_IDS.Overview }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+      <iframe id="player1" src="http://player.vimeo.com/video/57153098?api=1&player_id=player1?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
   <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
@@ -31,14 +32,18 @@
       <p>This is a test paragraph.</p>
       <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}
-          {% if x.TEST == 'marriage' %}
+          {% if x.SECTION == 'OVERVIEW' %}
           <a href="{{ x.VIMEO }}">
             <li id="{{ x.ID }}" class="lawmaker-info-box">
               <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
                 <span class="icon-TT-god_play"></span>
               </div>
-              <h2 class="lawmaker-name">{{ x.NAME }}</h2>
               <div class="lawmaker-info">
+                {% if x.ID == 'nevarez' %}
+                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.NAME }}</h2>
+                {% else %}
+                <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+                {% endif %}
                 <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
                 <p class="lawmaker-faith">{{ x.FAITH }}</p>
               </div>

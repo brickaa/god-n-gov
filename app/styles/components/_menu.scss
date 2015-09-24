@@ -1,4 +1,4 @@
-$menu-desktop-sm: new-breakpoint(min-width 500px);
+$menu-desktop-sm: new-breakpoint(min-width 550px);
 $menu-desktop-lg: new-breakpoint(min-width 800px);
 $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 $vid-list: overview guns edu marriage life;
@@ -91,7 +91,7 @@ $vid-list: overview guns edu marriage life;
   width: 100%;
 
   @include media($menu-desktop-sm) {
-    padding: 0 1em;
+    padding: 0 2em 0 1.5em;
   }
 }
 
@@ -159,6 +159,7 @@ $vid-list: overview guns edu marriage life;
 .menu-chapters-btn {
   .icon-TT-god_chapters {
     color: $white;
+    padding: 0 10px 0 0;
   }
 
   &:hover {
@@ -175,7 +176,7 @@ $vid-list: overview guns edu marriage life;
   width: 100%;
   
   @include media($menu-desktop-sm) {
-    padding: 0 1em;
+    padding: 0 2em 0 1.5em;
   }
 
   .active {

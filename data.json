@@ -10,7 +10,9 @@
       "LOCATION": "Austin",
       "ID": "naishtat",
       "SECTION": "OVERVIEW",
-      "VIMEO": "https://vimeo.com/140116845"
+      "VIMEO": "https://vimeo.com/140116845",
+      "NOTES": "lighten WS –AR",
+      "undefined": "*Lawmakers in BOLD are not included anywhere else in the project. There are only four of them."
     },
     {
       "NAME": "Glenn Hegar",
@@ -21,7 +23,32 @@
       "TITLE": "Comptroller",
       "ID": "hegar",
       "SECTION": "OVERVIEW",
-      "VIMEO": "https://vimeo.com/57153095"
+      "VIMEO": "https://vimeo.com/140215123"
+    },
+    {
+      "NAME": "Konni Burton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Colleyville",
+      "FAITH": "LUTHERAN",
+      "OFFICE": "Senate",
+      "PARTY": "R",
+      "TITLE": "State Sen.",
+      "LOCATION": "Colleyville",
+      "ID": "burton",
+      "SECTION": "OVERVIEW",
+      "VIMEO": "https://vimeo.com/140220886",
+      "undefined": "LINK TO TRANSCRIPT OF ALL CLIPS https://docs.google.com/a/texastribune.org/spreadsheets/d/1EHATOWVNCOkyITsSkjDyFOvqvuGqWA28YST0DO5F4W4/edit?usp=sharing"
+    },
+    {
+      "NAME": "Jeff Leach",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "FAITH": "CHRISTIAN",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Plano",
+      "ID": "leach",
+      "SECTION": "OVERVIEW BACKUP",
+      "VIMEO": "https://vimeo.com/140214927"
     },
     {
       "NAME": "Jonathan Stickland",
@@ -33,7 +60,8 @@
       "LOCATION": "Bedford",
       "ID": "stickland",
       "SECTION": "GUNS",
-      "VIMEO": "https://vimeo.com/1401156623"
+      "VIMEO": "https://vimeo.com/1401156623",
+      "NOTES": "audio click –AR"
     },
     {
       "NAME": "Matt Krause",
@@ -45,10 +73,11 @@
       "LOCATION": "Fort Worth",
       "ID": "krause",
       "SECTION": "GUNS",
-      "VIMEO": "https://vimeo.com/140117137"
+      "VIMEO": "https://vimeo.com/140117137",
+      "NOTES": "crop WS, slow fade out –AR"
     },
     {
-      "NAME": "Alfonso \"Poncho\" Nevárez",
+      "NAME": "\"Poncho\" Nevárez",
       "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Eagle Pass",
       "FAITH": "CATHOLIC",
       "OFFICE": "House",
@@ -57,19 +86,32 @@
       "LOCATION": "Eagle Pass",
       "ID": "nevarez",
       "SECTION": "GUNS",
-      "VIMEO": "https://vimeo.com/140116702"
+      "VIMEO": "https://vimeo.com/140116702",
+      "NOTES": "adjust WS color, audio click end –AR"
     },
     {
-      "NAME": "Matt Schaefer",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
+      "NAME": "Sid Miller",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Agriculture Commissioner",
       "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
+      "OFFICE": "Statewide",
       "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Plano",
-      "ID": "schaefer",
+      "TITLE": "Agriculture Commissioner",
+      "ID": "miller",
       "SECTION": "LIFE",
-      "VIMEO": "https://vimeo.com/140116213"
+      "VIMEO": "https://vimeo.com/140116978"
+    },
+    {
+      "NAME": "Eddie Lucio Jr.",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Brownsville",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "Senate",
+      "PARTY": "D",
+      "TITLE": "State Sen.",
+      "LOCATION": "Brownsville",
+      "ID": "lucioJr",
+      "SECTION": "LIFE",
+      "VIMEO": "https://vimeo.com/140209316",
+      "NOTES": "extend out end shot –AR"
     },
     {
       "NAME": "Donna Campbell",
@@ -81,41 +123,20 @@
       "LOCATION": "New Braunfels",
       "ID": "campbell",
       "SECTION": "LIFE",
-      "VIMEO": "https://vimeo.com/140117299"
+      "VIMEO": "https://vimeo.com/140241824"
     },
     {
-      "NAME": "Sid Miller",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R Agriculture Commissioner",
+      "NAME": "Matt Schaefer",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
       "FAITH": "CHRISTIAN",
-      "OFFICE": "Statewide",
+      "OFFICE": "House",
       "PARTY": "R",
-      "TITLE": "Agricultural Commissioner",
-      "ID": "miller",
-      "SECTION": "LIFE",
-      "VIMEO": "https://vimeo.com/140116978"
-    },
-    {
-      "NAME": "Konni Burton",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Senator, Colleyville",
-      "FAITH": "LUTHERAN",
-      "OFFICE": "Senate",
-      "PARTY": "R",
-      "TITLE": "State Sen.",
-      "LOCATION": "Colleyville",
-      "ID": "burton",
-      "SECTION": "LIFE or OVERVIEW",
-      "VIMEO": "https://vimeo.com/57153080"
-    },
-    {
-      "NAME": "Ken Paxton",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
-      "FAITH": "BAPTIST",
-      "OFFICE": "Statewide",
-      "PARTY": "R",
-      "TITLE": "Attorney General",
-      "ID": "paxton",
-      "SECTION": "MARRIAGE or OVERVIEW",
-      "VIMEO": "https://vimeo.com/140193818"
+      "TITLE": "State Rep.",
+      "LOCATION": "Plano",
+      "ID": "schaefer",
+      "SECTION": "LIFE BACKUP",
+      "VIMEO": "https://vimeo.com/140116213",
+      "NOTES": "brighten WS –AR"
     },
     {
       "NAME": "Bill Zedler",
@@ -127,7 +148,8 @@
       "LOCATION": "Arlington",
       "ID": "zedler",
       "SECTION": "MARRIAGE",
-      "VIMEO": "https://vimeo.com/140115546"
+      "VIMEO": "https://vimeo.com/140115546",
+      "NOTES": "slow fade out –AR"
     },
     {
       "NAME": "Kirk Watson",
@@ -151,7 +173,18 @@
       "LOCATION": "Lubbock",
       "ID": "perry",
       "SECTION": "MARRIAGE",
-      "VIMEO": "https://vimeo.com/140116451"
+      "VIMEO": "https://vimeo.com/140252191"
+    },
+    {
+      "NAME": "Ken Paxton",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R Attorney General",
+      "FAITH": "BAPTIST",
+      "OFFICE": "Statewide",
+      "PARTY": "R",
+      "TITLE": "Attorney General",
+      "ID": "paxton",
+      "SECTION": "MARRIAGE or OVERVIEW",
+      "VIMEO": "https://vimeo.com/140193818"
     },
     {
       "NAME": "Dan Patrick",
@@ -159,10 +192,34 @@
       "FAITH": "BAPTIST",
       "OFFICE": "Statewide",
       "PARTY": "R",
-      "TITLE": "Lt.Governor",
+      "TITLE": "Lt. Governor",
       "ID": "patrick",
       "SECTION": "EDUCATION",
       "VIMEO": "https://vimeo.com/140116214"
+    },
+    {
+      "NAME": "Eddie Lucio III",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Harlingen",
+      "FAITH": "CATHOLIC",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Brownsville",
+      "ID": "lucioIII",
+      "SECTION": "EDUCATION",
+      "VIMEO": "https://vimeo.com/140228602"
+    },
+    {
+      "NAME": "Sylvester Turner",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Houston",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "D",
+      "TITLE": "State Rep.",
+      "LOCATION": "Houston",
+      "ID": "turner",
+      "SECTION": "EDUCATION",
+      "VIMEO": "https://vimeo.com/140241567"
     },
     {
       "NAME": "David Simpson",
@@ -174,7 +231,8 @@
       "LOCATION": "Longview",
       "ID": "simpson",
       "SECTION": "VOICES",
-      "VIMEO": "https://vimeo.com/140115956"
+      "VIMEO": "https://vimeo.com/140115956",
+      "NOTES": "brighten, slow fade out, audio  –AR"
     },
     {
       "NAME": "Angie Chen Button",
@@ -186,29 +244,8 @@
       "LOCATION": "Richardson",
       "ID": "button",
       "SECTION": "VOICES",
-      "VIMEO": "https://vimeo.com/140117742"
-    },
-    {
-      "NAME": "Eddie Lucio Jr.",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Senator, Brownsville",
-      "FAITH": "CATHOLIC",
-      "OFFICE": "Senate",
-      "PARTY": "D",
-      "TITLE": "State Sen.",
-      "LOCATION": "Brownsville",
-      "ID": "lucioJr",
-      "VIMEO": "https://vimeo.com/57153078"
-    },
-    {
-      "NAME": "James White",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Woodville",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Woodville",
-      "ID": "white",
-      "VIMEO": "https://vimeo.com/57153081"
+      "VIMEO": "https://vimeo.com/140117742",
+      "NOTES": "take line out –AR"
     },
     {
       "NAME": "Bryan Hughes",
@@ -219,7 +256,20 @@
       "TITLE": "State Rep.",
       "LOCATION": "Mineola",
       "ID": "hughes",
-      "VIMEO": "https://vimeo.com/57153084"
+      "SECTION": "VOICES",
+      "VIMEO": "https://vimeo.com/140245132"
+    },
+    {
+      "NAME": "James White",
+      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Woodville",
+      "FAITH": "BAPTIST",
+      "OFFICE": "House",
+      "PARTY": "R",
+      "TITLE": "State Rep.",
+      "LOCATION": "Woodville",
+      "ID": "white",
+      "SECTION": "VOICES (life backup)",
+      "VIMEO": "https://vimeo.com/140245965"
     },
     {
       "NAME": "Celia Israel",
@@ -230,40 +280,18 @@
       "TITLE": "State Rep.",
       "LOCATION": "Austin",
       "ID": "israel",
-      "VIMEO": "https://vimeo.com/57153083"
+      "SECTION": "VOICES",
+      "VIMEO": "https://vimeo.com/140249287"
+    }
+  ],
+  "COPY": [
+    {
+      "Lawmaker_Text": "About_Text",
+      "The Texas Tribune interviewed 23 lawmakers with various religious and political backgrounds from across the state for this series. Watch additional clips from those interviews below.": "Duis vel nibh at velit scelerisque suscipit. Nullam sagittis. Nullam dictum felis eu pede mollis pretium. In hac habitasse platea dictumst. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent ut ligula non mi varius sagittis. Praesent turpis."
     },
     {
-      "NAME": "Sylvester Turner",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Houston",
-      "FAITH": "BAPTIST",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Houston",
-      "ID": "turner",
-      "VIMEO": "https://vimeo.com/57153090"
-    },
-    {
-      "NAME": "Eddie Lucio III",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "D State Representative, Harlingen",
-      "FAITH": "CATHOLIC",
-      "OFFICE": "House",
-      "PARTY": "D",
-      "TITLE": "State Rep.",
-      "LOCATION": "Harlingen",
-      "ID": "lucioIII",
-      "VIMEO": "https://vimeo.com/57153089"
-    },
-    {
-      "NAME": "Jeff Leach",
-      "PARTY AFFILIATION, TITLE, DISTRICT": "R State Representative, Plano",
-      "FAITH": "CHRISTIAN",
-      "OFFICE": "House",
-      "PARTY": "R",
-      "TITLE": "State Rep.",
-      "LOCATION": "Plano",
-      "ID": "leach",
-      "VIMEO": "https://vimeo.com/57153086"
+      "Lawmaker_Text": "Related_Text",
+      "The Texas Tribune interviewed 23 lawmakers with various religious and political backgrounds from across the state for this series. Watch additional clips from those interviews below.": "This is a test paragraph."
     }
   ],
   "VIDEO_IDS": {

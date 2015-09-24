@@ -12,6 +12,7 @@
   {% block styles %}
   <link rel="stylesheet" href="{{ PATH_PREFIX }}styles/main.css">
   {% endblock %}
+  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 </head>
 <body>
 {% include 'includes/_masthead.html' %}
@@ -21,6 +22,7 @@
 {% block script %}
 <script src="{{ PATH_PREFIX }}scripts/vendor/jquery.fitvids.js"></script>
 <script src="{{ PATH_PREFIX }}scripts/vendor/magnifique.js"></script>
+<script src="{{ PATH_PREFIX }}scripts/froogaloo-custom.js"></script>
 <script src="{{ PATH_PREFIX }}scripts/main.js"></script>
 {% endblock %}
 {% include 'includes/_google_analytics.html' %}

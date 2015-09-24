@@ -32,8 +32,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
       .lawmaker-layer-#{$lawmaker} {
         background: 
         linear-gradient(
-          transparentize($gg-red, .8), 
-          transparentize($gg-red, .8)
+          transparentize($gg-red, .85), 
+          transparentize($gg-red, .85)
         ),
         url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
         background-position: 30% center;
@@ -41,8 +41,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
         @include media($lawmaker-bp-sm) {
           background: 
           linear-gradient(
-            rgba(255, 0, 0, .85), 
-            rgba(255, 0, 0, .85)
+            rgba($gg-red, .1), 
+            rgba($gg-red, .1)
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg.jpg');
           background-position: 50% 50%;
@@ -51,8 +51,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
         @include media($lawmaker-bp-md) {
           background: 
           linear-gradient(
-            transparentize($gg-red, .8), 
-            transparentize($gg-red, .8)
+            transparentize($gg-red, .85), 
+            transparentize($gg-red, .85)
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
           background-position: 50% 50%;
@@ -61,11 +61,12 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
         @include media($lawmaker-bp-lg) {
           background: 
           linear-gradient(
-            transparentize($gg-red, .8), 
-            transparentize($gg-red, .8)
+            transparentize($gg-red, .85), 
+            transparentize($gg-red, .85)
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
-          background-position: 50% 50%;        }
+          background-position: 50% 50%;        
+        }
       }
     }
   }

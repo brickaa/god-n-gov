@@ -159,7 +159,10 @@ $vid-list: overview guns edu marriage life;
 .menu-chapters-btn {
   .icon-TT-god_chapters {
     color: $white;
-    padding: 0 10px 0 0;
+    
+    @include media($menu-desktop-sm) {
+      padding: 0 10px 0 0;
+    }
   }
 
   &:hover {

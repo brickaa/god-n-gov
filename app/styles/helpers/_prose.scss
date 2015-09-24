@@ -46,6 +46,57 @@
   h2 {
     @extend %font-m;
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    a {
+      color: $gg-black;
+      padding: 0 0 .1em 0;
+
+      &:hover {
+        color: $gg-black;
+        text-decoration: none;
+        border-bottom: 1px solid $gg-red;
+      }
+    }
+
+    &.bullet,
+    &.carat {
+      font-family: $montserrat;
+      font-weight: 400;
+      padding: 0 1em;
+
+      li {
+        margin-bottom: .75em;
+
+        &:last-child {
+          margin-bottom: 1em;
+        }
+      }
+
+    }
+
+    &.bullet {
+      list-style: disc;
+    }
+
+    &.carat {
+
+      li {
+        &:before {
+          color: $gg-red;
+          content: '\203A';
+          font-family: $base-sans-serif;
+          margin: 0 .5em 0 -1em;
+          padding: 0;
+        }
+      }
+    }
+
+  }
+
 }
 
 .gg-page-title {
@@ -60,6 +111,19 @@
 .gg-prose-header {
   margin: 2em 0 1em;
 }
+
 .gg-prose-block {
   margin-bottom: 2em;
+
+  &.inline {
+    // display: inline-block;
+    // width: 45%;
+    // vertical-align: top;
+
+    @include media(min-width 500px) {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
+  }
 }

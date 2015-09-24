@@ -3,8 +3,8 @@
 $(function() {
   var iframe = $('#player1')[0],
       player = $f(iframe),
-      playBtn = $('#play'),
-      pauseBtn = $('#pause'),
+      // playBtn = $('#play'),
+      // pauseBtn = $('#pause'),
       status = $('.status');
 
 
@@ -12,36 +12,36 @@ $(function() {
   player.addEvent('ready', function() {
     status.text('ready');
 
-    player.addEvent('pause', onPause);
+    // player.addEvent('pause', onPause);
     player.addEvent('play', onPlay);
-    player.addEvent('finish', onFinish);
-    player.addEvent('playProgress', onPlayProgress);
+    // player.addEvent('finish', onFinish);
+    // player.addEvent('playProgress', onPlayProgress);
   });
 
   // Call the API when a button is pressed
-  $('button').bind('click', function() {
-    player.api($(this).attr('id'));
+  $('#start-video').bind('click', function() {
+    player.api('play');
   });
 
-  function onPause(id) {
-    status.text('paused');
-    pauseBtn.hide();
-    playBtn.show();
-    console.log('pause');
-  }
+  // function onPause(id) {
+  //   status.text('paused');
+  //   pauseBtn.hide();
+  //   playBtn.show();
+  //   console.log('pause');
+  // }
 
   function onPlay(id) {
-    playBtn.hide();
-    pauseBtn.show();
+    // playBtn.hide();
+    // pauseBtn.show();
     console.log('play');
   }
 
-  function onFinish(id) {
-    status.text('finished');
-  }
+  // function onFinish(id) {
+  //   status.text('finished');
+  // }
 
-  function onPlayProgress(data, id) {
-    status.text(data.seconds + 's played');
-  }
+  // function onPlayProgress(data, id) {
+  //   status.text(data.seconds + 's played');
+  // }
 
 });

@@ -1,4 +1,4 @@
-/* global $ */
+/* global $, $f */
 
 var $extraFootage = $('#extra-footage'),
     $main = $('#main'),
@@ -8,7 +8,9 @@ var $extraFootage = $('#extra-footage'),
     $relatedVids = $('#lawmakers-related'),
     $startBtn = $('#start-video'),
     $videoCover = $('#video-cover-wrapper'),
-    $videoWrapper = $('.video-wrapper');
+    $videoWrapper = $('.video-wrapper'),
+    iframe = $('#player1')[0],
+    player = $f(iframe);
 
 function menuAccordion(e) {
   e.preventDefault();
@@ -23,6 +25,8 @@ function startVideo(e) {
   $videoWrapper.css('visibility', 'visible');
   $relatedVids.show();
   $extraFootage.show();
+  player.api('play');
+  console.log('click');
 }
 
 function videoSize() {
@@ -36,8 +40,27 @@ function resize() {
 $(document).ready(function() {
   'use strict';
 
-  $startBtn.click(startVideo);
+  player.addEvent('ready', function() {
+
+    // player.addEvent('pause', onPause);
+    player.addEvent('play', onPlay);
+    // player.addEvent('finish', onFinish);
+    // player.addEvent('playProgress', onPlayProgress);
+  });
+
+  $main.fitVids();
+  videoSize();
+  $videoWrapper.css('visibility', 'visible');
+
+  $startBtn.click(startVideo, function() {
+    $videoCover.hide();
+    $relatedVids.show();
+    $extraFootage.show();
+    player.api('play');
+  });
+
   $menuBtn.click(menuAccordion);
+
 
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {

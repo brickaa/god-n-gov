@@ -1,3 +1,5 @@
+
+
 .lawmakers-related {
   display: none;
 }
@@ -12,28 +14,35 @@
     color: $white;
     float: left;
     margin: 0 0 1em;
-    min-height: 160px;
+    min-height: 140px;
     position: relative;
     width: 100%;
 
     .lawmaker-hover-layer {
       span {
+        color: transparentize($white, 1);
         font-size: 30px;
       }
     }
 
     &:hover {
+      background-color: $gg-red;
       color: $white;
       text-decoration: none;
 
       .lawmaker-hover-layer { 
-        // display: block;
-        // background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/burton-sq-red.jpg');
+        span { 
+          color: $white; 
+        }
       }
     }
 
     &:last-child {
       margin: 0 0 4em;
+    }
+
+    @include media($lawmaker-bp-sm) {
+       min-height: 160px;
     }
 
   }
@@ -44,8 +53,14 @@
 
   a {
     margin: 0 3% 1em 0;
-    
-    @include media($default-desktop) {
+
+    @include media($lawmaker-bp-md) {
+      @include omega(3n);
+      min-height: 120px;
+      width: 31.33%;
+    }
+
+    @include media($lawmaker-bp-lg) {
       @include omega(3n);
       min-height: 160px;
       width: 31.33%;
@@ -55,31 +70,46 @@
 
 .lawmaker-info {
   bottom: 0;
-  padding: 16px;
+  padding: .5em;
   position: absolute;
   z-index: 2;
 
   p {
+    @extend %font-xs;
     margin: 0;
 
     &.lawmaker-faith {
-      @extend %font-s;
+      @extend %font-xs;
       font-family: $montserrat;
       text-transform: uppercase;
     }
+  }
+
+  @include media($lawmaker-bp-md) {
+    position: relative;
+  }
+
+  @include media($lawmaker-bp-lg) {
+    position: relative;
   }
 }
 
 
 
-.lawmaker-name {
-  @extend %font-l;
-  top: 0;
+h2.lawmaker-name {
+  @extend %font-base;
   font-family: $montserrat;
-  padding: 16px;
-  position: absolute;
   text-transform: uppercase;
   z-index: 2;
+
+  @include media($lawmaker-bp-md) {
+    font-size: .85em;
+  }
+
+  @include media($lawmaker-bp-lg) {
+    @extend %font-m;
+  }
+
 }
 
 .lawmaker-video-wrapper {

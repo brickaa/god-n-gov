@@ -1,28 +1,63 @@
 $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton paxton zedler watson perry patrick simpson button lucioJr white hughes israel turner lucioIII leach;
 
 @each $lawmaker in $list {
-  .lawmaker-layer-#{$lawmaker} {
-    @extend %bg-cover;
-    background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-bw.jpg');
-    height: 100%;
-    padding: 4.5em 0;
-    text-align: center;
-
-    @include media($default-desktop) {
-      background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
-    }
-  }
 
   .lawmaker-list a {
+
+    .lawmaker-layer-#{$lawmaker} {
+      background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-bw.jpg');
+      background-position: 30% center;
+      height: 100%;
+      padding: 2.5em 0 4.5em;
+      text-align: center;
+
+      @include media($lawmaker-bp-sm) {
+        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg-bw.jpg');
+        background-position: 50% 50%;
+        padding: 5em 0;
+      }
+
+      @include media($lawmaker-bp-md) {
+        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+        padding: 2.75em 0;
+      }
+
+      @include media($lawmaker-bp-lg) {
+        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+        padding: 3.5em 0;
+      }
+    }
+
     &:hover {
       .lawmaker-layer-#{$lawmaker} {
-        background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-red.jpg');
-        
-        @include media($default-desktop) {
-          background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-red.jpg');
+        background: 
+        linear-gradient(
+          transparentize($gg-red, .4), 
+          transparentize($gg-red, .4)
+        ),
+        url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm-bw.jpg');
+        background-position: 30% center;
+
+        @include media($lawmaker-bp-sm) {
+          background: 
+          linear-gradient(
+            rgba(255, 0, 0, .45), 
+            rgba(255, 0, 0, .45)
+          ),
+          url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg-bw.jpg');
+          background-position: 50% 50%;
+        }
+
+        @include media($lawmaker-bp-md) {
+          background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
+        }
+
+        @include media($lawmaker-bp-lg) {
+          background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sq-bw.jpg');
         }
       }
     }
   }
 }
-    
+
+

@@ -172,10 +172,10 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 .menu-chapters {
   @include clearfix();
   display: none;
-  overflow: scroll;
+  // overflow: scroll;
   padding: 0 .35em 1em;
   // margin: 0 1% .35em 0;
-  width: 98%;
+  width: 100%;
   
   @include media($menu-desktop-sm) {
     padding: 0 2em 0 1.5em;

@@ -24,20 +24,20 @@
 }
 
 .gg-page-cover-img {
-  background-image: url('{{ PATH_PREFIX }}assets/images/overview-sm.png');
+  background-image: url('{{ PATH_PREFIX }}assets/images/overview-sm.jpg');
 
   @include media($default-desktop) {
-    background-image: url('{{ PATH_PREFIX }}assets/images/overview-lg.png');
+    background-image: url('{{ PATH_PREFIX }}assets/images/overview-lg.jpg');
   }
 }
 
 @each $vid in $vid-list {
   .video-cover-img-#{$vid},
   .video-wrapper-#{$vid} {
-    background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
+    background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.jpg');
 
     @include media($default-desktop) {
-      background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-lg.png');
+      background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-lg.jpg');
     }  
   }
 }

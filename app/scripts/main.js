@@ -39,6 +39,12 @@ function videoSize() {
   $('.video-wrapper').css('min-height', $(window).height() - extraHeight);
 }
 
+function onFinish(playerID) {
+  if($('#menu-chapters').is(':hidden')) {
+    $('#menu-chapters').slideToggle(250);
+  }
+}
+
 function resize() {
   videoSize();
 }
@@ -49,6 +55,7 @@ $(document).ready(function() {
   // When player ready, add play callback
   player.addEvent('ready', function() {
     player.addEvent('play');
+    player.addEvent('finish', onFinish);
   });
 
   // Call FitVids on main container
@@ -66,6 +73,7 @@ $(document).ready(function() {
     $videoWrapper.css('visibility', 'visible');
     player.api('play');
     sendEvent('start-button-clk');
+    player.api(onFinish);
   });
 
   // Open/close menu on click. Send GA.

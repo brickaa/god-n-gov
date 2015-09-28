@@ -66,7 +66,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 }
 
 .extra-footage {
-  background-color: $gg-black;
+  background-color: transparentize($gg-red, .2);
   display: none;
   padding: .5em 1.5em;
   text-align: center;
@@ -131,7 +131,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
     @each $vid in $vid-list {
       .bg-#{$vid} {
         @extend %bg-cover-menu;
-        background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
+        background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.jpg');
       }
 
       &:hover {
@@ -141,7 +141,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
               transparentize($gg-red, .6), 
               transparentize($gg-red, .6)
             ),
-            url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
+            url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.jpg');
           background-size: cover;
           background-position: 50% 50%;       
         }

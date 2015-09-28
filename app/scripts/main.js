@@ -68,13 +68,15 @@ $(document).ready(function() {
   });
 
   // Open/close menu on click. Send GA.
-  $menuBtn.click(menuAccordion, sendEvent('menu-chpts-btn-clk'));
+  $menuBtn.click(function() {
+    menuAccordion();
+    sendEvent('menu-chpts-btn-clk');
+  });
 
   // Click main area to close menu. Send GA.
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {
       $('#menu-chapters').slideToggle(250);
-      sendEvent('main-clk-to-close-menu');
     }
   });
 
@@ -97,13 +99,17 @@ $(document).ready(function() {
      });
   });
 
-  $('#twitter-share').click(sendEvent('twitter-share-clk'));
-  $('#fb-share').click(sendEvent('fb-share-clk'));
+  $('#twitter-share').click(function() {
+    sendEvent('twitter-share-clk');
+  });
+  $('#fb-share').click(function() {
+    sendEvent('fb-share-clk');
+  });
 
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 50) {
+  if ($(this).scrollTop() > 150) {
     $('#extra-footage').fadeOut();
   }
 });

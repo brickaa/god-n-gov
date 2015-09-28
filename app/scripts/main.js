@@ -107,6 +107,7 @@ $(document).ready(function() {
   $('#twitter-share').click(function() {
     sendEvent('twitter-share-clk');
   });
+  
   $('#fb-share').click(function() {
     sendEvent('fb-share-clk');
   });

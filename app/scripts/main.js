@@ -65,11 +65,12 @@ $(document).ready(function() {
     $extraFootage.show();
     $videoWrapper.css('visibility', 'visible');
     player.api('play');
+    sendEvent('start-button-clk');
   });
 
   // Open/close menu on click. Send GA.
-  $menuBtn.click(function() {
-    menuAccordion();
+  $menuBtn.click(function(el) {
+    menuAccordion(el);
     sendEvent('menu-chpts-btn-clk');
   });
 

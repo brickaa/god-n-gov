@@ -1,4 +1,4 @@
-/* global $, $f */
+/* global $, $f, ga */
 
 var $extraFootage = $('#extra-footage'),
     $main = $('#main'),
@@ -17,16 +17,22 @@ function menuAccordion(e) {
   $menuChapters.slideToggle(250);
 }
 
-function startVideo(e) {
-  e.preventDefault();
-  $videoCover.hide();
-  videoSize();
-  $main.fitVids();
-  $videoWrapper.css('visibility', 'visible');
-  $relatedVids.show();
-  $extraFootage.show();
-  player.api('play');
-  console.log('click');
+function sendEvent(eventAction, label, value) {
+  var eventParams = {
+    hitType: 'event',
+    eventCategory: 'god-and-governing',
+    eventAction: eventAction
+  };
+
+  if (label) {
+    eventParams.eventLabel = label;
+  }
+
+  if (value) {
+    eventParams.eventValue = value;
+  }
+
+  ga('send', eventParams);
 }
 
 function videoSize() {
@@ -40,32 +46,43 @@ function resize() {
 $(document).ready(function() {
   'use strict';
 
+  // When player ready, add play callback
   player.addEvent('ready', function() {
     player.addEvent('play');
   });
 
+  // Call FitVids on main container
   $main.fitVids();
-  videoSize();
-  $videoWrapper.css('visibility', 'visible');
 
-  $startBtn.click(startVideo, function() {
+  // Size video wrapper to window
+  videoSize();
+
+  // Hide cover & start video when user clicks 'Play'
+  // Show related vids
+  $startBtn.click(function() {
     $videoCover.hide();
     $relatedVids.show();
     $extraFootage.show();
+    $videoWrapper.css('visibility', 'visible');
     player.api('play');
+    sendEvent('start-button-clk');
   });
 
-  $menuBtn.click(menuAccordion);
+  // Open/close menu on click. Send GA.
+  $menuBtn.click(function(el) {
+    menuAccordion(el);
+    sendEvent('menu-chpts-btn-clk');
+  });
 
-
+  // Click main area to close menu. Send GA.
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {
       $('#menu-chapters').slideToggle(250);
     }
   });
 
-  //lightboxes
-  $('#lawmaker-list').each(function() { // the containers for all your galleries
+  // Video lightboxes
+  $('#lawmaker-list').each(function() {
       $(this).magnificPopup({
         delegate: 'a',
         type:'iframe',
@@ -83,10 +100,22 @@ $(document).ready(function() {
      });
   });
 
+  $('#support').click(function() {
+    sendEvent('support-link-clk');
+  });
+
+  $('#twitter-share').click(function() {
+    sendEvent('twitter-share-clk');
+  });
+  
+  $('#fb-share').click(function() {
+    sendEvent('fb-share-clk');
+  });
+
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 50) {
+  if ($(this).scrollTop() > 150) {
     $('#extra-footage').fadeOut();
   }
 });

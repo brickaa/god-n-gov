@@ -20,7 +20,7 @@
   <div class="gg-prose-wrapper">
     <div class="gg-prose">
       <div class="gg-prose-block">
-        <p>The Texas Tribune interviewed 23 lawmakers with various religious and political backgrounds from across the state for this series. Watch additional clips from those interviews below.</p>
+        {{ COPY.Lawmaker_Text|safe }}
       </div>
       <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}

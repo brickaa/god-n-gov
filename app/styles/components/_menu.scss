@@ -1,7 +1,6 @@
 $menu-desktop-sm: new-breakpoint(min-width 550px);
 $menu-desktop-lg: new-breakpoint(min-width 800px);
 $menu-desktop-xlg: new-breakpoint(min-width 1080px);
-$vid-list: overview guns edu marriage life;
 
 %bg-cover-menu {
   background-position: 50% 50%; 
@@ -111,11 +110,11 @@ $vid-list: overview guns edu marriage life;
 .menu-block {
 
   @include media($menu-desktop-sm) {
-    // @include span-columns(4 of 20);
-    // @include omega(5n);
-    float: left;
-    margin-right: 1%;
-    width: 19%;
+    @include span-columns(4 of 20);
+    @include omega(5n);
+    // float: left;
+    // margin-right: 1%;
+    // width: 19%;
 
     &:last-child {
       margin-right: 0;
@@ -132,7 +131,7 @@ $vid-list: overview guns edu marriage life;
     @each $vid in $vid-list {
       .bg-#{$vid} {
         @extend %bg-cover-menu;
-        background-image: url('{{ PATH_PREFIX }}assets/images/TT-god_#{$vid}-sm.png');
+        background-image: url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
       }
 
       &:hover {
@@ -142,7 +141,7 @@ $vid-list: overview guns edu marriage life;
               transparentize($gg-red, .6), 
               transparentize($gg-red, .6)
             ),
-            url('{{ PATH_PREFIX }}assets/images/TT-god_#{$vid}-sm.png');
+            url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.png');
           background-size: cover;
           background-position: 50% 50%;       
         }
@@ -173,9 +172,9 @@ $vid-list: overview guns edu marriage life;
 .menu-chapters {
   @include clearfix();
   display: none;
-  overflow: scroll;
+  // overflow: scroll;
   padding: 0 .35em 1em;
-  margin: 0 1% .35em 0;
+  // margin: 0 1% .35em 0;
   width: 100%;
   
   @include media($menu-desktop-sm) {

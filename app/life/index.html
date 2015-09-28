@@ -15,6 +15,7 @@
     <div class="video-cover-img video-cover-img-life"></div>
     <figure class="video-cover-logo">
       <img src="{{ PATH_PREFIX }}assets/images/logos/TT-god_logo-stack.svg">
+      <h1>Life</h1>
       <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
     </figure>   
   </div>
@@ -26,9 +27,9 @@
   <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
     <div class="gg-prose">
       <header class="gg-prose-header">
-        <h2>Related Clips</h2>
+        <h2>Related Interviews</h2>
       </header>
-      <p>This is a test paragraph.</p>
+      <p>{{ COPY.Related_Text }}</p>
       <ul id="lawmaker-list" class="lawmaker-list">
         {% for x in L %}
           {% if x.SECTION == 'LIFE' %}

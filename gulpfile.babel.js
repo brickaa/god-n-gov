@@ -17,7 +17,7 @@ const args = yargs.argv;
 const bs = browserSync.create();
 
 gulp.task('jshint', () => {
-  gulp.src('./app/scripts/*.js')
+  return gulp.src('./app/scripts/*.js')
     .pipe(bs.reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
@@ -31,11 +31,11 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('images', () => {
-  gulp.src('./app/assets/images/**/*')
-    .pipe($.cache($.imagemin({
+  return gulp.src('./app/assets/images/**/*')
+    .pipe($.imagemin({
       progressive: true,
       interlaced: true
-    })))
+    }))
     .pipe(gulp.dest('./dist/assets/images'))
     .pipe($.size({title: 'images'}));
 });

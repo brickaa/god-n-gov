@@ -1,3 +1,5 @@
+$vid-list: overview guns edu marriage life;
+
 %bg-cover {
   background-position: no-repeat center center fixed; 
   background-size: cover;
@@ -7,7 +9,7 @@
 }
 
 $lawmaker-bp-sm: new-breakpoint(min-width 410px);
-$lawmaker-bp-md: new-breakpoint(min-width 835px max-width 959px);
+$lawmaker-bp-md: new-breakpoint(min-width 835px);
 $lawmaker-bp-lg: new-breakpoint(min-width 960px);
 
 /*COLORS:*/

@@ -100,6 +100,10 @@ $(document).ready(function() {
      });
   });
 
+  $('#support').click(function() {
+    sendEvent('support-link-clk');
+  });
+
   $('#twitter-share').click(function() {
     sendEvent('twitter-share-clk');
   });

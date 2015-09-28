@@ -110,11 +110,11 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 .menu-block {
 
   @include media($menu-desktop-sm) {
-    // @include span-columns(4 of 20);
-    // @include omega(5n);
-    float: left;
-    margin-right: 1%;
-    width: 19%;
+    @include span-columns(4 of 20);
+    @include omega(5n);
+    // float: left;
+    // margin-right: 1%;
+    // width: 19%;
 
     &:last-child {
       margin-right: 0;
@@ -174,8 +174,8 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
   display: none;
   overflow: scroll;
   padding: 0 .35em 1em;
-  margin: 0 1% .35em 0;
-  width: 100%;
+  // margin: 0 1% .35em 0;
+  width: 98%;
   
   @include media($menu-desktop-sm) {
     padding: 0 2em 0 1.5em;

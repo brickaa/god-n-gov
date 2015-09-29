@@ -15,7 +15,7 @@
     <div class="video-cover-img video-cover-img-overview"></div>
     <figure class="video-cover-logo">
       <img src="{{ PATH_PREFIX }}assets/images/logos/TT-god_logo-stack.svg">
-      <h1 class="tagline">A documentary series on<br/>Church and State in the Texas Legislature.</h1>
+      <h1 class="tagline">{{ COPY.Tagline }}</h1>
       <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
     </figure>   
   </div>
@@ -39,7 +39,7 @@
                 <span class="icon-TT-god_play"></span>
               </div>
               <div class="lawmaker-quote">
-                <h2>"{{ x.QUOTE }}"</h2>
+                <p>"{{ x.QUOTE }}"</p>
               </div>
               <div class="lawmaker-info lawmaker-info-wide">
                 {% if x.ID == 'nevarez' %}

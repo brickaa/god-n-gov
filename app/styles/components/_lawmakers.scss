@@ -105,24 +105,25 @@
       width: 100%;
       padding: 1em .5em;
 
+      p {
+        @extend %font-l;
+        font-family: $bookmania;
+        margin: 0;
+        text-transform: none;
+      }
+
       @include media($lawmaker-bp-md) {
         display: inline-block;
         width: 58%;
         padding: 0 1em;
-
-        h2 {
-          margin: 1em 0;
-        }
+        margin: 1em 0;
       }
 
       @include media($lawmaker-bp-lg) {
         display: inline-block;
         width: 58%;
         padding: 0 1em;
-
-        h2 {
-          margin: 1em 0;
-        }
+        margin: 1em 0;
       }
     }
 

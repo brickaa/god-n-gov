@@ -87,7 +87,7 @@
       @include media($lawmaker-bp-md) {
         @include omega(3n);
         display: inline-block;
-        min-height: 160px;
+        min-height: 180px;
         width: 40%;
         vertical-align: top;
       }
@@ -95,7 +95,7 @@
       @include media($lawmaker-bp-lg) {
         @include omega(3n);
         display: inline-block;
-        min-height: 160px;
+        min-height: 180px;
         width: 40%;
       }
     }
@@ -114,7 +114,7 @@
         &.small {
           @extend %font-m;
         }
-        
+
       }
 
       @include media($lawmaker-bp-md) {

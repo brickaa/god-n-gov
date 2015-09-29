@@ -66,6 +66,73 @@
       width: 31.33%;
     }
   }
+
+  &.lawmaker-list-wide {
+    a {
+      width: 100%;
+
+      &:hover {
+        background-color: $gg-black;
+
+        .lawmaker-info {
+          background-color: $gg-red;
+        }
+      } 
+    }
+
+    .lawmaker-hover-layer {
+      display: block;
+      min-height: 120px;
+
+      @include media($lawmaker-bp-md) {
+        @include omega(3n);
+        display: inline-block;
+        min-height: 160px;
+        width: 40%;
+        vertical-align: top;
+      }
+
+      @include media($lawmaker-bp-lg) {
+        @include omega(3n);
+        display: inline-block;
+        min-height: 160px;
+        width: 40%;
+      }
+    }
+
+    .lawmaker-quote {
+      display: block;
+      width: 100%;
+      padding: 1em .5em;
+
+      @include media($lawmaker-bp-md) {
+        display: inline-block;
+        width: 58%;
+        padding: 0 1em;
+
+        h2 {
+          margin: 1em 0;
+        }
+      }
+
+      @include media($lawmaker-bp-lg) {
+        display: inline-block;
+        width: 58%;
+        padding: 0 1em;
+
+        h2 {
+          margin: 1em 0;
+        }
+      }
+    }
+
+    .lawmaker-info-wide {
+      @include clearfix;
+      background-color: $gg-black;
+      border-top: 2px solid $gg-red;
+      position: relative;
+    }
+  }
 }
 
 .lawmaker-info {

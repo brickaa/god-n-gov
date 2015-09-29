@@ -59,7 +59,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
       z-index: -1;
 
       &:hover {
-        background-color: transparentize($gg-red, .5);
+        background-color: transparentize($gg-black, .5);
       }
     }
   }
@@ -138,8 +138,8 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
         .bg-#{$vid} {
           background: 
             linear-gradient(
-              transparentize($gg-red, .6), 
-              transparentize($gg-red, .6)
+              transparentize($gg-black, .6), 
+              transparentize($gg-black, .6)
             ),
             url('{{ PATH_PREFIX }}assets/images/#{$vid}-sm.jpg');
           background-size: cover;

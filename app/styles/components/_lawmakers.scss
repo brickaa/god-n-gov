@@ -110,6 +110,11 @@
         font-family: $bookmania;
         margin: 0;
         text-transform: none;
+
+        &.small {
+          @extend %font-m;
+        }
+        
       }
 
       @include media($lawmaker-bp-md) {

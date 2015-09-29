@@ -1,8 +1,8 @@
 .video-cover-wrapper,
 .gg-page-cover-wrapper {
   margin: 0;
-  position: absolute;
   width: 100%;
+  position: absolute;
   z-index: 1;
 }
 
@@ -21,6 +21,10 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+.video-cover-img {
+  position: fixed;
 }
 
 .gg-page-cover-img {

@@ -20,7 +20,7 @@
 <nav class="menu">
   {% if related == 'related' %}
   <div id="extra-footage" class="extra-footage">
-    <p><span class="icon-TT-god_scroll"></span>Related Interviews<span class="icon-TT-god_scroll"></span></p>
+    <p><span class="icon-TT-god_scroll"></span>Scroll to Watch Related Interviews<span class="icon-TT-god_scroll"></span></p>
   </div>
   {% endif %}
   <div id="menu-bar" class="menu-bar">
@@ -66,6 +66,15 @@
         <p>Guns</p>
       </li>
     </a>
+    <a href="{{ path_prefix }}life?utm_source=gg-menu" class="menu-block">
+      {% if active == 'life' %}
+      <li class="menu-chapter menu-video-chapter bg-life active">
+      {% else %}
+      <li class="menu-chapter menu-video-chapter bg-life">
+      {% endif %}
+        <p>Life</p>
+      </li>
+    </a>
     <a href="{{ path_prefix }}marriage?utm_source=gg-menu" class="menu-block">
       {% if active == 'marriage' %}
       <li class="menu-chapter menu-video-chapter bg-marriage active">
@@ -82,15 +91,6 @@
       <li class="menu-chapter menu-video-chapter bg-edu">
       {% endif %}
         <p>Education</p>
-      </li>
-    </a>
-    <a href="{{ path_prefix }}life?utm_source=gg-menu" class="menu-block">
-      {% if active == 'life' %}
-      <li class="menu-chapter menu-video-chapter bg-life active">
-      {% else %}
-      <li class="menu-chapter menu-video-chapter bg-life">
-      {% endif %}
-        <p>Life</p>
       </li>
     </a>
     <a href="{{ path_prefix }}lawmakers?utm_source=gg-menu" class="menu-extra">

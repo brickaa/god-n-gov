@@ -29,7 +29,6 @@
       <header class="gg-prose-header">
         <h2>Related Interviews</h2>
       </header>
-      <p>{{ COPY.Related_Text }}</p>
       <ul id="lawmaker-list" class="lawmaker-list lawmaker-list-wide">
         {% for x in L %}
           {% if x.SECTION == 'LIFE' %}
@@ -42,11 +41,7 @@
                 <div class="lawmaker-quote">
                   <p>"{{ x.QUOTE }}"</p>
                 </div>
-                {% if x.ID == 'nevarez' %}
-                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.TITLE }} {{ x.NAME }}</h2>
-                {% else %}
                 <h2 class="lawmaker-name">{{ x.TITLE }} {{ x.NAME }}</h2>
-                {% endif %}
               </div>
             </li>
           </a>

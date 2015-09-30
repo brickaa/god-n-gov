@@ -110,25 +110,20 @@
       width: 100%;
 
       p {
-        @extend %font-m;
+        font-size: 1.2em;
         font-family: $bookmania;
         margin: 0;
         text-transform: none;
-
-        &.small {
-          @extend %font-base;
-        }
-
       }
 
       @include media($lawmaker-bp-md) {
         display: inline-block;
-        margin: 1em 0;
+        margin: 0 0 1em;
       }
 
       @include media($lawmaker-bp-lg) {
         display: inline-block;
-        margin: 1em 0;
+        margin: 0 0 1em;
       }
     }
 
@@ -140,7 +135,6 @@
 
     .lawmaker-info {
       @include clearfix;
-      // color: $white;
 
       @include media($lawmaker-bp-md) {
         padding: 1em 1.5em 0;

@@ -38,17 +38,15 @@
               <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
                 <span class="icon-TT-god_play"></span>
               </div>
-              <div class="lawmaker-quote">
-                <p class="small">"{{ x.QUOTE }}"</p>
-              </div>
               <div class="lawmaker-info lawmaker-info-wide">
+                <div class="lawmaker-quote">
+                  <p class="small">"{{ x.QUOTE }}"</p>
+                </div>
                 {% if x.ID == 'nevarez' %}
-                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.NAME }}</h2>
+                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.TITLE }} {{ x.NAME }}</h2>
                 {% else %}
-                <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+                <h2 class="lawmaker-name">{{ x.TITLE }} {{ x.NAME }}</h2>
                 {% endif %}
-                <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
-                <p class="lawmaker-faith">{{ x.FAITH }}</p>
               </div>
             </li>
           </a>

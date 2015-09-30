@@ -21,7 +21,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
 
       @include media($lawmaker-bp-md) {
         background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
-        padding: 2.75em 0;
+        padding: 4.5em 0;
       }
 
       @include media($lawmaker-bp-lg) {

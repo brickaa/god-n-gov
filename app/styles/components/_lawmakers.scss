@@ -69,10 +69,13 @@
 
   &.lawmaker-list-wide {
     a {
+      background-color: $gg-gray;
+      color: $gg-black;
       width: 100%;
 
       &:hover {
-        background-color: $gg-black;
+        background-color: $gg-gray;
+        color: $gg-black;
 
         .lawmaker-info {
           background-color: $gg-red;
@@ -86,7 +89,7 @@
 
       @include media($lawmaker-bp-md) {
         @include omega(3n);
-        display: inline-block;
+        float: right;
         min-height: 180px;
         width: 40%;
         vertical-align: top;
@@ -94,56 +97,67 @@
 
       @include media($lawmaker-bp-lg) {
         @include omega(3n);
-        display: inline-block;
+        float: right;
         min-height: 180px;
         width: 40%;
       }
     }
 
     .lawmaker-quote {
+      color: $gg-black;
       display: block;
+      margin: 0 0 1em;
       width: 100%;
-      padding: 1em .5em;
 
       p {
-        @extend %font-l;
+        @extend %font-m;
         font-family: $bookmania;
         margin: 0;
         text-transform: none;
 
         &.small {
-          @extend %font-m;
+          @extend %font-base;
         }
 
       }
 
       @include media($lawmaker-bp-md) {
         display: inline-block;
-        width: 58%;
-        padding: 0 1em;
         margin: 1em 0;
       }
 
       @include media($lawmaker-bp-lg) {
         display: inline-block;
-        width: 58%;
-        padding: 0 1em;
         margin: 1em 0;
       }
     }
 
     .lawmaker-info-wide {
       @include clearfix;
-      background-color: $gg-black;
-      border-top: 2px solid $gg-red;
+      background-color: $gg-gray;
       position: relative;
+    }
+
+    .lawmaker-info {
+      @include clearfix;
+      // color: $white;
+
+      @include media($lawmaker-bp-md) {
+        padding: 1em 1.5em 0;
+        width: 60%;
+      }
+
+      @include media($lawmaker-bp-lg) {
+        padding: 1em 1.5em 0;
+        width: 60%;
+      }
     }
   }
 }
 
 .lawmaker-info {
   bottom: 0;
-  padding: .5em;
+  padding: .75em;
   position: absolute;
   z-index: 2;
 

@@ -11,7 +11,7 @@
       "ID": "burton",
       "SECTION": "OVERVIEW",
       "VIMEO": "https://vimeo.com/140220886",
-      "undefined": "LINK TO TRANSCRIPT OF ALL CLIPS https://docs.google.com/a/texastribune.org/spreadsheets/d/1EHATOWVNCOkyITsSkjDyFOvqvuGqWA28YST0DO5F4W4/edit?usp=sharing"
+      "QUOTE": "Religion, it gives you what's right and wrong."
     },
     {
       "NAME": "Angie Chen Button",
@@ -23,8 +23,7 @@
       "LOCATION": "Richardson",
       "ID": "button",
       "SECTION": "VOICES",
-      "VIMEO": "https://vimeo.com/140117742",
-      "NOTES": "take line out –AR"
+      "VIMEO": "https://vimeo.com/140117742"
     },
     {
       "NAME": "Donna Campbell",
@@ -37,8 +36,8 @@
       "ID": "campbell",
       "SECTION": "LIFE",
       "VIMEO": "https://vimeo.com/140241824",
-      "NOTES": "long blank spot at end/paz",
-      "undefined": "trimmed and replaced in VIMEO"
+      "QUOTE": "God creates life. He means for us to sustain it until natural death. Animals do not kill their young, but America does?",
+      "Alt_Quote": "I believe any society that does not respect life is destined for failure. God creates life. He means for us to sustain it until natural death."
     },
     {
       "NAME": "Glenn Hegar",
@@ -49,7 +48,8 @@
       "TITLE": "Comptroller",
       "ID": "hegar",
       "SECTION": "OVERVIEW",
-      "VIMEO": "https://vimeo.com/140215123"
+      "VIMEO": "https://vimeo.com/140215123",
+      "QUOTE": "It's not something that I try to wear on my shoulder every single day, kind of as a marker for everything that I do."
     },
     {
       "NAME": "Bryan Hughes",
@@ -61,9 +61,7 @@
       "LOCATION": "Mineola",
       "ID": "hughes",
       "SECTION": "VOICES",
-      "VIMEO": "https://vimeo.com/140245132",
-      "NOTES": "long blank spot at end",
-      "undefined": "trimmed and uploaded in VIMEO"
+      "VIMEO": "https://vimeo.com/140245132"
     },
     {
       "NAME": "Celia Israel",
@@ -88,8 +86,7 @@
       "ID": "krause",
       "SECTION": "GUNS",
       "VIMEO": "https://vimeo.com/140117137",
-      "NOTES": "crop WS, slow fade out –AR",
-      "undefined": "changes made and uploaded in VIMEO"
+      "QUOTE": "You have to have the right to protect yourself against a tyrant or a government that might seek to oppress you."
     },
     {
       "NAME": "Jeff Leach",
@@ -113,7 +110,9 @@
       "LOCATION": "Brownsville",
       "ID": "lucioIII",
       "SECTION": "EDUCATION",
-      "VIMEO": "https://vimeo.com/140228602"
+      "VIMEO": "https://vimeo.com/140228602",
+      "QUOTE": "None of us want unwanted pregnancies, and in order to cut down on those number of things, we need to be realistic in the conversations we need to be having with children.",
+      "Alt_Quote": "Sometimes those who have very strong religious convictions and go to church every day don't even talk about safe sex and other realities."
     },
     {
       "NAME": "Eddie Lucio Jr.",
@@ -126,8 +125,7 @@
       "ID": "lucioJr",
       "SECTION": "LIFE",
       "VIMEO": "https://vimeo.com/140209316",
-      "NOTES": "extend out end shot –AR",
-      "undefined": "changes made and uploaded in VIMEO"
+      "QUOTE": "I can't prejudge why those thing happen, heinous crimes, but all I can say is that, even those that kill should not be killed."
     },
     {
       "NAME": "Sid Miller",
@@ -138,7 +136,8 @@
       "TITLE": "Agriculture Commissioner",
       "ID": "miller",
       "SECTION": "LIFE",
-      "VIMEO": "https://vimeo.com/140116978"
+      "VIMEO": "https://vimeo.com/140116978",
+      "QUOTE": "Where you stand on the life issue I think tells about your character, tells you where your heart is."
     },
     {
       "NAME": "Elliott Naishtat",
@@ -151,8 +150,7 @@
       "ID": "naishtat",
       "SECTION": "OVERVIEW",
       "VIMEO": "https://vimeo.com/140116845",
-      "NOTES": "audio sounds muddy/paz",
-      "undefined": "source mic was choppy. his office was also on the ground level and had some interference"
+      "QUOTE": "Health, human services, welfare — what tzedakah and hukum alam are all about, that's what I focus on."
     },
     {
       "NAME": "\"Poncho\" Nevárez",
@@ -165,7 +163,7 @@
       "ID": "nevarez",
       "SECTION": "GUNS",
       "VIMEO": "https://vimeo.com/140116702",
-      "NOTES": "adjust WS color, audio click end –AR"
+      "QUOTE": "I don't see how wearing your gun outside your belt will make you more faith driven or prosperous."
     },
     {
       "NAME": "Dan Patrick",
@@ -176,7 +174,8 @@
       "TITLE": "Lt. Governor",
       "ID": "patrick",
       "SECTION": "EDUCATION",
-      "VIMEO": "https://vimeo.com/140116214"
+      "VIMEO": "https://vimeo.com/140116214",
+      "QUOTE": "People who believe that values and principles and the word of God has been pushed aside in schools, I understand their concern."
     },
     {
       "NAME": "Ken Paxton",
@@ -199,7 +198,8 @@
       "LOCATION": "Lubbock",
       "ID": "perry",
       "SECTION": "MARRIAGE",
-      "VIMEO": "https://vimeo.com/140252191"
+      "VIMEO": "https://vimeo.com/140252191",
+      "QUOTE": "I'm not going to judge a man's heart, they may be very happy. I don't know. But does that reach the level of joy that I get as a heterosexual under the confines of what God ordained? I wouldn't think so."
     },
     {
       "NAME": "Matt Schaefer",
@@ -211,8 +211,7 @@
       "LOCATION": "Plano",
       "ID": "schaefer",
       "SECTION": "LIFE BACKUP",
-      "VIMEO": "https://vimeo.com/140116213",
-      "NOTES": "brighten WS –AR"
+      "VIMEO": "https://vimeo.com/140116213"
     },
     {
       "NAME": "David Simpson",
@@ -224,8 +223,7 @@
       "LOCATION": "Longview",
       "ID": "simpson",
       "SECTION": "VOICES",
-      "VIMEO": "https://vimeo.com/140115956",
-      "NOTES": "brighten, slow fade out, audio  –AR"
+      "VIMEO": "https://vimeo.com/140115956"
     },
     {
       "NAME": "Jonathan Stickland",
@@ -238,7 +236,7 @@
       "ID": "stickland",
       "SECTION": "GUNS",
       "VIMEO": "https://vimeo.com/140115662",
-      "NOTES": "audio click –AR"
+      "QUOTE": "It's been pretty hypocritical of a lot of 'pro-gun' people that someone commits a felony, they go to prison, they serve their time, we send them back into society, but we say, 'You now don't have the right to defend yourself.'"
     },
     {
       "NAME": "Sylvester Turner",
@@ -250,7 +248,9 @@
       "LOCATION": "Houston",
       "ID": "turner",
       "SECTION": "EDUCATION",
-      "VIMEO": "https://vimeo.com/140241567"
+      "VIMEO": "https://vimeo.com/140241567",
+      "QUOTE": "If it means spending the dollars to make sure that the education system is a quality one, to help them be productive, to utilize their gifts and their talents, then you give them a quality education.",
+      "Alt_Quote": "I can't see a kid that's in need and walk on the other side. And I can't treat a kid as if, you're not my biological kid so I don't have to do anything for you. My obligation is to assist you."
     },
     {
       "NAME": "Kirk Watson",
@@ -262,7 +262,8 @@
       "LOCATION": "Austin",
       "ID": "watson",
       "SECTION": "MARRIAGE",
-      "VIMEO": "https://vimeo.com/140193562"
+      "VIMEO": "https://vimeo.com/140193562",
+      "QUOTE": "I don't accept the inability of others to recognize that people can love one another, that people can have committed relationships, that they can be married in a union that's as powerful as a male-female union."
     },
     {
       "NAME": "James White",
@@ -287,17 +288,15 @@
       "ID": "zedler",
       "SECTION": "MARRIAGE",
       "VIMEO": "https://vimeo.com/140115546",
-      "NOTES": "slow fade out –AR"
-    },
-    {
-      "undefined": "*Lawmakers in BOLD are not included anywhere else in the project. There are only four of them."
+      "QUOTE": "Once you start redefining marriage based on whether they love each other or something like that, once you start doing that you open up the gate to everything.",
+      "Alt_Quote": "Fundamentally what it boils down to is an attack on the family."
     }
   ],
   "COPY": {
     "Lawmaker_Text": "<p>During and after the 2015 legislative session, The Texas Tribune invited numerous legislators and state officials to discuss how God and faith influenced their decisions and debates. Below are key excerpts from the 23 who agreed to be interviewed. Their full remarks can be found <a href=\"https://www.youtube.com/playlist?list=PLJ0QpNyUHKi62VCCOPIY-U6qdVEIiZR4M\">here</a>.</p>\n",
     "About_Text": "<p>The God &amp; Governing project emerged during the 2015 session of the Texas Legislature, as it became evident that discussions of God and faith were underscoring a greater share of political discourse — and disagreement — than in the recent past. The Tribune invited lawmakers to discuss how faith influenced their public policy decisions.</p>\n",
     "Related_Text": "More thoughts from lawmakers on this topic.",
-    "Tagline": ""
+    "Tagline": "A documentary series on how Texas legislators' religious beliefs guide their lawmaking"
   },
   "VIDEO_IDS": {
     "Overview": 140111963,

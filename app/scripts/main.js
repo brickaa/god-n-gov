@@ -67,6 +67,7 @@ $(document).ready(function() {
   // Hide cover & start video when user clicks 'Play'
   // Show related vids
   $startBtn.click(function() {
+    $('.masthead').css('position', 'relative');
     $videoCover.hide();
     $relatedVids.show();
     $extraFootage.show();

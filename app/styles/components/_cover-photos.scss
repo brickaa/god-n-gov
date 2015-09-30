@@ -1,8 +1,8 @@
 .video-cover-wrapper,
 .gg-page-cover-wrapper {
   margin: 0;
-  position: absolute;
   width: 100%;
+  position: absolute;
   z-index: 1;
 }
 
@@ -21,6 +21,10 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+.video-cover-img {
+  position: fixed;
 }
 
 .gg-page-cover-img {
@@ -45,7 +49,7 @@
 .video-cover-logo {
   left: 0;
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 85%;
   padding: 0 2em;
   position: absolute;
   right: 0;
@@ -53,7 +57,7 @@
   top: 20%;
 
   @include media($default-desktop) {
-    max-width: 50%;
+    max-width: 60%;
   }
 
   h1 {
@@ -66,9 +70,11 @@
     @include media($default-desktop) {
       font-size: 3.5em;
     }
-    
+
     &.tagline {
-      font-size: 1.1em;
+      font-size: 1.4em;
+      line-height: 1.4;
+      text-transform: none;
     }
   }
 }

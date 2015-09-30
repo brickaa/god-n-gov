@@ -7,6 +7,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
     .lawmaker-layer-#{$lawmaker} {
       background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
       background-position: 30% center;
+      background-size: cover;
       height: 100%;
       padding: 2.5em 0 4.5em;
       text-align: center;
@@ -14,6 +15,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
       @include media($lawmaker-bp-sm) {
         background-image: url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg.jpg');
         background-position: 50% 50%;
+        background-size: cover;
         padding: 5em 0;
       }
 
@@ -40,6 +42,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
           background-position: 75% center;
+          background-size: cover;
 
           @include media($lawmaker-bp-sm) {
             background: 
@@ -49,6 +52,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg.jpg');
             background-position: 75% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-md) {
@@ -59,6 +63,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
             background-position: 75% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-lg) {
@@ -68,7 +73,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
               transparentize($gg-black, .85)
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
-            background-position: 75% 50%;        
+            background-position: 75% 50%;
+            background-size: cover;        
           }
         }
       } 
@@ -85,6 +91,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
           background-position: 0% center;
+          background-size: cover;
 
           @include media($lawmaker-bp-sm) {
             background: 
@@ -94,6 +101,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg.jpg');
             background-position: 25% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-md) {
@@ -104,6 +112,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
             background-position: 25% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-lg) {
@@ -113,7 +122,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
               transparentize($gg-black, .85)
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
-            background-position: 25% 50%;        
+            background-position: 25% 50%;
+            background-size: cover;        
           }
         }
       }
@@ -126,6 +136,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
           ),
           url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
           background-position: 30% center;
+          background-size: cover;
 
           @include media($lawmaker-bp-sm) {
             background: 
@@ -135,6 +146,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-lg.jpg');
             background-position: 50% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-md) {
@@ -145,6 +157,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
             background-position: 50% 50%;
+            background-size: cover;
           }
 
           @include media($lawmaker-bp-lg) {
@@ -154,7 +167,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
               transparentize($gg-black, .85)
             ),
             url('{{ PATH_PREFIX }}assets/images/lawmakers/#{$lawmaker}-sm.jpg');
-            background-position: 50% 50%;        
+            background-position: 50% 50%;
+            background-size: cover;        
           }
         }
 
@@ -169,9 +183,11 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
   .lawmaker-layer-nevarez,
   .lawmaker-layer-watson {
     background-position: 75% center;
+    background-size: cover;
 
     @include media($lawmaker-bp-sm) {
       background-position: 75% 50%;
+      background-size: cover;
     }
 
     @include media($lawmaker-bp-md) {
@@ -189,9 +205,11 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
   .lawmaker-layer-schaefer,
   .lawmaker-layer-white {
     background-position: 0% center;
+    background-size: cover;
 
     @include media($lawmaker-bp-sm) {
       background-position: 25% 50%;
+      background-size: cover;
     }
 
     @include media($lawmaker-bp-md) {

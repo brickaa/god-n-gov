@@ -16,3 +16,34 @@
 .inverse {
   background-color: $gg-black;
 }
+
+
+.mailchimp_form {
+  color: $white;
+  font-family: $bookmania;
+  font-size: 1.1em;
+  margin: 1.5em 0;
+
+  .mc-field-group {
+    width: 100%;
+    text-align: left;
+  }
+
+  .email-label,
+  .response  {
+    text-align: left;
+    padding: .5em 0 0;
+    line-height: 1.3;
+  }
+
+  .email{
+    color: $gg-black;
+    margin: 1em 0 .5em;
+    padding: .25em;
+    width: 100%;
+  }
+
+  .video-cover-btn {
+    margin: .5em 0;
+  }
+}

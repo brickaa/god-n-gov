@@ -72,9 +72,13 @@
     }
 
     &.tagline {
-      font-size: 1.4em;
+      font-size: 1.1em;
       line-height: 1.4;
       text-transform: none;
+
+      @include media($default-desktop) {
+        font-size: 1.4em;
+      }
     }
   }
 }
@@ -105,5 +109,8 @@
 }
 
 .video-frame {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 5%;
+
 }

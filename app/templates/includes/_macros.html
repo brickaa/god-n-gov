@@ -3,7 +3,11 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@texastribune">
   <meta name="twitter:creator" content="@texastribune">
-  <meta property="og:url" content="http://apps.texastribune.org/god-and-governing/{{ page }}">
+  {% if page == 'overview' %}
+  <meta property="og:url" content="http://apps.texastribune.org/god-and-governing/">
+  {% else %}
+  <meta property="og:url" content="http://apps.texastribune.org/god-and-governing/{{ page }}/">
+  {% endif %}
   <meta property="og:title" content="God and Governing | The Texas Tribune">
   {% if page == 'lawmakers' %}
   <meta property="og:description" content="{{ data.Lawmakers_FB|safe }}">
@@ -19,7 +23,7 @@
   <meta property="og:description" content="{{ data.Overview_FB|safe }}">
   {% endif %}
   <meta property="og:site_name" content="The Texas Tribune">
-  <meta property="og:image" content="http://apps.texastribune.org/god-and-governing/assets/images/TT-god-fb-graphic.png">
+  <meta property="og:image" content="http://apps.texasgtribune.org/god-and-governing/assets/images/TT-god-fb-graphic.png">
   <meta property="fb:app_id" content="154122474650943">
 {% endmacro %}
 

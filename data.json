@@ -125,7 +125,7 @@
       "ID": "lucioJr",
       "SECTION": "LIFE",
       "VIMEO": "https://vimeo.com/140209316",
-      "QUOTE": "I can't prejudge why those thing happen, heinous crimes, but all I can say is that, even those that kill should not be killed."
+      "QUOTE": "I can't prejudge why those thing happen, heinous crimes, but all I can say is that even those that kill should not be killed."
     },
     {
       "NAME": "Sid Miller",
@@ -249,7 +249,7 @@
       "ID": "turner",
       "SECTION": "EDUCATION",
       "VIMEO": "https://vimeo.com/140241567",
-      "QUOTE": "I can't see a kid that's in need and walk on the other side... My obligation is to assist you.",
+      "QUOTE": "I can't see a kid that's in need and walk on the other side...My obligation is to assist you.",
       "Alt_Quote": "I can't see a kid that's in need and walk on the other side. And I can't treat a kid as if, you're not my biological kid so I don't have to do anything for you. My obligation is to assist you."
     },
     {
@@ -296,7 +296,19 @@
     "Lawmaker_Text": "<p>During and after the 2015 legislative session, The Texas Tribune invited numerous legislators and state officials to discuss how God and faith influenced their decisions and debates. Below are key excerpts from the 23 who agreed to be interviewed. Their full remarks can be found <a href=\"https://www.youtube.com/playlist?list=PLJ0QpNyUHKi62VCCOPIY-U6qdVEIiZR4M\">here</a>.</p>\n",
     "About_Text": "<p>The God &amp; Governing project emerged during the 2015 session of the Texas Legislature, as it became evident that discussions of God and faith were underscoring a greater share of political discourse — and disagreement — than in the recent past. The Tribune invited lawmakers to discuss how faith influenced their public policy decisions.</p>\n<p>ADD PARTNERSHIP LINE</p>\n",
     "Related_Text": "More thoughts from lawmakers on this topic.",
-    "Tagline": "A documentary series on how Texas legislators' religious beliefs guide their lawmaking"
+    "Tagline": "A documentary series on how Texas legislators' religious beliefs guide their lawmaking",
+    "Overview_TW": "God & Governing: A video series on faith and lawmaking from @TexasTribune http://apps.texastribune.org/god-and-governing/ #txlege",
+    "Overview_FB": "God & Governing: A documentary-style series from The Texas Tribune on the role legislators' personal faith plays in their policymaking. http://apps.texastribune.org/god-and-governing/",
+    "Guns_TW": "God & Guns: A @TexasTribune video on how lawmakers' faith played in the #txlege gun rights debate. http://apps.texastribune.org/god-and-governing/guns/",
+    "Guns_FB": "God & Guns: A Texas Tribune video on how lawmakers' personal faith played in the gun rights debate during the 2015 Texas Legislature. http://apps.texastribune.org/god-and-governing/guns/",
+    "Life_TW": "God & Life: A @TexasTribune video on how lawmakers' faith guides the #txlege abortion fight. http://apps.texastribune.org/god-and-governing/life/",
+    "Life_FB": "God & Life: A Texas Tribune video on how lawmakers' personal faith guides the abortion fight in the Texas Legislature. http://apps.texastribune.org/god-and-governing/life/",
+    "Edu_TW": "God & Education: A Texas Tribune video on how lawmakers' personal faith drives their stance on education. http://apps.texastribune.org/god-and-governing/education/",
+    "Edu_FB": "God & Education: A Texas Tribune video on how lawmakers' personal faith drives their stance on abstinence-only education and school vouchers. http://apps.texastribune.org/god-and-governing/education/",
+    "Marriage_TW": "God & Marriage: A @TexasTribune video on how lawmakers' faith drove the same-sex marriage fight during 2015 #txlege. http://apps.texastribune.org/god-and-governing/marriage/",
+    "Marriage_FB": "God & Marriage: A Texas Tribune video on how lawmakers' faith drove the same-sex marriage battle during the 2015 Texas Legislature. http://apps.texastribune.org/god-and-governing/marriage/",
+    "Lawmakers_TW": "God & Governing: Hear from two-dozen #txlege lawmakers on how their faith guides their policymaking. http://apps.texastribune.org/god-and-governing/lawmakers/",
+    "Lawmakers_FB": "God & Governing: Hear from two-dozen Texas lawmakers on how their faith guides their policymaking, from abortion and same-sex marriage to school vouchers and the death penalty. http://apps.texastribune.org/god-and-governing/lawmakers/ "
   },
   "VIDEO_IDS": {
     "Overview": 140111963,

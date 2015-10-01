@@ -21,7 +21,7 @@
   </div>
   <div class="video-wrapper video-wrapper-life">
     <div class="video-frame">
-      <iframe id="player1" src="http://player.vimeo.com/video/{{ VIDEO_IDS.Life }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe id="player1" src="http://player.vimeo.com/video/{{ VIDEO_IDS.Life }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen height="720px" width="1280px"></iframe>
     </div>
   </div>
   <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
@@ -29,7 +29,6 @@
       <header class="gg-prose-header">
         <h2>Related Interviews</h2>
       </header>
-      <p>{{ COPY.Related_Text }}</p>
       <ul id="lawmaker-list" class="lawmaker-list lawmaker-list-wide">
         {% for x in L %}
           {% if x.SECTION == 'LIFE' %}
@@ -38,17 +37,11 @@
               <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
                 <span class="icon-TT-god_play"></span>
               </div>
-              <div class="lawmaker-quote">
-                <p>"{{ x.QUOTE }}"</p>
-              </div>
               <div class="lawmaker-info lawmaker-info-wide">
-                {% if x.ID == 'nevarez' %}
-                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.NAME }}</h2>
-                {% else %}
-                <h2 class="lawmaker-name">{{ x.NAME }}</h2>
-                {% endif %}
-                <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
-                <p class="lawmaker-faith">{{ x.FAITH }}</p>
+                <div class="lawmaker-quote">
+                  <p>"{{ x.QUOTE }}"</p>
+                </div>
+                <h2 class="lawmaker-name">{{ x.TITLE }} {{ x.NAME }}</h2>
               </div>
             </li>
           </a>

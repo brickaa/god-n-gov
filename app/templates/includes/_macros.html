@@ -1,19 +1,19 @@
 {% macro meta(page) %}
-  <link rel="icon" href="http://apps.texastribune.org.s3.amazonaws.com/favicon.ico">
+  <link rel="icon" href="http://moose.texastribune.org.s3.amazonaws.com/favicon.ico">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@texastribune">
   <meta name="twitter:creator" content="@texastribune">
-  <meta property="og:url" content="{{ PATH_FULL }}{{ page }}">
+  <meta property="og:url" content="https://moose.texastribune.org/god-and-governing/{{ page }}">
   <meta property="og:title" content="God and Governing | The Texas Tribune">
   <meta property="og:type" content="article">
   <meta property="og:description" content="Church and State in the Texas Legislature.">
   <meta property="og:site_name" content="The Texas Tribune">
-  <meta property="og:image" content="{{ PATH_FULL }}assets/images/TT-god-fb-graphic.png">
+  <meta property="og:image" content="https://apps.texastribune.org/god-and-governing/assets/images/TT-god-fb-graphic.png">
   <meta property="fb:app_id" content="154122474650943">
 {% endmacro %}
 
 {% macro fb(slug) %} 
-<a class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F&amp;redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+<a class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F&amp;redirect_uri=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 {% endmacro %}
 
 {% macro menu(path_prefix, active, related) %}
@@ -30,14 +30,14 @@
     </div>
     <div class="menu-bar-right">
       {% if active == 'overview' %}
-      <a id="twitter-share" href="https://twitter.com/intent/tweet?text=God%20and%20Governing%3A%20A%20video%20series%20from%20%40TexasTribune%20http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F" title="share on Twitter" class="social-share" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
+      <a id="twitter-share" href="https://twitter.com/intent/tweet?text=God%20and%20Governing%3A%20A%20video%20series%20from%20%40TexasTribune%20http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F" title="share on Twitter" class="social-share" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
       {% else %}
-      <a id="twitter-share" href="https://twitter.com/intent/tweet?text=God%20and%20Governing%20%7C%20{{ active|title }}%3A%20A%20video%20series%20from%20%40TexasTribune%20http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F" title="share on Twitter" class="social-share" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
+      <a id="twitter-share" href="https://twitter.com/intent/tweet?text=God%20and%20Governing%20%7C%20{{ active|title }}%3A%20A%20video%20series%20from%20%40TexasTribune%20http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F" title="share on Twitter" class="social-share" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_twitter"></span></a>
       {% endif %}
       {% if active == 'overview' %}
-      <a id="fb-share" class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F&amp;redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F" title="Share on Facebook" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
+      <a id="fb-share" class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F&amp;redirect_uri=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F" title="Share on Facebook" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
       {% else %}
-      <a id="fb-share" class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F&amp;redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F" title="Share on Facebook" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
+      <a id="fb-share" class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F&amp;redirect_uri=http%3A%2F%2Fmoose.texastribune.org%2Fgod-and-governing%2F{{ active }}%2F" title="Share on Facebook" target="_blank"><span class="menu-icon menu-icon-share icon-TT-god_facebook"></span></a>
       {% endif %}
       <div class="menu-extra-links">
         <span class="icon-TT-god_dash menu-icon"></span>

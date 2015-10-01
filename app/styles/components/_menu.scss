@@ -68,7 +68,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 .extra-footage {
   background-color: transparentize($gg-red, .2);
   display: none;
-  padding: .5em 1.5em;
+  padding: .5em;
   text-align: center;
 
   p { 
@@ -81,7 +81,15 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 
   span {
     font-size: .8em;
-    padding: 0 3em;
+    padding: 0 .5em;
+    
+    @include media($menu-desktop-sm) {
+      padding: 0 3em;
+    }
+  }
+
+  @include media($menu-desktop-sm) {
+    padding: .5em 1.5em;
   }
 }
 
@@ -255,7 +263,7 @@ $menu-desktop-xlg: new-breakpoint(min-width 1080px);
 }
 
 .menu-icon-share {
-  padding: 0 24px;
+  padding: 0 14px;
 
   @include media($menu-desktop-sm) {
     padding: 0 14px;

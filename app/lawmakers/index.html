@@ -2,7 +2,7 @@
 {% import 'includes/_macros.html' as macro %}
 
 {% block meta %}
-  {{ macro.meta('Lawmakers') }}
+  {{ macro.meta(COPY, 'lawmakers') }}
 {% endblock %}
 
 {% block styles %}
@@ -45,7 +45,7 @@
     </div>
   </div>
 </section>
-{{ macro.menu(PATH_PREFIX, 'lawmakers') }}
+{{ macro.menu(PATH_PREFIX, COPY, 'lawmakers') }}
 
 {% endblock %}
 

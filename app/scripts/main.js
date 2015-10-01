@@ -55,6 +55,7 @@ $(document).ready(function() {
   // When player ready, add play callback
   player.addEvent('ready', function() {
     player.addEvent('play');
+    player.addEvent('pause');
     player.addEvent('finish', onFinish);
   });
 
@@ -107,6 +108,10 @@ $(document).ready(function() {
           enabled: true
         }
      });
+
+      $(this).click(function() {
+        player.api('pause');
+      });
   });
 
   $('#support').click(function() {

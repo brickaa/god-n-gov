@@ -1,16 +1,18 @@
-{% macro meta(page) %}
+
+
+{% macro meta(data) %}
   <link rel="icon" href="http://apps.texastribune.org.s3.amazonaws.com/favicon.ico">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@texastribune">
   <meta name="twitter:creator" content="@texastribune">
-  <meta property="og:url" content="{{ PATH_FULL }}{{ page }}">
-  <meta property="og:title" content="God and Governing{% if page %}: {{ page }}{% endif %} | The Texas Tribune">
-  <meta property="og:type" content="article">
-  <meta property="og:description" content="Church and State in the Texas Legislature.">
+  <meta property="og:url" content="http://apps.texastribune.org/god-and-governing/">
+  <meta property="og:title" content="God and Governing | The Texas Tribune">
+  <meta property="og:description" content="{{ data.Overview_FB|safe }}">
   <meta property="og:site_name" content="The Texas Tribune">
-  <meta property="og:image" content="{{ PATH_FULL }}assets/images/test.jpg">
+  <meta property="og:image" content="http://apps.texasgtribune.org/god-and-governing/assets/images/TT-god-fb-graphic.png">
   <meta property="fb:app_id" content="154122474650943">
 {% endmacro %}
+
 
 {% macro fb(slug) %} 
 <a class="share" href="https://www.facebook.com/dialog/share?app_id=154122474650943&amp;display=popup&amp;href=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F&amp;redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fgod-and-governing%2F{{ slug }}%2F" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>

@@ -11,37 +11,37 @@
 
 {% block content %}
 <section id="main" class="main">
-  <div class="gg-page-cover-wrapper">
-    <div class="gg-page-cover-img"></div>
-  </div>
-  <div class="gg-prose-wrapper">
-    <div class="gg-prose">
-      <header class="gg-prose-header">
-        <h1>Lawmakers</h1>  
-      </header>
-      <div class="gg-prose-block">
-        {{ COPY.Lawmaker_Text|safe }}
+  <div id="video-cover-wrapper" class="video-cover-wrapper">
+    <div class="video-cover-img video-cover-img-overview"></div> 
+    <div class="gg-prose-wrapper">
+      <div class="gg-prose">
+        <header class="gg-prose-header gg-prose-header-top">
+          <h1>Lawmakers</h1>  
+        </header>
+        <div class="gg-prose-block">
+          {{ COPY.Lawmaker_Text|safe }}
+        </div>
+        <ul id="lawmaker-list" class="lawmaker-list">
+          {% for x in L %}
+            <a href="{{ x.VIMEO }}">
+              <li id="{{ x.ID }}" class="lawmaker-info-box">
+                <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
+                  <span class="icon-TT-god_play"></span>
+                </div>
+                <div class="lawmaker-info">
+                  {% if x.ID == 'nevarez' %}
+                  <h2 class="lawmaker-name lawmaker-name-sm">{{ x.NAME }}</h2>
+                  {% else %}
+                  <h2 class="lawmaker-name">{{ x.NAME }}</h2>
+                  {% endif %}
+                  <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
+                  <p class="lawmaker-faith">{{ x.FAITH }}</p>
+                </div>
+              </li>
+            </a>
+          {% endfor %}
+        </ul>
       </div>
-      <ul id="lawmaker-list" class="lawmaker-list">
-        {% for x in L %}
-          <a href="{{ x.VIMEO }}">
-            <li id="{{ x.ID }}" class="lawmaker-info-box">
-              <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
-                <span class="icon-TT-god_play"></span>
-              </div>
-              <div class="lawmaker-info">
-                {% if x.ID == 'nevarez' %}
-                <h2 class="lawmaker-name lawmaker-name-sm">{{ x.NAME }}</h2>
-                {% else %}
-                <h2 class="lawmaker-name">{{ x.NAME }}</h2>
-                {% endif %}
-                <p>{{ x.TITLE }}, {{ x.PARTY }}{% if x.LOCATION %}-{{ x.LOCATION }}{% endif %}</p>
-                <p class="lawmaker-faith">{{ x.FAITH }}</p>
-              </div>
-            </li>
-          </a>
-        {% endfor %}
-      </ul>
     </div>
   </div>
 </section>

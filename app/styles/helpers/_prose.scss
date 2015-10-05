@@ -1,11 +1,12 @@
 .gg-prose-wrapper {
-  background-color: $white;
+  background-color: transparentize($white, .15);
   position: absolute;
   margin: 0 0 3em;
   width: 100%;
 }
 
 .gg-prose {
+  // background-color: transparentize($white, .1);
   margin: 0 auto;
   max-width: 900px;
   padding: 1em 1.5em 2em;
@@ -66,6 +67,11 @@
   margin: 2em 0 1em;
 }
 
+.gg-prose-header-top {
+  h1 {
+    margin: 3em 0 1em;
+  }
+}
 .gg-prose-block {
   margin: 0 0 2.5em;
 
@@ -76,19 +82,32 @@
     margin: 0 0 2em;
 
     a {
-      color: $gg-black;
+      color: $gg-red;
       padding: 0 0 .1em 0;
 
       &:hover {
         color: $gg-red;
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
 
     li {
       margin: .25em 0 .5em;
     }
+  }
 
+  .inline {
+    ul {
+      a {
+        color: $gg-black;
+        padding: 0 0 .1em 0;
+
+        &:hover {
+          color: $gg-red;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 

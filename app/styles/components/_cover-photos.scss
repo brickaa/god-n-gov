@@ -46,13 +46,17 @@
   }
 }
 
-.video-cover-logo {
+.video-cover-logo,
+.gg-prose-wrapper {
   left: 0;
   margin: 0 auto;
-  max-width: 85%;
-  padding: 0 2em;
   position: absolute;
   right: 0;
+}
+
+.video-cover-logo {
+  max-width: 85%;
+  padding: 0 2em;
   text-align: center;
   top: 20%;
 

@@ -7,90 +7,94 @@
 {% block content %}
 {% import 'includes/_macros.html' as macro %}
 <section id="main" class="main">
-  <div class="gg-page-cover-wrapper">
-    <div class="gg-page-cover-img"></div>
-  </div>
-  <div class="gg-prose-wrapper">
-    <div class="gg-prose">
-      <header class="gg-prose-header">
-        <h1 class="">About</h1>
-      </header>
-      <div class="gg-prose-block gg-prose-about">
-        {{ COPY.About_Text|safe }}
-      </div>
-      <div class="gg-prose-block">
-        <header>
-          <h1>Enjoy this series?</h1>
+
+  <div id="video-cover-wrapper" class="video-cover-wrapper">
+    <div class="video-cover-img video-cover-img-overview"></div>   
+    <div class="gg-prose-wrapper">
+      <div class="gg-prose">
+        <header class="gg-prose-header gg-prose-header-top">
+          <h1>About God &amp; Governing</h1>
         </header>
-        <p>Projects like God and Governing are made possible by Texas Tribune members and donors. Please support our nonprofit newsroom by making a donation <a id="#support" href="http://support.texastribune.org/">here</a> and subscribe to TribWeek, a weekly roundup of The Texas Tribune's latest content:</p>
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup" class="mailchimp_form">
-          <form action="//texastribune.us3.list-manage.com/subscribe/post?u=3d0ce87edeeb6df90043897db&amp;id=141c96f7df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-           <div id="mc_embed_signup_scroll">
-             <div class="mc-field-group">
-               <input type="email" placeholder="Email address" name="EMAIL" class="required email" id="mce-EMAIL">
-             </div>
-             <div id="mce-responses" class="clear">
-               <div class="response" id="mce-error-response" style="display:none"></div>
-               <div class="response" id="mce-success-response" style="display:none"></div>
-             </div>
-              <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="video-cover-btn ghost-button-red mc-signup"></div>   
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_3d0ce87edeeb6df90043897db_141c96f7df" tabindex="-1" value=""></div>
-            </div>
-          </form>
-        </div>
-         <!--End mc_embed_signup-->
-      </div>
-      <div class="gg-prose-block gg-prose-about">
-        <header class="gg-prose-header">
-          <h1>Check your local listings</h1>  
-        </header>
-        {{ COPY.LocalListings_Text|safe }}
-      </div>
-      <div class="gg-prose-block">
-        <header class="gg-prose-header">
-          <h1>Project Contributors</h1>  
-        </header>
-        <div class="inline">
-          <header>
-            <h3>Editorial</h3>
-          </header>
-          <ul>
-            <li><a href="http://www.texastribune.org/about/staff/justin-dehn/" target="_blank">Justin Dehn</a></li>
-            <li><a href="http://www.texastribune.org/about/staff/david-pasztor/" target="_blank">David Pasztor</a></li>
-            <li><a href="http://www.texastribune.org/about/staff/rocha-alana/" target="_blank">Alana Rocha</a></li>
-            <li><a href="http://www.texastribune.org/about/staff/twiseman/" target="_blank">Todd Wiseman</a></li>
-          </ul>
-        </div>
-        <div class="inline">
-          <header>
-            <h3>Design</h3>
-          </header>
-          <ul>
-            <li><a href="http://www.texastribune.org/about/staff/becca-aaronson/" target="_blank">Becca Aaronson</a></li>
-            <li><a href="http://www.texastribune.org/about/staff/emily-albracht/" target="_blank">Emily Albracht</a></li>
-          </ul>
-        </div>
-        <div class="inline">
-          <header>
-            <h3>Photography</h3>
-          </header>
-          <ul>
-            <li>Ryan Booth</li>
-            <li>Charlie Pearce</li>
-            <li>Gabriel Crist&#243;ver P&#233;rez</li>
-          </ul>
+        <div class="gg-prose-block gg-prose-about">
+          {{ COPY.About_Text|safe }}
         </div>
         <div class="gg-prose-block">
           <header>
-            <h3>Music</h3>
+            <h1>Enjoy this series?</h1>
           </header>
-          <p>“Biology Slides” by Bleak House, “Cylinder Five” by Chris Zabriskie, “Led by the Dress Colored in Red” by Augustus Bro &amp; Gallery Six.</p>
+          <p>Projects like God and Governing are made possible by Texas Tribune members and donors. Please support our nonprofit newsroom by making a donation <a id="#support" href="http://support.texastribune.org/">here</a> and subscribe to TribWeek, a weekly roundup of The Texas Tribune's latest content:</p>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup" class="mailchimp_form">
+            <form action="//texastribune.us3.list-manage.com/subscribe/post?u=3d0ce87edeeb6df90043897db&amp;id=141c96f7df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+             <div id="mc_embed_signup_scroll">
+               <div class="mc-field-group">
+                 <input type="email" placeholder="Email address" name="EMAIL" class="required email" id="mce-EMAIL">
+               </div>
+               <div id="mce-responses" class="clear">
+                 <div class="response" id="mce-error-response" style="display:none"></div>
+                 <div class="response" id="mce-success-response" style="display:none"></div>
+               </div>
+                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="video-cover-btn ghost-button-red mc-signup"></div>   
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3d0ce87edeeb6df90043897db_141c96f7df" tabindex="-1" value=""></div>
+              </div>
+            </form>
+          </div>
+           <!--End mc_embed_signup-->
+        </div>
+        <div class="gg-prose-block gg-prose-about">
+          <header class="gg-prose-header">
+            <h1>Check your local listings</h1>  
+          </header>
+          {{ COPY.LocalListings_Text|safe }}
+        </div>
+        <div class="gg-prose-block">
+          <header class="gg-prose-header">
+            <h1>Project Contributors</h1>  
+          </header>
+          <div class="inline">
+            <header>
+              <h3>Editorial</h3>
+            </header>
+            <ul>
+              <li><a href="http://www.texastribune.org/about/staff/justin-dehn/" target="_blank">Justin Dehn</a></li>
+              <li><a href="http://www.texastribune.org/about/staff/david-pasztor/" target="_blank">David Pasztor</a></li>
+              <li><a href="http://www.texastribune.org/about/staff/rocha-alana/" target="_blank">Alana Rocha</a></li>
+              <li><a href="http://www.texastribune.org/about/staff/twiseman/" target="_blank">Todd Wiseman</a></li>
+            </ul>
+          </div>
+          <div class="inline">
+            <header>
+              <h3>Design</h3>
+            </header>
+            <ul>
+              <li><a href="http://www.texastribune.org/about/staff/becca-aaronson/" target="_blank">Becca Aaronson</a></li>
+              <li><a href="http://www.texastribune.org/about/staff/emily-albracht/" target="_blank">Emily Albracht</a></li>
+            </ul>
+          </div>
+          <div class="inline">
+            <header>
+              <h3>Photography</h3>
+            </header>
+            <ul>
+              <li>Ryan Booth</li>
+              <li>Charlie Pearce</li>
+              <li>Gabriel Crist&#243;ver P&#233;rez</li>
+            </ul>
+          </div>
+          <div class="gg-prose-block">
+            <header>
+              <h3>Music</h3>
+            </header>
+            <p>“Biology Slides” by Bleak House, “Cylinder Five” by Chris Zabriskie, “Led by the Dress Colored in Red” by Augustus Bro &amp; Gallery Six.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
 </section>
 {{ macro.menu(PATH_PREFIX, 'about') }}
 

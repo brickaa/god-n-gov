@@ -76,7 +76,7 @@
 
   ul {
     list-style: none;
-    padding: 0;
+    padding: 0;  
 
     a {
       color: $gg-black;
@@ -85,7 +85,6 @@
       &:hover {
         color: $gg-red;
         text-decoration: none;
-        // border-bottom: 1px solid $gg-red;
       }
     }
 
@@ -102,7 +101,6 @@
           margin-bottom: 1em;
         }
       }
-
     }
 
     &.bullet {
@@ -113,7 +111,6 @@
 
       li {
         &:before {
-          color: $gg-red;
           content: '';
           font-family: $base-sans-serif;
           margin: 0 .5em 0 -1em;
@@ -122,6 +119,37 @@
       }
     }
 
+  }
+}
+
+.gg-prose-about {
+  ul {
+    @include clearfix;
+    list-style: none;
+    padding: 0;
+    font-family: $montserrat;
+    font-weight: 400;
+    padding: 0 1em;
+
+    li {
+      margin-bottom: .5em;
+
+      &:last-child {
+        margin-bottom: 1em;
+      }
+
+      &:before {
+        content: '';
+        font-family: $base-sans-serif;
+        margin: 0 .5em 0 -1em;
+        padding: 0 .25em;
+      }
+
+      @include media($default-desktop) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
   }
 }
 
@@ -138,6 +166,7 @@
     @include media($default-desktop) {
       display: inline-block;
       width: 60%;
+      margin: 0 .5em 0 0;
     }
 
   }

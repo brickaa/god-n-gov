@@ -32,30 +32,34 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     font-family: $montserrat;
     line-height: 1.3;
     margin: 0 0 .5em;
-    text-transform: uppercase;
   }
 
   h1 {
     @extend %font-l;
+    text-transform: uppercase;
   }
 
   h2 {
     @extend %font-m;
+    text-transform: uppercase;
   }
 
-}
+  h3 {
+    @extend %font-base;
+  }
 
-.gg-page-title {
-  @extend %font-xxl;
-  color: $white;
-  font-family: $montserrat;
-  line-height: 1.3;
-  margin: 81px 0 52px;
-  text-transform: uppercase;  
+  .inline {
+    @include media(min-width 600px) {
+      display: inline-block;
+      vertical-align: top;
+      width: 32.3%;
+    }
+  }
 }
 
 .gg-prose-header {
@@ -63,20 +67,13 @@
 }
 
 .gg-prose-block {
-  margin-bottom: 2em;
-
-  &.inline {
-
-    @include media(min-width 600px) {
-      display: inline-block;
-      width: 32.3%;
-      vertical-align: top;
-    }
-  }
+  margin: 0 0 2.5em;
 
   ul {
+    font-family: $bookmania;
     list-style: none;
-    padding: 0;  
+    padding: 0;
+    margin: 0 0 2em;
 
     a {
       color: $gg-black;
@@ -88,35 +85,8 @@
       }
     }
 
-    &.bullet,
-    &.carat {
-      font-family: $montserrat;
-      font-weight: 400;
-      padding: 0 1em;
-
-      li {
-        margin-bottom: .75em;
-
-        &:last-child {
-          margin-bottom: 1em;
-        }
-      }
-    }
-
-    &.bullet {
-      list-style: disc;
-    }
-
-    &.carat {
-
-      li {
-        &:before {
-          content: '';
-          font-family: $base-sans-serif;
-          margin: 0 .5em 0 -1em;
-          padding: 0 .25em;
-        }
-      }
+    li {
+      margin: .25em 0 .5em;
     }
 
   }
@@ -145,10 +115,6 @@
         padding: 0 .25em;
       }
 
-      @include media($default-desktop) {
-        @include span-columns(6);
-        @include omega(2n);
-      }
     }
   }
 }

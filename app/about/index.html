@@ -9,14 +9,14 @@
 <section id="main" class="main">
   <div class="gg-page-cover-wrapper">
     <div class="gg-page-cover-img"></div>
-    <header class="gg-page-cover-title">
-      <h1 class="gg-page-title">About</h1>
-    </header>
   </div>
   <div class="gg-prose-wrapper">
     <div class="gg-prose">
+      <header class="gg-prose-header">
+        <h1 class="">About</h1>
+      </header>
       <div class="gg-prose-block gg-prose-about">
-        <p>{{ COPY.About_Text|safe }}</p>
+        {{ COPY.About_Text|safe }}
       </div>
       <div class="gg-prose-block">
         <header>
@@ -42,45 +42,52 @@
         </div>
          <!--End mc_embed_signup-->
       </div>
-      <div class="gg-prose-block inline">
-        <header>
-          <h1>Editorial</h1>
+      <div class="gg-prose-block gg-prose-about">
+        <header class="gg-prose-header">
+          <h1>Check your local listings</h1>  
         </header>
-        <ul class="carat">
-          <li><a href="http://www.texastribune.org/about/staff/justin-dehn/" target="_blank">Justin Dehn</a></li>
-          <li><a href="http://www.texastribune.org/about/staff/david-pasztor/" target="_blank">David Pasztor</a></li>
-          <li><a href="http://www.texastribune.org/about/staff/rocha-alana/" target="_blank">Alana Rocha</a></li>
-          <li><a href="http://www.texastribune.org/about/staff/twiseman/" target="_blank">Todd Wiseman</a></li>
-        </ul>
-      </div>
-      <div class="gg-prose-block inline">
-        <header>
-          <h1>Design</h1>
-        </header>
-        <ul class="carat">
-          <li><a href="http://www.texastribune.org/about/staff/becca-aaronson/" target="_blank">Becca Aaronson</a></li>
-          <li><a href="http://www.texastribune.org/about/staff/emily-albracht/" target="_blank">Emily Albracht</a></li>
-        </ul>
-      </div>
-      <div class="gg-prose-block inline">
-        <header>
-          <h1>Photography</h1>
-        </header>
-        <ul class="carat">
-          <li>Ryan Booth</li>
-          <li>Charlie Pearce</li>
-          <li>Gabriel Crist&#243;ver P&#233;rez</li>
-        </ul>
+        {{ COPY.LocalListings_Text|safe }}
       </div>
       <div class="gg-prose-block">
-        <header>
-          <h1>Music</h1>
+        <header class="gg-prose-header">
+          <h1>Project Contributors</h1>  
         </header>
-        <ul class="carat">
-          <li>“Biology Slides” by Bleak House</li>
-          <li>“Cylinder Five” by Chris Zabriskie</li>
-          <li>“Led by the Dress Colored in Red” by Augustus Bro &amp; Gallery Six</li>
-        </ul>
+        <div class="inline">
+          <header>
+            <h3>Editorial</h3>
+          </header>
+          <ul>
+            <li><a href="http://www.texastribune.org/about/staff/justin-dehn/" target="_blank">Justin Dehn</a></li>
+            <li><a href="http://www.texastribune.org/about/staff/david-pasztor/" target="_blank">David Pasztor</a></li>
+            <li><a href="http://www.texastribune.org/about/staff/rocha-alana/" target="_blank">Alana Rocha</a></li>
+            <li><a href="http://www.texastribune.org/about/staff/twiseman/" target="_blank">Todd Wiseman</a></li>
+          </ul>
+        </div>
+        <div class="inline">
+          <header>
+            <h3>Design</h3>
+          </header>
+          <ul>
+            <li><a href="http://www.texastribune.org/about/staff/becca-aaronson/" target="_blank">Becca Aaronson</a></li>
+            <li><a href="http://www.texastribune.org/about/staff/emily-albracht/" target="_blank">Emily Albracht</a></li>
+          </ul>
+        </div>
+        <div class="inline">
+          <header>
+            <h3>Photography</h3>
+          </header>
+          <ul>
+            <li>Ryan Booth</li>
+            <li>Charlie Pearce</li>
+            <li>Gabriel Crist&#243;ver P&#233;rez</li>
+          </ul>
+        </div>
+        <div class="gg-prose-block">
+          <header>
+            <h3>Music</h3>
+          </header>
+          <p>“Biology Slides” by Bleak House, “Cylinder Five” by Chris Zabriskie, “Led by the Dress Colored in Red” by Augustus Bro &amp; Gallery Six.</p>
+        </div>
       </div>
     </div>
   </div>

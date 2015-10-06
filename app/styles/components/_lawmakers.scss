@@ -1,5 +1,3 @@
-
-
 .lawmakers-related {
   display: none;
 }
@@ -80,6 +78,10 @@
         .lawmaker-info {
           background-color: $gg-red;
         }
+
+        .lawmaker-mobile-play {
+          color: $white;
+        }
       } 
     }
 
@@ -87,12 +89,20 @@
       display: block;
       min-height: 120px;
 
+      .icon-TT-god_play {
+        display: none;
+      }
+
       @include media($lawmaker-bp-md) {
         @include omega(3n);
         float: right;
         min-height: 180px;
         width: 40%;
         vertical-align: top;
+
+        .icon-TT-god_play {
+          display: block;
+        }
       }
 
       @include media($lawmaker-bp-lg) {
@@ -100,6 +110,10 @@
         float: right;
         min-height: 180px;
         width: 40%;
+
+        .icon-TT-god_play {
+          display: block;
+        }
       }
     }
 
@@ -146,6 +160,32 @@
         width: 60%;
       }
     }
+
+    .lawmaker-mobile-play {
+      color: $gg-red;
+      float: right;
+      margin: 0 1em 0 0;
+
+      p {
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0 .5em 0 0;
+        vertical-align: middle;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 1.5em;
+      }
+
+      @include media($lawmaker-bp-md) {
+        display: none;
+      }
+
+      @include media($lawmaker-bp-lg) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -179,16 +219,22 @@
 
 h2.lawmaker-name {
   @extend %font-base;
+  display: inline-block;
   font-family: $montserrat;
+  margin: .25em 0;
   text-transform: uppercase;
   z-index: 2;
 
   @include media($lawmaker-bp-md) {
+    display: block;
     font-size: .85em;
+    margin: 0 0 .5em;
   }
 
   @include media($lawmaker-bp-lg) {
     @extend %font-m;
+    display: block;
+    margin: 0 0 .5em;
   }
 
 }

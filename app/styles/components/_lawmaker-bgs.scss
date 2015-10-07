@@ -32,7 +32,8 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
 
     &:hover {
       @if #{$lawmaker} == 'israel'
-      or #{$lawmaker} == 'nevarez' 
+      or #{$lawmaker} == 'nevarez'
+      or #{$lawmaker} == 'simpson'
       or #{$lawmaker} == 'watson' {
         .lawmaker-layer-#{$lawmaker} {
           background: 
@@ -181,6 +182,7 @@ $list: naishtat hegar stickland krause nevarez schaefer campbell miller burton p
 
   .lawmaker-layer-israel,
   .lawmaker-layer-nevarez,
+  .lawmaker-layer-simpson,
   .lawmaker-layer-watson {
     background-position: 75% center;
     background-size: cover;

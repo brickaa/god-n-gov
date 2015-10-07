@@ -221,8 +221,9 @@ h2.lawmaker-name {
   @extend %font-base;
   display: inline-block;
   font-family: $montserrat;
-  margin: .25em 0;
+  margin: 0 0 .5em;
   text-transform: uppercase;
+  max-width: 80%;
   z-index: 2;
 
   @include media($lawmaker-bp-md) {

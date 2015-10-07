@@ -2,7 +2,6 @@
 
 var $extraFootage = $('#extra-footage'),
     $main = $('#main'),
-    extraHeight = $('.masthead').height() + $('#menu-bar').height(),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
     $relatedVids = $('#lawmakers-related'),
@@ -35,19 +34,12 @@ function sendEvent(eventAction, label, value) {
   ga('send', eventParams);
 }
 
-function videoSize() {
-  $('.video-wrapper').css('min-height', $(window).height() - extraHeight);
-}
-
 function onFinish(playerID) {
   if($('#menu-chapters').is(':hidden')) {
     $('#menu-chapters').slideToggle(250);
   }
 }
 
-function resize() {
-  videoSize();
-}
 
 $(document).ready(function() {
   'use strict';
@@ -61,9 +53,6 @@ $(document).ready(function() {
 
   // Call FitVids on main container
   $main.fitVids();
-
-  // Size video wrapper to window
-  videoSize();
 
   // Hide cover & start video when user clicks 'Play'
   // Show related vids
@@ -133,29 +122,3 @@ $(window).scroll(function() {
     $('#extra-footage').fadeOut();
   }
 });
-
-// RESIZE EVENTS
-window.onresize = resize;
-
-// Check orientation and call resize on Android
-var supportsOrientationChange = 'onorientationchange' in window,
-    orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
-
-window.addEventListener(orientationEvent, function() {
-  resize();
-}, false);
-
-// Check orientation & call resize on iPhone/iPad, etc.
-window.onorientationchange = function(){
-  var orientation = window.orientation;
-
-  if (orientation === 0){
-    resize();
-  }
-  else if (orientation === 90){
-    resize();
-  }
-  else if (orientation === -90){
-    resize();
-  }
-};

@@ -4,6 +4,7 @@ var $extraFootage = $('#extra-footage'),
     $main = $('#main'),
     $menuBtn = $('#menu-chapters-btn'),
     $menuChapters = $('#menu-chapters'),
+    $pageID = $main.data('id'),
     $relatedVids = $('#lawmakers-related'),
     $startBtn = $('#start-video'),
     $videoCover = $('#video-cover-wrapper'),
@@ -37,6 +38,7 @@ function sendEvent(eventAction, label, value) {
 function onFinish(playerID) {
   if($('#menu-chapters').is(':hidden')) {
     $('#menu-chapters').slideToggle(250);
+    sendEvent('video-finished', $pageID);
   }
 }
 
@@ -44,6 +46,7 @@ function onFinish(playerID) {
 $(document).ready(function() {
   'use strict';
 
+  console.log($pageID);
   // When player ready, add play callback
   player.addEvent('ready', function() {
     player.addEvent('play');
@@ -63,20 +66,23 @@ $(document).ready(function() {
     $extraFootage.show();
     $videoWrapper.css('visibility', 'visible');
     player.api('play');
-    sendEvent('start-button-clk');
+    $pageID = $(this).data('id');
+    sendEvent('start-button-clk', $pageID);
     player.api(onFinish);
+    
   });
 
   // Open/close menu on click. Send GA.
   $menuBtn.click(function(el) {
     menuAccordion(el);
-    sendEvent('menu-chpts-btn-clk');
+    sendEvent('menu-chpts-btn-clk', $pageID);
   });
 
   // Click main area to close menu. Send GA.
   $main.click(function() {
     if($('#menu-chapters').is(':visible')) {
       $('#menu-chapters').slideToggle(250);
+      sendEvent('main-close-menu-clk', $pageID);
     }
   });
 
@@ -108,11 +114,11 @@ $(document).ready(function() {
   });
 
   $('#twitter-share').click(function() {
-    sendEvent('twitter-share-clk');
+    sendEvent('twitter-share-clk', $pageID);
   });
   
   $('#fb-share').click(function() {
-    sendEvent('fb-share-clk');
+    sendEvent('fb-share-clk', $pageID);
   });
 
 });
@@ -120,5 +126,6 @@ $(document).ready(function() {
 $(window).scroll(function() {
   if ($(this).scrollTop() > 150) {
     $('#extra-footage').fadeOut();
+    sendEvent('fade-extra-footage-scrll', $pageID);
   }
 });

@@ -200,7 +200,7 @@
     margin: 0;
 
     &.lawmaker-faith {
-      @extend %font-xs;
+      font-size: .6em;
       font-family: $montserrat;
       text-transform: uppercase;
     }
@@ -228,7 +228,7 @@ h2.lawmaker-name {
 
   @include media($lawmaker-bp-md) {
     display: block;
-    font-size: .85em;
+    font-size: .75em;
     margin: 0 0 .5em;
   }
 

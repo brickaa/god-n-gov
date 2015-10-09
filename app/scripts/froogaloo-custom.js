@@ -13,7 +13,7 @@ $(function() {
     status.text('ready');
 
     // player.addEvent('pause', onPause);
-    player.addEvent('play', onPlay);
+    player.addEvent('play');
     // player.addEvent('finish', onFinish);
     // player.addEvent('playProgress', onPlayProgress);
   });

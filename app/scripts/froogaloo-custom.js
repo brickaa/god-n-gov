@@ -23,25 +23,4 @@ $(function() {
     player.api('play');
   });
 
-  // function onPause(id) {
-  //   status.text('paused');
-  //   pauseBtn.hide();
-  //   playBtn.show();
-  //   console.log('pause');
-  // }
-
-  function onPlay(id) {
-    // playBtn.hide();
-    // pauseBtn.show();
-    console.log('play');
-  }
-
-  // function onFinish(id) {
-  //   status.text('finished');
-  // }
-
-  // function onPlayProgress(data, id) {
-  //   status.text(data.seconds + 's played');
-  // }
-
 });

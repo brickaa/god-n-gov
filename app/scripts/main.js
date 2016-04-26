@@ -45,8 +45,6 @@ function onFinish(playerID) {
 
 $(document).ready(function() {
   'use strict';
-
-  console.log($pageID);
   // When player ready, add play callback
   player.addEvent('ready', function() {
     player.addEvent('play');

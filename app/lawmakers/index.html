@@ -5,6 +5,10 @@
   {{ macro.meta(COPY, 'lawmakers') }}
 {% endblock %}
 
+{% block parsely %}
+  {{ macro.parsely(COPY, 'lawmakers') }}
+{% endblock %}
+
 {% block styles %}
 {{ super() }}
 {% endblock %}
@@ -12,11 +16,11 @@
 {% block content %}
 <section id="main" class="main" data-id="lawmakers">
   <div id="video-cover-wrapper" class="video-cover-wrapper">
-    <div class="video-cover-img video-cover-img-overview"></div> 
+    <div class="video-cover-img video-cover-img-overview"></div>
     <div class="gg-prose-wrapper">
       <div class="gg-prose">
         <header class="gg-prose-header gg-prose-header-top">
-          <h1>Lawmakers</h1>  
+          <h1>Lawmakers</h1>
         </header>
         <div class="gg-prose-block">
           {{ COPY.Lawmaker_Text|safe }}

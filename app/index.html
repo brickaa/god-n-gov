@@ -5,6 +5,10 @@
   {{ macro.meta(COPY, 'overview') }}
 {% endblock %}
 
+{% block parsely %}
+  {{ macro.parsely(COPY, 'overview') }}
+{% endblock %}
+
 {% block styles %}
 {{ super() }}
 {% endblock %}
@@ -17,11 +21,11 @@
       <img src="{{ PATH_PREFIX }}assets/images/logos/TT-god_logo-stack.svg">
       <h1 class="tagline">{{ COPY.Tagline }}</h1>
       <button id="start-video" class="video-cover-btn ghost-button-red">Play</button>
-    </figure>   
+    </figure>
   </div>
   <div class="video-wrapper video-wrapper-overview">
     <div class="video-frame">
-      <iframe id="player1" src="http://player.vimeo.com/video/{{ VIDEO_IDS.Overview }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen height="720px" width="1280px"></iframe>
+      <iframe id="player1" src="https://player.vimeo.com/video/{{ VIDEO_IDS.Overview }}?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen height="720px" width="1280px"></iframe>
     </div>
   </div>
   <div id="lawmakers-related" class="gg-prose-wrapper lawmakers-related">
@@ -36,7 +40,7 @@
             <li id="{{ x.ID }}" class="lawmaker-info-box">
               <div class="lawmaker-hover-layer lawmaker-layer-{{ x.ID }}">
                 <span class="icon-TT-god_play"></span>
-              </div>          
+              </div>
               <div class="lawmaker-info lawmaker-info-wide">
                 <div class="lawmaker-quote">
                   <p>"{{ x.QUOTE }}"</p>
@@ -54,7 +58,7 @@
     </div>
   </div>
 </section>
- 
+
 {{ macro.menu(PATH_PREFIX, COPY, 'overview', 'related') }}
 {% endblock %}
 

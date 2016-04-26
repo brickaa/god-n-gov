@@ -27,6 +27,27 @@
   <meta property="fb:app_id" content="154122474650943">
 {% endmacro %}
 
+{% macro parsely(data, page) %}
+<!-- Update articleSection, creator and dateCreated! -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    {% if page == 'overview' %}
+    "headline": "God and Governing | The Texas Tribune",
+    "url": "http://apps.texastribune.org/",
+    {% else %}
+    "headline": "God and Governing | The Texas Tribune",
+    "url": "http://apps.texastribune.org/{{ page }}/",
+    {% endif %}
+    "thumbnailUrl": "",
+    "dateCreated": "2016-02-09T06:00:00-06:00",
+    "articleSection": "FRONT PAGE, POLITICS, POLICY, GOD, RELIGION",
+    "creator": ["Becca Aaronson, The Texas Tribune"]
+  }
+</script>
+{% endmacro %}
+
 {% macro menu(path_prefix, data, active, related) %}
 <nav class="menu">
   {% if related == 'related' %}
